@@ -21,17 +21,17 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 39px;
+    font-size: 2rem;
 }
 
 p {
     color: #000;
-    font-size: 21px;
-    line-height: 1.35;
+    font-size: 1rem;
+    line-height: 1.5;
     font-weight: 400;
     margin-bottom: 20px;
 }
