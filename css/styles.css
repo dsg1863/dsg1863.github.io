@@ -35,3 +35,17 @@ p {
     font-weight: 400;
     margin-bottom: 20px;
 }
+
+a {
+  color: red;
+  font-weight: 400;
+  line-height: 1.35;
+  text-decoration: none;
+  border-bottom: 1px solid red;
+  padding-bottom: 3px;
+}
+
+a:hover {
+  color: blue;
+  border-bottom: 1px solid blue;
+}
