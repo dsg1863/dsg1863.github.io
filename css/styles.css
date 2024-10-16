@@ -38,17 +38,17 @@ p {
 }
 
 a {
-    color: red;
+    color: #f00;
     line-height: 1.5;
     font-weight: bold;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #f000;
     padding-bottom: 3px;
     text-decoration: none;
 }
 
 a:hover {
-  color: blue;
-  border-bottom: 1px solid blue;
+  color: #00f;
+  border-bottom: 1px solid #00f;
   margin-bottom: -1px;
 }
 
