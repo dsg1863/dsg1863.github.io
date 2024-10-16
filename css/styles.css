@@ -39,13 +39,16 @@ p {
 
 a {
     display: block;
-    color: #red;
+    color: red;
+    border-bottom: 1px solid red;
     line-height: 2;
+    text-decoration: none;
 }
 
 a:hover {
-    color: blue;
-    border-bottom: 1px solid blue;
+  color: blue;
+  border-bottom: 1px solid blue;
+  margin-bottom: -1px;
 }
 
 hr {
