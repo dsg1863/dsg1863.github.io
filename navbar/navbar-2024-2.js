@@ -1,4 +1,4 @@
-// JavaScript to add a "Voltar para índice" link to every page.
+// JavaScript to add a "Voltar para índice" link to every page
 window.onload = function() {
     // Create the link element
     var navBar = document.createElement('div');
@@ -6,7 +6,7 @@ window.onload = function() {
     
     // Set the link attributes
     link.href = 'https://dsg1863.github.io/2024-2/';
-    link.textContent = '< Projetos 2024-2';
+    link.textContent = 'Projetos 2024-2';
     
     // Apply the CSS class
     navBar.classList.add('nav-bar');
