@@ -1,7 +1,6 @@
 .top-bar {
     width: calc(100% + 72px); /* 100% + the left and right margins of the body (36px each) */
     height: 32px;
-    background-color: #222;
     display: flex;
     align-items: center; 
     justify-content: flex-start; 
@@ -10,6 +9,10 @@
     margin-bottom: 30px; 
     padding-left: 20px; /* alinhamento com H1 abaixo */
 }
+
+.body-start .topbar {background-color: #000;}
+.body-2024-2 .topbar {background-color: #555;}
+.body-2025-1 .topbar {background-color: #c00;}
 
 .top-bar a {
     color: #fff;
