@@ -1,4 +1,5 @@
 window.onload = function() {
+    
     // Create the top bar container
     var topBar = document.createElement('div');
     
@@ -12,14 +13,20 @@ window.onload = function() {
     link2.href = 'https://dad.puc-rio.br';
     link2.textContent = 'Departamento de Artes & Design';
     
+    // Create the separator with a class
+    var separator = document.createElement('span');
+    separator.textContent = ' |';
+    separator.className = 'separator'; // Add a CSS class for styling
+
+    
     // Apply the CSS class to the top bar
     topBar.classList.add('top-bar');
     
-    // Append both links to the top bar
+    // Append both links and the separator to the top bar
     topBar.appendChild(link1);
-    topBar.appendChild(document.createTextNode(' | ')); // Add a separator between the links
+    topBar.appendChild(separator);
     topBar.appendChild(link2);
     
-    // Add the top bar to the body of every page (as the second child)
-    document.body.insertBefore(topBar, document.body.children[1]);
+    // Add the top bar to the body as the first child
+    document.body.insertBefore(topBar, document.body.firstChild);
 };
