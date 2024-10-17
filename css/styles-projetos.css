@@ -6,9 +6,11 @@
     box-sizing: border-box;
 }
 
+body.body-2024-2 {background-color: #000;}
+body.body-2025-1 {background-color: #e00;}
+
 body {
     color: #fff;
-    background-color: #000;
     margin: 24px 36px;
     font-family: "Space Grotesk", sans-serif;
 }
