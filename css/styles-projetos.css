@@ -67,7 +67,8 @@ a.tit1 {
 }
 
 a.tit1:hover {
-    color: #f90;
+    color: #fff;
+    text-decoration: underline;
 }
 
 hr {
