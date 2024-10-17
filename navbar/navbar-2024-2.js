@@ -1,4 +1,4 @@
-// JavaScript to add a "Voltar para índice" link to every page
+// JavaScript to add a "Voltar para índice" link to every page.
 window.onload = function() {
     // Create the link element
     var navBar = document.createElement('div');
