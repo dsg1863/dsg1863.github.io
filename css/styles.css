@@ -88,7 +88,7 @@ hr {
 
 
 /* Media query to hide the image on smaller screens */
-@media (max-width: 1200px) {
+@media (max-width: 1023px) {
     .brasao {
         display: none; /* Hides the entire brasao div */
     }
