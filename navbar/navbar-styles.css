@@ -1,11 +1,10 @@
 .nav-bar {
-    width: 125px;
+    width: 120px;
     height: 32px;
     background-color: #0005;
-    vertical-align: middle;
     display: flex;
     align-items: center; 
-    justify-content: flex-start;
+    justify-content: center;
     z-index: 1000; 
     position: fixed;
     bottom: 0; 
@@ -18,7 +17,7 @@
     font-size: 0.8rem;
     text-decoration: none;
     margin: 5px 0;
-    padding: 0 0 2px 20px;
+    padding: 0 0 2px 0;
 }
 
 .nav-bar a:hover {
