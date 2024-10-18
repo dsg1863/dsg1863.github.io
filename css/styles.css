@@ -76,7 +76,7 @@ hr {
     height: 1480px; /* Set the height of the image */
     width: auto; /* Maintain aspect ratio */
     position: relative; /* Allow positioning */
-    right: -35%; /* Move the image 50% of its width to the right */
+    right: -30%; /* Move the image 50% of its width to the right */
 }
 .body-start .brasao img {
     opacity: 0.07; /* Adjust the opacity as needed */
