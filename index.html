@@ -7,6 +7,24 @@
     <link rel="stylesheet" type="text/css" href="topbar/topbar-styles.css">    
     <script src="topbar/topbar.js"></script>
     <link rel="icon" type="image/png" href="imagens/favicon.png">
+    <style type="text/css">
+        .brasao {
+    position: fixed; /* Fixes the position relative to the viewport */
+    top: 50px; /* 50px margin from the top */
+    right: 50px; /* 50px margin from the right */
+    z-index: -1; /* Places it behind all other elements */
+}
+
+.brasao img {
+    opacity: 0.5; /* Adjust the opacity as needed (0 is fully transparent, 1 is fully opaque) */
+    filter: invert(1); /* Inverts the colors; set to 0 to keep original colors */
+    width: auto; /* Adjust the width as needed, or set a specific value */
+    height: auto; /* Adjust the height as needed, or set a specific value */
+    max-width: 100%; /* Ensures the image scales responsively */
+    max-height: 100%; /* Ensures the image scales responsively */
+}
+
+    </style>
 </head>
 
 <body class="body-start">
