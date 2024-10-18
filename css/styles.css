@@ -54,6 +54,7 @@ a:hover {
 
 hr {
     border: none;
+    max-width: 1024px;
     height: 1px;
     background-color: #000;
     margin: 25px 0;
