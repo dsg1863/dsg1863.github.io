@@ -74,7 +74,7 @@ hr {
     right: -35%; /* Move the image 50% of its width to the right */
 }
 .body-start .brasao img {
-    opacity: 0.1; /* Adjust the opacity as needed */
+    opacity: 0.07; /* Adjust the opacity as needed */
     filter: invert(0); /* Inverts the colors; set to 0 to keep original colors */
 }
 .body-2024-2 .brasao img {
