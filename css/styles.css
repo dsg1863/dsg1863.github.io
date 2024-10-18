@@ -47,8 +47,8 @@ a {
 }
 
 a:hover {
-  color: #00f;
-  border-bottom: 1px solid #00f;
+  color: #f00;
+  border-bottom: 1px solid #f00;
   margin-bottom: -1px;
 }
 
