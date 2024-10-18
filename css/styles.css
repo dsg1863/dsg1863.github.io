@@ -52,6 +52,10 @@ a:hover {
   margin-bottom: -1px;
 }
 
+a.semestre {
+  font-size: 1.5rem;
+}
+
 hr {
     border: none;
     max-width: 1024px;
@@ -91,6 +95,12 @@ hr {
 /* Media query to hide the image on smaller screens */
 @media (max-width: 1023px) {
     .brasao {
-        display: none; /* Hides the entire brasao div */
+        top: 120px; /* 50px margin from the top */
+    }
+    .brasao img {
+        height: 700px; /* Set the height of the image */
+        width: auto; /* Maintain aspect ratio */
+        position: relative; /* Allow positioning */
+        right: -40%; /* Move the image 50% of its width to the right */
     }
 }
