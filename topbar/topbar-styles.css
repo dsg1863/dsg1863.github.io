@@ -11,12 +11,12 @@
 }
 
 @media (min-width: 993px) {
-    .top-bar {
-        width: calc(100% + 130px); 
-        margin-left: -92px; 
-    }
+  .top-bar {
+    width: calc(100% + 136px);
+    margin-left: -100px;
+    padding-left: 80px;
+  }
 }
-
 
 .body-start .top-bar {background-color: #000;}
 .body-2024-2 .top-bar {background-color: #000;}
