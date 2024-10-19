@@ -9,6 +9,13 @@
 body.body-2024-2 {background-color: #1d1d1d;}
 body.body-2025-1 {background-color: #f00;}
 
+@media (min-width: 993px) {
+    body {
+        margin-left: 100px; 
+    }
+}
+
+
 body {
     color: #fff;
     margin: 24px 36px;

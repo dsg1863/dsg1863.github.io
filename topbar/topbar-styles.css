@@ -10,6 +10,14 @@
     padding-left: 20px; /* alinhamento com H1 abaixo */
 }
 
+@media (min-width: 993px) {
+    .top-bar {
+        width: calc(100% + 130px); 
+        margin-left: -92px; 
+    }
+}
+
+
 .body-start .top-bar {background-color: #000;}
 .body-2024-2 .top-bar {background-color: #000;}
 .body-2025-1 .top-bar {background-color: #c00;}
