@@ -1,6 +1,6 @@
 .top-bar {
     width: calc(100% + 72px); /* 100% + the left and right margins of the body (36px each) */
-    height: 36px;
+    height: 37px;
     display: flex;
     align-items: center; 
     justify-content: flex-start; 
