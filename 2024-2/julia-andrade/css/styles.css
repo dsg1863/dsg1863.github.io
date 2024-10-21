@@ -1,0 +1,124 @@
+body {
+	background-color: #ffffff;
+}
+body.p1 {
+	background-color: #B74D2C;
+}
+body.p2 {
+	background-color: #E8CC90;
+}
+body.p3 {
+	background-color: #EDE6E5;
+}
+
+h1 {
+	font-family: "Courier Prime", monospace;
+ 	font-weight: 700;
+ 	font-style: normal;
+ 	margin: 50px;
+ 	color: #303252;
+	text-align: center;
+}
+
+p {
+	font-family: "Courier Prime", monospace;
+	font-size: 60px;
+	font-weight: 700;
+	font-style: normal;
+	color: #303252;
+	position: absolute;
+	top: 200px;
+	left: 650px;
+}
+
+p.enquanto {
+	top: 250px;
+	left: 92px;
+}
+
+p.desagua {
+	color: #EDE6E5;
+	left: 250px
+}
+
+p.cartao {
+	top: 150px;
+	left: 800px;
+}
+
+a {
+	 font-family: "Courier Prime", monospace;
+	 font-weight: 700;
+	 font-style: normal;
+	 color: #303252;
+	 position: absolute;
+	 top: 600px;
+	 left: 650px;
+}
+
+a.agua {
+	top: 50px;
+	left: 100px;
+}
+
+a.agua2 {
+	top: 120px;
+	left: 1120px;
+	color: #EDE6E5
+}
+
+a.oquefica {
+	top: 600px;
+	left: 490px ;
+}
+
+a.oquefica2 {
+	color: #EDE6E5;
+	left: 170px;
+	top: 540px;
+}
+
+a.doquevai {
+	top: 800px;
+	left: 1200px;
+}
+
+img {
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70%;	
+}
+
+img.gifmar {
+	position: absolute;
+	top: 50%;
+/*	left: 50%;
+	transform: translate(-50%, -50%);*/
+	/*opacity: 0.5;*/
+	width: 100%;
+	z-index: -1;
+}
+
+img.brilho {
+	position: absolute;
+	top: 70%;
+	left: 63%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+}
+
+img.lilas {
+	position: absolute;
+	top: 58%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
