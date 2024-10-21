@@ -1,0 +1,52 @@
+
+body {
+	background-color: #012a4a;
+}
+
+.conteudo {
+	margin: 20px;
+}
+
+h1 {
+	font-family: Gowun Batang;
+	font-size: 55px;
+	color: #EEC170;
+	margin: 50px;
+	text-align: center;
+}
+
+p {
+	font-family: Montserrat;
+	font-size: 25px;
+	color: white;
+	margin: 15px;
+	text-align: center;
+}
+
+a {
+    position: absolute;
+    top: 10px; 
+    right: 10px;  
+    color: #b56576; 
+}
+
+a.cima {
+	position: relative;
+	margin-left: 910px;
+
+
+}
+
+p.menor {
+	background-color: white;
+	margin: 30px;
+	font-size: 22px;
+	color: #012a4a;
+	margin-left: 475px; 
+    margin-right: 475px;
+    border-radius: 10px;
+}
+
+img.izanagi {
+	margin: 10px;
+}

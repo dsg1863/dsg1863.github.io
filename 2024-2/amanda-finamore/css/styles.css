@@ -1,0 +1,23 @@
+h1 {
+	font-family: "baskerville display" ;
+	font-size: 80px;
+	text-align: center;
+	color: #21a56f;
+}
+
+h2 {
+	font-family: "baskerville display" ;
+	font-size: 80px;
+	text-align: center;
+	color: #069d0f;
+}
+
+
+p {
+	text-align: center;
+	color: #0a0a23;
+}
+
+a {
+	color: #cf1c73;
+}

@@ -1,0 +1,59 @@
+body {
+	background-color: #012a4a;
+}
+
+h1 {
+	font-family: Gowun Batang;
+	font-size: 55px;
+	color: #f7b267;
+	margin: 60px;
+}
+
+a {
+    position: absolute;
+    top: 10px; 
+    right: 10px;  
+    color: #b56576; 
+}
+
+p {
+	font-family: Montserrat;
+	font-size: 25px;
+	color: white;
+}
+
+p1 {
+	font-family: Montserrat;
+	font-size: 20px;
+	color: white;
+	margin: 60px
+}
+
+p2 {
+	font-family: Montserrat;
+	font-size: 20px;
+	color: white;
+	margin: 60px
+}
+
+
+.bio-container {
+            display: flex;
+            align-items: center;
+            margin: 30px;
+        }
+
+.bio-text {
+            margin-left: 30px; 
+            margin-right: 50px;
+        }
+        img {
+            width: 600px; /* Definindo a largura da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+
+p.menor {
+	font-family: Montserrat;
+	font-size: 20px;
+	color: white;
+}
