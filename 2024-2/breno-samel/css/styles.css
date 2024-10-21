@@ -1,0 +1,328 @@
+body{
+	background-color: #fff185;
+}
+h1 {
+	font-family: @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+	font-size: 120px;
+	color: #000000;
+}
+img {
+	width: 540px;
+	height: 540px;
+  position: fixed;
+    left: 300px;
+
+}
+img.img-hp {
+  width: 1080px;
+    position: relative;
+    top: -90px;
+    left: 40px;
+    z-index: 1;
+    height: 608px;
+
+}
+
+img.img-hp:hover{
+  -webkit-transform: rotate(33deg);
+          transform: rotate(33deg);
+          z-index: 1;
+
+}
+
+p {
+	/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+font-size: 20px;
+}
+
+p.textobio {
+font-family: Anonymous+Pro ;
+font-size: 20px;
+position: absolute;
+    right: 220px;
+    margin-left: 950px;
+    margin-top: 500px;
+    padding-bottom: 100px;
+  } 
+
+p.textoindex {
+font-size: 20px;
+z-index: 2;
+position: absolute;
+    right: 220px;
+    top: 850px;
+    margin-left: 950px;
+    padding-bottom: 100px;
+  } 
+
+
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Cursor */
+.cursor{
+    position: relative;
+    width: 48em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 75px;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    z-index: 2;    
+
+}
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+
+h1 {
+	/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+}
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Cursor */
+.cursor{
+    position: sticky;
+    width: 48em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 75px;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+
+a:-webkit-any-link {
+    color: #000000;
+    cursor: cell;
+    text-decoration: underline;
+
+}
+
+a{
+  font-size: 30px;
+
+
+}
+
+a.botao-tipo {
+    position: fixed;
+    top: 70px;
+}
+
+a.linkado{
+  position: absolute;
+  top: 20px;
+
+}
+
+ img {
+  border-radius: 0%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+
+.flower {
+    position: absolute;
+    left: 1200px; /* Posição inicial */
+    top: 500px;
+    animation: move 5s linear infinite; /* Animação de movimento */
+}
+
+.petal {
+    position: absolute;
+    width: 100px; /* Aumentar tamanho das pétalas */
+    height: 100px; /* Aumentar tamanho das pétalas */
+    background-color: #ff69b4; /* Cor das pétalas */
+    border-radius: 50%;
+    opacity: 0;
+    animation: bloom 1s forwards;
+}
+
+.petal1 {
+    top: 0;
+    left: 25%;
+    animation-delay: 0s;
+}
+
+.petal2 {
+    right: 0;
+    top: 25%;
+    animation-delay: 0.2s;
+}
+
+.petal3 {
+    bottom: 0;
+    left: 25%;
+    animation-delay: 0.4s;
+}
+
+.petal4 {
+    left: 0;
+    top: 25%;
+    animation-delay: 0.6s;
+}
+
+.center {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 40px; /* Aumentar tamanho do centro */
+    height: 40px; /* Aumentar tamanho do centro */
+    background-color: #ffd700; /* Cor do centro da flor */
+    border-radius: 50%;
+    opacity: 0;
+    animation: bloom 1s forwards;
+    animation-delay: 0.8s;
+}
+
+.stem {
+    position: absolute;
+    left: 45%; /* Centralizar a haste */
+    top: 70%; /* Ajustar a posição da haste */
+    width: 10px; /* Largura da haste */
+    height: 300px; /* Altura da haste */
+    background-color: #228B22; /* Cor verde da haste */
+}
+
+@keyframes bloom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px); /* Movimenta para cima */
+        rotate: 40deg;
+
+    }
+
+    75% {
+transform: translateY(-500px);
+
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+.flor-giratoria {
+    position: relative;
+    left: 350px;
+    width: 120px; /* largura total da flor */
+    height: 200px; /* altura total da flor */
+    animation: girar 5s linear infinite; /* animação de rotação */
+}
+
+.petal {
+    position: absolute;
+    width: 50px; /* largura da pétala */
+    height: 80px; /* altura da pétala */
+    border-radius: 30px; /* arredondar as pétalas */
+    background-color: #87CEEB; /* cor azul clara para as pétalas */
+}
+
+.petal-1 {
+    top: 25px;
+    left: 20%; /* centraliza horizontalmente */
+    transform: translateX(-50%); /* centraliza em relação ao eixo */
+}
+
+.petal-2 {
+    top: 23%;
+    left: 48%; /* posição à direita */
+    rotate: 60deg;
+    transform: translateY(-50%) translateX(-100%) rotate(90deg); /* centraliza e rotaciona */
+}
+
+.petal-3 {
+    top: 25%;
+    left: 0%; /* centraliza horizontalmente */
+    rotate: 120deg;
+    transform: translateX(-50%) translateY(-100%) rotate(180deg); /* centraliza e rotaciona */
+}
+
+.centro {
+    position: absolute;
+    width: 30px; /* largura do centro da flor */
+    height: 30px; /* altura do centro da flor */
+    background-color: #ffcc00; /* cor do centro da flor */
+    border-radius: 50%; /* formato redondo */
+    top: 50%; /* centraliza verticalmente */
+    left: 50%; /* centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* centraliza o centro */
+}
+
+.haste {
+    position: absolute;
+    width: 15px; /* largura da haste */
+    height: 100px; /* altura da haste */
+    background-color: #228B22; /* cor da haste (verde) */
+    top: 120px; /* posição da haste */
+    left: 50%; /* centraliza horizontalmente */
+    transform: translateX(-50%); /* centraliza a haste */
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* Global */
+body { margin-top: 4em; padding: 5em; color: #000000; font-family: 'Anonymous Pro', monospace; }
+
