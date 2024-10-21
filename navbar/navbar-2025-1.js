@@ -5,7 +5,7 @@ window.onload = function() {
     var link = document.createElement('a');
     
     // Set the link attributes
-    link.href = 'https://dsg1863.github.io/2025-1/';
+    link.href = '/2025-1/';
     link.textContent = 'Projetos 2025-1';
     
     // Apply the CSS class
@@ -17,4 +17,3 @@ window.onload = function() {
     // Add the nav bar to the body of every page
     document.body.insertBefore(navBar, document.body.firstChild);
 };
-
