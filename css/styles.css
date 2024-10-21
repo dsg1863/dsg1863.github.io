@@ -41,6 +41,11 @@ p {
     margin-bottom: 10px;
 }
 
+.semestre p:nth-child(2),
+.semestre p:nth-child(3) {
+  display: none;
+}
+
 a {
     color: #f00;
     line-height: 1.5;
