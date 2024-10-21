@@ -18,7 +18,6 @@ body {
     }
 }
 
-
 h1, h2 {
     color: #000;
     line-height: 1;
@@ -57,7 +56,7 @@ a:hover {
   margin-bottom: -1px;
 }
 
-a.semestre {
+.semestre a {
   font-size: 1.5rem;
 }
 
