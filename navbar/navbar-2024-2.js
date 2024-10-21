@@ -5,7 +5,7 @@ window.onload = function() {
     var link = document.createElement('a');
     
     // Set the link attributes
-    link.href = 'https://dsg1863.github.io/2024-2/';
+    link.href = '/2024-2/';
     link.textContent = 'Projetos 2024-2';
     
     // Apply the CSS class
