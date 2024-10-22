@@ -1,0 +1,22 @@
+body {
+  background-color: beige;
+}
+
+h1 {
+  color: royalblue;
+  text-align: center;
+  font-size: 48px;
+}
+
+p {
+  font-family: monospace;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(191, 33, 47, 1.0);
+}
+
+H2 {
+  color: royalblue;
+  text-align: center;
+  font-size: 48px;
+}

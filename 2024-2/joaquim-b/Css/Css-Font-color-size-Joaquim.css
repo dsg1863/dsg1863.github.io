@@ -1,0 +1,19 @@
+body {
+  background-color: wheat;
+}
+
+h1 {
+  color: darkgoldenrod;
+  text-align: center;
+  font-size: 45px;
+}
+
+p {
+  font-family: monospace;
+  font-size: 15px;
+}
+
+h3 {
+  font-family: monospace;
+  font-size: 34;
+}
