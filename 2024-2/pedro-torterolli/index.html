@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <script src="/navbar/navbar-2024-2.js"></script>
+  <link rel="stylesheet" type="text/css" href="/navbar/navbar-styles.css">
+  
+    <title>Pedro Torterolli</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <style>
+      /* Posicionando os links no topo esquerdo */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      h1 {
+        animation: fadeIn 1.5s ease-in-out;
+      }
+      .top-right {
+        position: absolute;
+        top: 100;
+        right: 100px;
+        display: flex;
+        gap: 50px; /* Espaçamento entre os links */
+      }
+
+      /* Estilizando os links */
+      .top-right a:hover {
+        display: block;
+        margin-bottom: 5px;
+        text-decoration: none;
+        color: blue;
+      }
+      h1 {
+        margin-top: 50px;
+      }
+      .container {
+        text-align: center; /* Centraliza o conteúdo dentro do container */
+      }
+
+      img {
+        margin: 0 auto; /* Centraliza a imagem horizontalmente */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Div para os links fixos no topo esquerdo -->
+    <div class="top-right">
+      <a href="bio.html">Sobre mim</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="frases.html">Frases</a>
+    </div>
+
+    <!-- Conteúdo principal da página -->
+    <h1>Bem-vindo ao meu site</h1>
+    <div class="container">
+      <a href="index.html">
+        <img src="imagens/banner.jpg" width="50%" />
+      </a>
+    </div>
+    <p>
+      "O Design, arquiteto do amanhã, constrói um futuro sustentável, onde a
+      beleza se une à funcionalidade. Com olhar atento, reconfigura sistemas,
+      otimiza recursos e inspira a criação de soluções que regeneram o planeta.
+      É a força que impulsiona a transição para um mundo mais justo e
+      equilibrado, onde o Design é a semente da mudança." - Pedro Torterolli ft.
+      ChatGPT
+    </p>
+  </body>
+</html>

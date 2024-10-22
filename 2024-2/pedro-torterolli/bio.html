@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="/navbar/navbar-2024-2.js"></script>
+    <link rel="stylesheet" type="text/css" href="/navbar/navbar-styles.css">
+
+    <title>Sobre mim</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <style>
+        /* Animação de typing para o h1 e h2 */
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: black; }
+        }
+
+        h1, h2 {
+            font-family: "Courier", monospace; /* Fonte que lembra um terminal */
+            overflow: hidden; /* Oculta o texto que ainda não foi "digitado" */
+            border-right: 3px solid; /* Cria o cursor piscante */
+            width: 100%; /* Para que ocupe 100% da largura ao final */
+            margin-left: 20px;
+            text-align: left; /* Alinha o texto à esquerda */
+            position: relative; /* Para posicionamento controlado */
+            top: 80px;
+        }
+
+        h1 {
+            animation: typing 3s steps(30, end), blink-caret 1.02s;
+            animation-fill-mode: forwards; /* Mantém o h1 após a animação */
+            white-space: nowrap;
+        }
+
+        h2 {
+            animation: typing 3s steps(40, end), blink-caret 2.3s;
+            animation-fill-mode: forwards; /* Mantém o h2 após a animação */
+            white-space: nowrap;
+            margin-left: 20px; /* Alinhado à esquerda */
+            text-align: left; /* Alinhado à esquerda */
+        }
+
+        /* Posicionando os links no topo direito */
+        .top-right {
+            position: absolute;
+            top: 100; /* Ajustado para um valor válido */
+            right: 100px; /* Ajustado para um valor válido */
+            display: flex;
+            gap: 50px; /* Espaçamento entre os links */
+        }
+
+        .top-right a:hover {
+            margin-bottom: 5px;
+            color: blue;
+        }
+
+        /* Estilo da imagem de perfil */
+        .rounded-image {
+            border-radius: 50%; /* Ajuste o valor para controlar o arredondamento */
+            width: 350px; /* Defina a largura desejada */
+            height: 350px; /* Defina a altura desejada */
+            object-fit: cover; /* Mantém a proporção da imagem */
+            margin-top: 100px;
+        }
+
+        .image-container {
+            display: flex;
+            align-items: flex-start; /* Alinha verticalmente o conteúdo ao topo */
+            justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+            margin-top: 40px;
+            margin-left: 20px; /* Mantém o layout à esquerda */
+        }
+
+        .text-container {
+            margin-left: 40px; /* Espaçamento entre a imagem e o texto */
+            margin-right: 40px;
+            margin-top: 100px;
+        }
+
+        p {
+            max-width: 1000px;
+            text-align: justify;
+        }
+
+        .gif-container {
+            margin-left: 20px; /* Espaçamento entre o texto e o GIF */
+        }
+
+        .gif-container img {
+            width: 350px; /* Ajuste o tamanho do GIF conforme necessário */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-right">
+        <a href="index.html">Homepage</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="frases.html">Frases</a>
+    </div>
+    <h1>Prazer, Pedro</h1>
+    <h2>Estudante de Design, amante de tecnologia,<br />
+        natureza e viciado em sushi.
+    </h2>
+    <div class="image-container">
+        <img class="rounded-image" src="imagens/editada.jpg" alt="Imagem de perfil de Pedro" />
+        <div class="text-container">
+            <p>
+                Nome: Pedro Torterolli<br>Idade: 22<br>Signo: Cachorro<br>Modelo: nº01<br>Bitcoin ammount: 100k<br><br>
+                "Arroz em baixo do feijão."<br>"A vida é um peido."<br>"Eu toco a vida que nem bateria...Eu não toco bateria."
+            </p>
+        </div>
+        <div class="gif-container">
+            <img class="rounded-image" src="imagens/preguica.gif" alt="preguica" />
+        </div>
+    </div>
+</body>
+</html>
