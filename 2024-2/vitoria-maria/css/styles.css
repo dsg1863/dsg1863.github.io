@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+
+body {
+	/*background-color: royalblue ;*/
+	background-image: url("../imagens/wallpaper.png");
+	font-family: Fredoka;
+}
+img {
+	display: block; 
+	margin-bottom: 20px;
+}
+
+h1 {
+
+	font-size: 60px;
+	color: darkblue;
+}
+
+p {
+max-width: 1000px;
+	font-size: 30px;
+}
+
+a {
+
+	font-size: 20px;
+}
