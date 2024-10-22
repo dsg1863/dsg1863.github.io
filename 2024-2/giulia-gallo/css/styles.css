@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 900
+
+.inconsolata-<uniquifier> {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body{
+	background-color:##f7edd0 ;
+	font-family: "Inconsolata", monospace;
+
+}
+
+h1 {
+	font-size: 60px;
+	color: ##de9c57;
+}
+
+p {
+	font-size: 60px;
+	color:#de9c57 ;
+}
+
+img.abc{
+	width: 1920px;
+	align-content: center;
+}
+
+<i class="fa-sharp-duotone fa-solid fa-star"></i>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#f5f3ed;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+.typewriter h1 {
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; /* Inicialmente, a largura é 0 */
+    animation: typing 5s steps(40, end), blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%; /* A largura final deve ser 100% do texto */
+    }
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+img {
+	width: 40%;
+}
+
+.gifs img {
+    width: 400px;
+}
