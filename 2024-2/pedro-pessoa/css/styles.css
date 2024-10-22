@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
+
+.jacquarda-bastarda-9-regular {
+  font-family: "Jacquarda Bastarda 9", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+body{
+	background-color: #ff5733;
+}
+/*@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');*/
+
+.jacquarda-bastarda-9-regular {
+  font-family: "Jacquarda Bastarda 9", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+	font-family: "Jacquarda Bastarda 9", serif;
+	font-size: 72px;
+}
+P {
+	font-family: "Jacquarda Bastarda 9", serif;
+	font-size: 32px;
+}
+h2 {
+	font-family: "Jacquarda Bastarda 9", serif;
+	font-size: 48px;
+}
+h3 {
+	font-family: "Jacquarda Bastarda 9", serif;
+	font-size: 48px;
+}
+a {
+	font-family: "Jacquarda Bastarda 9", serif;
+	color: #000;
+	font-size: 32px;
+}
+img {
+	width: 100%;
+}
+.img-grid{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.img-grid img {
+	flex: 0 1 calc(33.33% - 10px);
+	margin-bottom: 10px;
+	height: auto;
+	width: 33.33%;
+}
