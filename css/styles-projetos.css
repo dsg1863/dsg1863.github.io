@@ -3,8 +3,6 @@ body.body-2025-1 {background-color: #f00;}
 
 body {
     color: #fff;
-    margin: 24px 36px;
-    font-family: "Space Grotesk", sans-serif;
 }
 
 h1, h2 {
@@ -31,6 +29,14 @@ p {
     color: #fff;
 }
 
+a {
+    color: #ff0;
+}
+
+hr {
+    background-color: #fff;
+}
+
 .lista-projetos ul {
   list-style: none;
 }
@@ -38,12 +44,4 @@ p {
 .lista-projetos ul li a {
   font-size: 1.4rem;
   line-height: 2;
-}
-
-a {
-    color: #ff0;
-}
-
-hr {
-    background-color: #fff;
 }
