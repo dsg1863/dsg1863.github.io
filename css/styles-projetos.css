@@ -23,7 +23,6 @@ h1 a:hover {
 
 h3 {
     font-size: 2.35rem;
-    padding-bottom: 1.5rem;
 }
 
 p {
@@ -40,6 +39,8 @@ hr {
 
 .lista-projetos ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .lista-projetos ul li a {
