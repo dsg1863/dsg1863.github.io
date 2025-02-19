@@ -30,9 +30,9 @@ body.semestre-2025-1 .top-bar {
 .top-bar a {
     color: #fff;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-decoration: none;
-    margin: 8px 0 4px;
+    margin: 8px 0 5px;
     padding-left: 20px;
 }
 
