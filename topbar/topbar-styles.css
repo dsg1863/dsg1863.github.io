@@ -1,42 +1,47 @@
 .top-bar {
-    width: calc(100% + 72px); /* 100% + the left and right margins of the body (36px each) */
+    width: calc(100% + 72px); /* Compensate for body margins */
     height: 37px;
     display: flex;
     align-items: center; 
     justify-content: flex-start; 
-    margin-left: -36px; /* Negate the left margin of the body */
-    margin-top: -24px; /* Negate the top margin of the body */
-    margin-bottom: 30px; 
-    padding-left: 20px; /* alinhamento com H1 abaixo */
+    margin: -24px -36px 30px; /* Consolidated margins */
+    padding-left: 20px; /* Align with H1 below */
 }
 
 @media (min-width: 993px) {
-  .top-bar {
-    width: calc(100% + 136px);
-    margin-left: -100px;
-    padding-left: 80px;
-  }
+    .top-bar {
+        width: calc(100% + 136px);
+        margin-left: -100px;
+        padding-left: 80px;
+    }
 }
 
-body.start-page .top-bar {background-color: #000;}
-body.2024-2 .top-bar {background-color: #000;}
-body.2025-1 .top-bar {background-color: #c00;}
+/* Background color logic */
+body.start-page .top-bar,
+body.2024-2 .top-bar {
+    background-color: #000;
+}
 
+body.2025-1 .top-bar {
+    background-color: #c00;
+}
+
+/* Top bar links */
 .top-bar a {
     color: #fff;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 0.8rem;
     text-decoration: none;
-    margin: 8px 0 4px 0;
+    margin: 8px 0 4px;
     padding-left: 20px;
 }
 
 .top-bar a:hover {
     text-decoration: underline;
-    border-bottom: 0;
 }
 
+/* Separator styling */
 .separator {
-    color: #fff; /* Make the separator white */
-    margin: -4px -10px 0 8px;
+    color: #fff; 
+    margin: -4px 8px 0; /* Consistent spacing */
 }
