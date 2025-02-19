@@ -5,6 +5,7 @@
     align-items: center; 
     justify-content: flex-start; 
     margin: -24px -36px 30px; /* Consolidated margins */
+    padding-left: 20px;
 }
 
 @media (min-width: 993px) {
