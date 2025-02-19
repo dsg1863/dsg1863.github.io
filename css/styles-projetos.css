@@ -52,7 +52,7 @@ p {
     margin-bottom: 10px;
 }
 
-.lista-projetos a {
+.lista-projetos li a {
   font-size: 1.4rem;
 }
 
