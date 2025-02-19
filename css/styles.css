@@ -61,10 +61,10 @@ a:hover {
 }
 
 hr {
+    background-color: #000;
     border: none;
     max-width: 1024px;
     height: 1px;
-    background-color: #000;
     margin: 25px 0;
 }
 
