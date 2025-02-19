@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+mes@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 * {
     margin: 0;
@@ -84,11 +84,11 @@ body.start-page .brasao img {
     opacity: 0.06; /* Adjust the opacity as needed */
     filter: invert(0); /* Inverts the colors; set to 0 to keep original colors */
 }
-body.2024-2 .brasao img {
+body.semestre-2024-2 .brasao img {
     opacity: 0.05; /* Adjust the opacity as needed */
     filter: invert(1); /* Inverts the colors; set to 0 to keep original colors */
 }
-body.2025-1 .brasao img  {
+body.semestre-2025-1 .brasao img  {
     opacity: 0.1; /* Adjust the opacity as needed */
     filter: invert(0); /* Inverts the colors; set to 0 to keep original colors */
 }
