@@ -63,17 +63,10 @@ p {
 
 a {
     color: #ff0;
-    line-height: 1.5;
-    font-weight: bold;
-    border-bottom: 1px solid #ff00;
-    padding-bottom: 3px;
-    text-decoration: none;
 }
 
 a:hover {
     color: #fff;
-    border-bottom: 1px solid #fff;
-    margin-bottom: -1px;
 }
 
 a.tit1 {
