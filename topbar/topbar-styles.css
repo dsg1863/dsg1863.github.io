@@ -31,6 +31,7 @@
 }
 
 .top-bar a:hover {
+    color: inherit;
     text-decoration: underline;
 }
 
