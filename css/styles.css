@@ -45,15 +45,13 @@ a {
     color: #f00;
     line-height: 1.5;
     font-weight: bold;
-    border-bottom: 1px solid #f000;
     padding-bottom: 3px;
     text-decoration: none;
 }
 
 a:hover {
-  color: #f00;
-  border-bottom: 1px solid #f00;
-  margin-bottom: -1px;
+  color: inherit;
+  text-decoration: underline;
 }
 
 .semestre a {
