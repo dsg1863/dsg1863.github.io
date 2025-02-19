@@ -52,8 +52,13 @@ p {
     margin-bottom: 10px;
 }
 
-.lista-projetos li a {
+.lista-projetos ul {
+  list-style: none;
+}
+
+.lista-projetos ul li a {
   font-size: 1.4rem;
+  line-height: 2;
 }
 
 a {
