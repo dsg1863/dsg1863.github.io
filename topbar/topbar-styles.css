@@ -18,7 +18,8 @@
 
 /* Background color logic */
 body.start-page .top-bar,
-body.semestre-2024-2 .top-bar {
+body.semestre-2024-2 .top-bar,
+body.semestre-2025-1 .top-bar {
     background-color: #000;
 }
 
