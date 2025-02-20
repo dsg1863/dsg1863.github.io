@@ -1,10 +1,11 @@
 .top-bar {
     width: calc(100% + 72px); /* Compensate for body margins */
-    height: 37px;
+    height: 40px;
     display: flex;
     align-items: center; 
     justify-content: flex-start; 
     margin: -24px -36px 30px; /* Consolidated margins */
+    padding-top: 4px;
     padding-left: 35px;
 }
 
