@@ -21,10 +21,6 @@ h1 a:hover {
     text-decoration: none;
 }
 
-h3 {
-    font-size: 2.35rem;
-}
-
 p {
     color: #fff;
 }
@@ -35,6 +31,11 @@ a {
 
 hr {
     background-color: #fff;
+}
+
+h3.ano-projetos {
+font-size: 2.25rem;
+  padding-bottom: 1.5rem;
 }
 
 .lista-projetos ul {
