@@ -7,10 +7,10 @@
 }
 
 body {
-    background-color: #fe0;
-    margin: 24px 36px;
+    background-color: #fe0;   
     font-family: "Space Grotesk", sans-serif;
     overflow-x: hidden;
+    margin: 24px 36px;
 }
 
 @media (min-width: 993px) {
