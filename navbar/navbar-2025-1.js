@@ -1,6 +1,6 @@
 window.onload = function() {
-    // Check if body has the correct class
-    if (document.body.classList.contains('semestre-2025-1')) {
+    // Check if current URL path includes /2024-2/
+    if (window.location.pathname.includes('/2025-1/')) {
         // Create the link element
         var navBar = document.createElement('div');
         var link = document.createElement('a');
