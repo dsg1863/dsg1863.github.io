@@ -6,7 +6,7 @@ window.onload = function() {
         var link = document.createElement('a');
         
         // Set the link attributes
-        link.href = '/2024-2/';
+        link.href = '../../2024-2/index.html';
         link.textContent = 'Projetos 2024-2';
         
         // Apply the CSS class
