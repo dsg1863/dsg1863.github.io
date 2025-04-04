@@ -89,7 +89,8 @@ body.semestre-2024-2 .brasao img {
     opacity: 0.05; /* Adjust the opacity as needed */
     filter: invert(1); /* Inverts the colors; set to 0 to keep original colors */
 }
-body.semestre-2025-1 .brasao img  {
+body.semestre-2025-1 .brasao img,
+body.semestre-2025-2 .brasao img  {
     opacity: 0.1; /* Adjust the opacity as needed */
     filter: invert(0); /* Inverts the colors; set to 0 to keep original colors */
 }
