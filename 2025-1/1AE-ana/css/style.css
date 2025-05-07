@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  background-color: #002B9A;
+  color: white;
+  font-family: 'Barrio', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Cortinas */
+.cortina-esq, .cortina-dir {
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    #800000 0px,
+    #990000 10px,
+    #800000 20px
+  ),
+  radial-gradient(circle at 30% 30%, rgba(255,255,255,0.1) 0%, transparent 60%);
+  background-blend-mode: overlay;
+  z-index: 999;
+  animation: abrirCortina 4s ease forwards;
+  box-shadow: inset 20px 0 40px rgba(0,0,0,0.5);
+}
+
+.cortina-esq {
+  left: 0;
+  border-right: 4px solid white;
+}
+
+.cortina-dir {
+  right: 0;
+  border-left: 4px solid white;
+  box-shadow: inset -20px 0 40px rgba(0,0,0,0.5);
+}
+
+@keyframes abrirCortina {
+  to {
+    width: 0;
+  }
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+.arte {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 120px;
+}
+
+.frase {
+  font-size: 36px;
+  margin-top: 10px;
+  color: white;
+  font-family: 'Barrio', cursive;
+}
+
+.wave {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  font-family: 'Barrio', cursive;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.links a:hover {
+  background: white;
+  color: #002B9A;
+}
+
+.footer {
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.linha {
+  width: 100%;
+  height: 4px;
+  background: white;
+}
+
+.pagina-explorar .wave {
+  display: none;
+}
+
+/*        GALERIA DE IMAGENS    */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.galeria img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/*           LIGHTBOX           */
+
+.lightbox-modal {
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-modal img.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 1001;
+}
+
+.close:hover {
+  color: #ccc;
+}
+.pagina-sobre .wave {
+  display: none;
+}
+.pagina-sobre .galeria img {
+  width: 350px;
+  height: auto;
+}
+
+.texto-reflexao {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+.audio-player {
+  text-align: center;
+  margin: 50px 0;
+}
+
+
+/*       ANIMAÇÕES NOVAS         */
+
+/* Texto aparecendo de baixo pra cima */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animação do texto de reflexão */
+.texto-reflexao {
+  opacity: 0;
+  animation: fadeInUp 1.5s ease forwards;
+ font-family: 'Raleway', serif;
+  animation-delay: 0.5s;
+}
+
+/* Animação do player de áudio */
+.audio-player {
+  opacity: 0;
+  animation: fadeInUp 1.5s ease forwards;
+  animation-delay: 1.5s;
+}
+
+/* Player dando um pulso leve */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.audio-player audio {
+  animation: pulse 3s infinite;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.video-player {
+  max-width: 900px;  
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.video-player video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+  font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+h1 { 
+	color: #ff0000;
+	font-size: 80px;
+	margin: 0px;
+	border: 3px black;
+	padding: 35px;
+	background-color: #181BAD;
+
+}
+
+p {
+	font-size: 25px;
+	border: 3px whitesmoke;
+	padding: 30px;
+	background-color: #181BAD;
+	color: #ffffff;
+}
+
+a {
+	color: #ffffff;
+	border: 3px red;
+	padding: 20px;
+  text-decoration: underline;
+}
+
+img{
+	width: 300;
+	height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border: 3px white;
+}
+
+.area-imagens {
+	display: flex;
+	gap: 35px;
+}
+
+.coluna {
+	flex: 1;
+	padding: 25px;
+	background-color: #181BAD;
+	border: 3px white;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.link {
+  text-align: center;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 600;
+  display: center;
+  align-items: center;
+  background: #181BAD;
+  color: #181BAD;
+  margin: 20px;
+
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.btn .icon {
+	position: absolute;
+  height: 30px;
+  width: 200px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.btn .text {
+  transform: translateX(55px);
+}
+
+.btn:hover .icon {
+  width: 125px;
+}
+
+.btn:hover .text {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active .icon {
+  transform: scale(1);
+}
+
+.gallery {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+/*.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}*/
+
+@media (max-width: 1023px) {
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+.card{
+  border-radius: 20px;
+  margin:15px;
+  height: 200px;
+  background-color: #fff;
+  flex: 1;
+  transition: .3s all ease;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover{
+  flex: 2;
+  background-color: rgb(207, 207, 207);
+}
+
+.card img{
+  width: 200%;
+  height: 100%;
+  object-fit: cover;
+  display:  flex;
+  border-radius: 15px;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease, grid-column 0.3s ease;
+  border-radius: 8px; 
+  cursor: pointer;
+  min-height: 500px;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  grid-column: span 2; 
+  z-index: 2; 
+}
+
+.center-container {
+   display: flex;
+   justify-content: center; /* horizontal centering */
+   align-items: center;     /* vertical centering */
+   height: 100vh;           /* full viewport height */
+}
+.content {
+  background: #000000;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0.1)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Responsive Columns */
+@media only screen and (max-width: 700px){
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  .modal-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .responsive {
+    width: 100%;
+  }
+}
+
+/* Clear Floats */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

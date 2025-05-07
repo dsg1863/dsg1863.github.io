@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gabriela Ramalho | Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<div class="navbar">
+  <div class="logo">Gabriela Ramalho</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="bio.html">Bio</a>
+    <a href="#projetos">Work</a>
+    <a href="#contato">Contact</a>
+  </nav>
+</div>
+
+<div class="container">
+  <main>
+    <section id="intro">
+      <h1>Designer & Visual Artist based in Rio de Janeiro, Brazil.</h1>
+      <p>Hi! I'm Gabriela Ramalho, a designer focused on branding, typography and UI/UX. I strive to create unique visual identity solutions with striking typography, also exploring illustrations and motion graphics.</p>
+      <a href="bio.html" class="button">See more</a>
+    </section>
+
+    <section id="projetos">
+      <div class="project-grid">
+        <div class="project-item">
+          <div class="zine-container">
+            <img src="imagens/zine1.jpg" alt="Zine Fashion Design" class="zine-image active">
+            <img src="imagens/zine2.jpg" alt="Zine Fashion Design" class="zine-image">
+            <div class="slide-nav prev-slide">
+              <i>❮</i>
+            </div>
+            <div class="slide-nav next-slide">
+              <i>❯</i>
+            </div>
+            <div class="slide-indicator">
+              <div class="indicator-dot active"></div>
+              <div class="indicator-dot"></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Zine Fashion &amp; Techno, Editorial, 2024</h3>
+          </div>
+        </div>
+        
+        <div class="project-item">
+          <div class="poster-container">
+            <img src="imagens/cartaz 1.jpg" alt="Poster 1" class="poster-image">
+            <img src="imagens/cartaz 2.png" alt="Poster 2" class="poster-image">
+          </div>
+          <div class="project-info">
+            <h3>Vou-me embora pra Pasárgada, Poster Design, 2025</h3>
+          </div>
+        </div>
+        
+        <div class="project-item">
+          <div class="image-wrapper">
+            <img src="imagens/organico.png" alt="3D Model" class="single-image">
+          </div>
+          <div class="project-info">
+            <h3>Personal Work, 3D Model, 2024</h3>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="image-wrapper">
+            <img src="imagens/vaso aalto.png" alt="Vaso Aalto" class="single-image">
+          </div>
+          <div class="project-info">
+            <h3>Vaso Aalto, 3D Model, 2024</h3>
+          </div>
+        </div>
+
+  <div class="project-item">
+          <div class="image-wrapper">
+            <img src="imagens/faces.jpg" alt="Faces" class="single-image">
+          </div>
+          <div class="project-info">
+            <h3>Faces, Illustration, 2024</h3>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="image-wrapper">
+            <img src="imagens/mimi.png" alt="Mimi" class="single-image">
+          </div>
+          <div class="project-info">
+            <h3>Mimi, 3D Character, 2024</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contato">
+      <h1>Let's work together!</h1>
+      <p>I'm available for collaborations and new projects. Feel free to send me a message!</p>
+      <p>Email: gabig.ramalho@gmail.com</p>
+      <div class="contact-container">
+        <div class="contact-buttons">
+          <a href="https://br.linkedin.com/in/gabriela-ramalho-1969a92a8/" class="button">LinkedIn</a>
+          <a href="https://www.instagram.com/sinalmudo/" class="button">Instagram</a>
+        </div>
+        <div class="image-container">
+          <img src="imagens/buque flores ascii.png" class="contact-image primary-image" alt="ASCII flowers">
+          <img src="imagens/buque flores ascii 2.png" class="contact-image secondary-image" alt="ASCII flowers 2">
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Slideshow functionality for zine-container
+    const slideContainers = document.querySelectorAll('.zine-container');
+    
+    slideContainers.forEach(container => {
+      const slides = container.querySelectorAll('.zine-image');
+      const prevBtn = container.querySelector('.prev-slide');
+      const nextBtn = container.querySelector('.next-slide');
+      const dots = container.querySelectorAll('.indicator-dot');
+      let currentIndex = 0;
+      
+      // Initialize with first slide active
+      updateSlideState();
+      
+      // Previous slide button
+      prevBtn.addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSlideState();
+      });
+      
+      // Next slide button
+      nextBtn.addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlideState();
+      });
+      
+      // Dot indicators
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', function() {
+          currentIndex = index;
+          updateSlideState();
+        });
+      });
+      
+      // Update the active slide and indicators
+      function updateSlideState() {
+        slides.forEach((slide, index) => {
+          if (index === currentIndex) {
+            slide.classList.add('active');
+          } else {
+            slide.classList.remove('active');
+          }
+        });
+        
+        dots.forEach((dot, index) => {
+          if (index === currentIndex) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }
+    });
+    
+    // Adicionar efeito de rolagem suave para navegação
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 100,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+    
+    // Adicionar efeito ao navbar ao rolar
+    let navbar = document.querySelector('.navbar');
+    let lastScrollTop = 0;
+    
+    window.addEventListener('scroll', function() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > 50) {
+        navbar.style.padding = 'calc(var(--spacing-unit) * 0.2) calc(var(--spacing-unit) * 3)';
+        navbar.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+      } else {
+        navbar.style.padding = 'calc(var(--spacing-unit) * 0.3) calc(var(--spacing-unit) * 3)';
+        navbar.style.boxShadow = 'none';
+      }
+      
+      lastScrollTop = scrollTop;
+    });
+  });
+</script>
+</body>
+</html>

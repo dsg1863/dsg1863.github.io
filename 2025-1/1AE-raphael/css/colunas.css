@@ -1,0 +1,19 @@
+.container {
+	display: flex; 
+	flex: wrap;
+	gap: 30px;
+}
+
+.coluna {
+	flex: 1;
+	background-color: #eee;
+	padding: 30px;
+}
+
+@media (max-width: 768px) {
+
+	.coluna {
+		flex: 0 0 33%;
+	}
+
+}

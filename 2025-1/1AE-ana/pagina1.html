@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Explorar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+
+<script src="../../navbar/navbar-2025-1.js"></script>
+<link rel="stylesheet" type="text/css" href="../../navbar/navbar-styles.css">
+
+
+</head>
+
+<body class="pagina-explorar">
+
+  <!-- Parte visual da palavra EXPLORAR + onda -->
+  <div class="container">
+    <div class="arte">
+      <div>E</div>
+      <div>X</div>
+      <div>P</div>
+      <div>L</div>
+      <div>O</div>
+      <div>R</div>
+      <div>A</div>
+      <div>R</div>
+    </div>
+
+    <div class="wave">
+      <svg viewBox="0 0 1440 320">
+        <path fill="white" fill-opacity="1"
+          d="M0,160 C360,0 1080,320 1440,160 L1440,320 L0,320 Z"></path>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Texto de reflexão -->
+  <div class="texto-reflexao">
+    <p><strong>O teatro nunca para.</strong> Aqui, cada cena é mais do que um espetáculo, é um ritual, um ato de resistência, um grito coletivo.</p>
+    <p>No palco, não se brinca com a vida. Através da arte, expomos verdades que muitas vezes são silenciadas. O riso, o choro, a dança e a palavra não servem só para entreter, mas para questionar.</p>
+    <p>O teatro abre portas, provoca o inesperado e faz refletir.</p>
+    <p>Não é bobagem, é denúncia. Não é só diversão, é memória. Cada personagem carrega a história de quem veio antes, e anuncia o que ainda está por vir.</p>
+    <p>Aqui, a cena é viva, é corpo, é crítica, é realidade.</p>
+    <p><strong>Entre em cena você também. Porque o teatro é para todos, e o mundo precisa ouvir.</strong></p>
+  </div>
+
+  <!-- Áudio logo abaixo -->
+  <div class="audio-player">
+    <audio src="audio/cena-exu.mp4" controls></audio>
+  </div>
+
+  <!-- Galeria de Imagens -->
+  <div class="galeria">
+    <img src="imagem/exu.jpg" alt="Imagem 1" onclick="openLightbox(this)">
+    <img src="imagem/marias.jpg" alt="Imagem 2" onclick="openLightbox(this)">
+    <img src="imagem/dor.jpg" alt="Imagem 3" onclick="openLightbox(this)">
+    <img src="imagem/certa1.jpg" alt="Imagem 4" onclick="openLightbox(this)">
+    <img src="imagem/certa2.jpg" alt="Imagem 5" onclick="openLightbox(this)">
+    <img src="imagem/certa3.jpg" alt="Imagem 6" onclick="openLightbox(this)">
+    <img src="imagem/certa4.jpg" alt="Imagem 7" onclick="openLightbox(this)">
+    <img src="imagem/certa5.jpg" alt="Imagem 8" onclick="openLightbox(this)">
+    <img src="imagem/certa6.jpg" alt="Imagem 9" onclick="openLightbox(this)">
+    <img src="imagem/certa8.jpg" alt="Imagem 10" onclick="openLightbox(this)">
+    <img src="imagem/certa9.jpg" alt="Imagem 11" onclick="openLightbox(this)">
+    <img src="imagem/certa10.jpg" alt="Imagem 12" onclick="openLightbox(this)">
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="modal-content" id="modal-image">
+  </div>
+<div class="texto-reflexao">
+    <p><strong>A arte nem sempre é bela...e a vida por acaso é bela?<p><strong>Cena da peça Retratos de um sociedade em curto-circuito. 
+  <!-- Rodapé -->
+  <div class="links">
+    <a href="index.html">Voltar</a>
+    <a href="pagina2.html">Ir para sobre</a>
+  </div>
+
+  <!-- Script do Lightbox -->
+  <script>
+    function openLightbox(img) {
+      const lightbox = document.getElementById("lightbox");
+      const modalImg = document.getElementById("modal-image");
+      modalImg.src = img.src;
+      lightbox.style.display = "flex";
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+
+
+</body>
+</html>
+

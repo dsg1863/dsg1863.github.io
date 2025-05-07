@@ -1,0 +1,100 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Site Raphael Miranda </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1> Bem-vindo ao meu site! </h1>
+
+	<div class="gallery">
+		  <div class="card"><img src="imagens/helicoptero.jpg" alt="helicoptero"></div>
+  		<div class="card"><img src="imagens/barco.jpg" alt="barco"></div>
+  		<div class="card"><img src="imagens/cavalo.jpg" alt="cavalo"></div>
+  		<div class="card"><img src="imagens/cachorro.jpg" alt="cachorro"></div>
+  </div>
+
+  	<div class="gallery">
+		  <div class="card"><img src="imagens/cristo.jpg" alt="cristo"></div>
+  		<div class="card"><img src="imagens/sol.jpg" alt="sol"></div>
+  		<div class="card"><img src="imagens/dedo.jpg" alt="dedo"></div>
+  		<div class="card"><img src="imagens/estatua.jpg" alt="estatua"></div>
+  	</div>
+
+	<div class="gallery">
+		<div class="card"><img src="imagens/mar.jpg"></div>
+		<div class="card"><img src="imagens/mico.jpg"></div>
+		<div class="card"><img src="imagens/barra.jpg"></div>
+		<div class="card"><img src="imagens/retrato2.jpg"></div>
+	</div>
+
+	<div class="gallery">
+		<div class="card"><img src="imagens/praia.jpg"></div>
+		<div class="card"><img src="imagens/foto.jpg"></div>
+		<div class="card"><img src="imagens/joa.jpg"></div>
+		<div class="card"><img src="imagens/bicho.jpg"></div>
+	</div>
+
+	<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+// Get all images and insert the clicked image inside the modal
+// Get the content of the image description and insert it inside the modal image caption
+var images = document.getElementsByTagName('img');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var i;
+for (i = 0; i < images.length; i++) {
+  images[i].onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.nextElementSibling.innerHTML;
+  }
+}
+</script>
+	<p>Clique nas imagens para aumentá-las!</p>
+	<div class="link">
+		<button class="btn">
+    	<span class="icon">
+       	 <svg viewBox="0 0 175 80" width="40" height="40">
+           	 <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+            	<rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+           	 <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+       	 </svg>
+  	 	 </span>
+  	 	 <a href="index.html">
+   		 <span class="text">Home</span>
+   		 </a> 
+		</button>
+		<button class="btn">
+    	<span class="icon">
+       	 <svg viewBox="0 0 175 80" width="40" height="40">
+           	 <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+            	<rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+           	 <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+       	 </svg>
+  	 	 </span>
+  	 	 <a href="bio.html">
+   		 <span class="text">Minha bio</span>
+   		 </a> 
+		</button>
+	</div>
+
+</body>
+</html>

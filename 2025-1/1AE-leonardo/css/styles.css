@@ -1,0 +1,28 @@
+
+body {
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box;
+	background-color: black;
+}
+
+h1 {
+	color: red;
+	font-size: 100px;
+	font-family: fantasy;
+	text-align: center;
+	border-bottom: 1px solid red;
+}
+p {
+	color: white;
+	text-align: center;
+}
+
+img {
+	width: 33%;
+	margin-left:auto ;
+	margin-right:auto;
+}
+img.img-hp {
+	width: 100%;
+}

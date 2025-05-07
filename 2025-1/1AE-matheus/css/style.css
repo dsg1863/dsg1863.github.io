@@ -1,0 +1,43 @@
+body {
+	background-color: #3f4eb5;
+	text-align: center;
+	font-family: monospace;
+	margin: 20px;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	color: white;
+	font-size: 100px;
+	
+}
+
+p {
+	color: white;
+	font-size: 40px;
+}
+
+a {
+	color: #25e0ff;
+}
+
+img {
+	width: 49%;
+}
+img.imghp {
+	width: 25%;
+	
+}
+
+nav {
+	font-size: 50px;
+	
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    border: 1px;
+    border-style: solid;
+}

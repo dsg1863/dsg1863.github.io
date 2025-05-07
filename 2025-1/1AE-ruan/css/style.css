@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+body {
+	background-image: url('../imagem/ritual.jpg');
+	background-color: #ff0;
+	font-family: "Special Gothic Expanded One", sans-serif;
+}
+h1 {
+	color: #009688;
+	font-size: 72px;
+}
+p {
+	    font-size: 45px;
+	    color: #55eadc;
+
+}

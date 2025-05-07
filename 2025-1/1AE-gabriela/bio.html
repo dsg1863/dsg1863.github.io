@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gabriela Ramalho | Bio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="navbar">
+  <div class="logo">Gabriela Ramalho</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="bio.html">Bio</a>
+    <a href="index.html#projetos">Work</a>
+    <a href="index.html#contato">Contact</a>
+  </nav>
+</div>
+
+<div class="container">
+  <main>
+    <section id="bio">
+      <div class="image-container">
+        <img src="imagens/bambi.png" class="main-image">
+        <div class="floating-images">
+          <img src="imagens/torrada.png" class="floating-img img-1">
+          <img src="imagens/sonny angel.png" class="floating-img img-2">
+          <img src="imagens/trevo.png" class="floating-img img-3">
+          <img src="imagens/laço.png" class="floating-img img-4">
+          <img src="imagens/botao.png" class="floating-img img-5">
+          <img src="imagens/morango.png" class="floating-img img-6">
+        </div>
+      </div>
+      
+      <h1>About me</h1>
+      <p>Hi! I'm Gabriela Ramalho, a designer and visual artist. I'm interested in typography, branding, UI/UX and 3d modelling. I also love drawing things and reading books! :)</p>
+      
+      <p>I am pursuing my bachelor's degree in Design at the Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio) with an emphasis on graphic design.</p>
+      
+      <p>My approach combines research, experimentation, and attention to detail. I believe that good design should communicate clearly, evoke emotion, and solve problems elegantly.</p>
+      
+      <h1>Experience</h1>
+      <div class="experience-item">
+        <h3> GenLabs Program - Deco.cx </h3>
+        <p>February 2025 - April 2025</p>
+        <p>I worked as a web developer focused on creating apps, softwares, websites and other digital content, using artificial intelligence tools to optimize processes and improve the user experience.</p>
+      </div>
+      
+      <div class="experience-item">
+        <h3>Freelancer Designer</h3>
+        <p>2024 - Present</p>
+        <p>Independent graphic design, web design and illustration projects.</p>
+      </div>
+      
+      <a href="index.html" class="button">Return to home</a>
+    </section>
+  </main>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const floatingImages = document.querySelectorAll('.floating-img');
+    
+    floatingImages.forEach(img => {
+      let isDragging = false;
+      let offsetX, offsetY;
+      let lastX, lastY;
+      let rotation = 0;
+      
+      // Set initial rotation for smooth transition
+      const initialTransform = window.getComputedStyle(img).transform;
+      if (initialTransform && initialTransform !== 'none') {
+        // Extract rotation if it exists in the transform
+        const transformValues = initialTransform.split('(');
+        for (let i = 0; i < transformValues.length; i++) {
+          if (transformValues[i].startsWith('rotate')) {
+            const rotateValue = transformValues[i].split('deg')[0].substring(6);
+            rotation = parseFloat(rotateValue);
+            break;
+          }
+        }
+      }
+      
+      // Mouse down event - start dragging
+      img.addEventListener('mousedown', function(e) {
+        isDragging = true;
+        img.classList.add('dragging');
+        
+        // Calculate the offset of the mouse position relative to the image position
+        const rect = img.getBoundingClientRect();
+        offsetX = e.clientX - rect.left;
+        offsetY = e.clientY - rect.top;
+        
+        // Store initial position for smooth movement
+        lastX = e.clientX;
+        lastY = e.clientY;
+        
+        // Prevent default behavior
+        e.preventDefault();
+      });
+      
+      // Mouse move event - move the image
+      document.addEventListener('mousemove', function(e) {
+        if (!isDragging) return;
+        
+        const container = document.querySelector('.image-container');
+        const containerRect = container.getBoundingClientRect();
+        
+        // Calculate new position relative to the container
+        let x = e.clientX - containerRect.left - offsetX;
+        let y = e.clientY - containerRect.top - offsetY;
+        
+        // Get image width and height accounting for scaling
+        const imgRect = img.getBoundingClientRect();
+        const imgWidth = imgRect.width;
+        const imgHeight = imgRect.height;
+        
+        // Set strict bounds constraints (no padding, fully within container)
+        const maxX = containerRect.width - imgWidth;
+        const maxY = containerRect.height - imgHeight;
+        
+        // Ensure image stays completely within container
+        x = Math.max(0, Math.min(x, maxX));
+        y = Math.max(0, Math.min(y, maxY));
+        
+        // Set the new position without changing rotation on every move
+        img.style.left = x + 'px';
+        img.style.top = y + 'px';
+        
+        // Only change rotation slightly and smoothly when dragging distance is significant
+        const moveDistanceX = Math.abs(lastX - e.clientX);
+        const moveDistanceY = Math.abs(lastY - e.clientY);
+        
+        if (moveDistanceX > 10 || moveDistanceY > 10) {
+          // Adjust rotation subtly based on movement direction
+          const rotationDelta = (e.clientX - lastX) * 0.05;
+          rotation += rotationDelta;
+          
+          // Limit rotation to keep it natural
+          rotation = Math.max(-15, Math.min(15, rotation));
+          
+          // Update last position
+          lastX = e.clientX;
+          lastY = e.clientY;
+        }
+        
+        // Apply smooth rotation
+        img.style.transform = `rotate(${rotation}deg)`;
+        
+        // Remove percentage-based positioning
+        img.style.removeProperty('right');
+        img.style.removeProperty('bottom');
+      });
+      
+      // Mouse up event - stop dragging
+      document.addEventListener('mouseup', function() {
+        if (isDragging) {
+          isDragging = false;
+          img.classList.remove('dragging');
+        }
+      });
+      
+      // Mouse leave event - stop dragging
+      document.addEventListener('mouseleave', function() {
+        if (isDragging) {
+          isDragging = false;
+          img.classList.remove('dragging');
+        }
+      });
+      
+      // Smooth hover effect without random movement
+      img.addEventListener('mouseover', function() {
+        if (!isDragging) {
+          // Apply a subtle, consistent scale effect instead of random movement
+          img.style.transition = 'transform 0.3s ease';
+          const currentRotation = rotation || 0;
+          img.style.transform = `rotate(${currentRotation}deg) scale(1.05)`;
+        }
+      });
+      
+      img.addEventListener('mouseout', function() {
+        if (!isDragging) {
+          // Return to normal state smoothly
+          img.style.transition = 'transform 0.3s ease';
+          const currentRotation = rotation || 0;
+          img.style.transform = `rotate(${currentRotation}deg)`;
+        }
+      });
+    });
+    
+    // Adicionar efeito de rolagem suave para navegação
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 100,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+    
+    // Adicionar efeito ao navbar ao rolar
+    let navbar = document.querySelector('.navbar');
+    let lastScrollTop = 0;
+    
+    window.addEventListener('scroll', function() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > 50) {
+        navbar.style.padding = 'calc(var(--spacing-unit) * 0.2) calc(var(--spacing-unit) * 3)';
+        navbar.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+      } else {
+        navbar.style.padding = 'calc(var(--spacing-unit) * 0.3) calc(var(--spacing-unit) * 3)';
+        navbar.style.boxShadow = 'none';
+      }
+      
+      lastScrollTop = scrollTop;
+    });
+  });
+</script>
+</body>
+</html>

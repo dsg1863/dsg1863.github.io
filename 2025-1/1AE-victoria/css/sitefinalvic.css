@@ -1,0 +1,117 @@
+
+
+.inicio {
+
+  background-color:skyblue;
+
+  color: black;
+
+  text-align: center;
+
+  font-family: fantasy;
+
+  padding: 50px;
+
+}
+
+.titulo {
+  font-size: 60px;
+  font-family: cursive;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 24px;
+  font-family: sans-serif;
+  color: black;
+}
+
+
+.portfolio {
+
+  background-color: #ffcce5; 
+
+  text-align: center;
+
+  font-family: sans-serif;
+
+  padding: 30px;
+
+}
+
+
+
+
+
+a {
+
+  color: darkblue;
+
+  font-family: sans-serif;
+
+  font-weight: normal;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  border: 0px solid white;
+
+  padding: 8px 20px;
+
+  border-radius: 40px;
+
+  background-color: lightblue;
+
+}
+
+
+
+a:hover {
+
+  background-color: skyblue;
+
+  color: #005bbb;
+
+}
+
+
+
+
+
+.galeria {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 16px;
+
+  margin-top: 30px;
+
+}
+
+
+
+.galeria img {
+
+  width: 500px;
+
+  height: auto;
+
+  border-radius: 3px;
+
+  border-color: skyblue;
+
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+
+}
+
+.portfolio {
+  font-size: 18px;
+
+  font-family: sans-serif;
+}
+
