@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 40px 100px; /* 100px nas laterais */
+  line-height: 1.6;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+  border-bottom: 1px solid white;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.8em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin-top: 40px;
+  text-align: center;
+}
+
+p {
+  text-align: left;
+  margin-bottom: 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.topo {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conteudo {
+  margin-top: 20px;
+}
+
+.personagem-img {
+  width: 700px;
+  height: 500px;
+  object-fit: cover; /* ajusta o corte da imagem para preencher sem deformar */
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* sombra opcional */
+  transition: transform 0.3s ease;
+  border: none;
+  text-decoration: none;
+  display: block;
+}
+
+.personagem-img:hover {
+  transform: scale(1.03); /* leve zoom ao passar o mouse */
+}
+
+/* Temas por personagem */
+.tema-saci {
+  background-color: #c42b2b;
+}
+
+.tema-curupira {
+  background-color: #4caf50;
+}
+
+.tema-boto {
+  background-color: #d975d6;
+}
+
+.bloco-lateral {
+  justify-content: center;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 90px;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+
+.texto-lateral {
+  max-width: 500px;
+}
+

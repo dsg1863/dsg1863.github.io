@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Barrio&family=Cal+Sans&family=Galindo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahianita&family=Mouse+Memoirs&display=swap');
+
+body {
+	background-color: black;
+	 font-family: "Mouse Memoirs", sans-serif;
+ 	 font-weight: 400;
+ 	 font-style: normal;
+}
+h1 {
+	font-size: 60px;
+	font-family: "Barrio", system-ui;
+  	font-weight: 400;
+  	font-style: normal;
+	color: white;
+	text-align: center;
+}
+
+h2 {
+	font-size: 200px;
+	font-family: "Barrio", system-ui;
+  	font-weight: 400;
+  	font-style: normal;
+	color: white;
+	text-align: center;
+}
+
+p {
+	font-size: 30px;
+  	color: white;
+  	text-align: center;
+
+}
+p2 {
+	font-size: 30px;
+	color: white; 
+	text-align: center;
+}
+
+p3 {
+	font-size: 24px;
+	font-family: "Barriecito", system-ui;
+  	font-weight: 400;
+  	font-style: normal;
+  	color: white;
+  	text-align: center;
+}
+
+a {
+    color: #f9e241;
+}
+
+img.image-home {
+	display: block;
+	width: 60%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.image-bio {
+	display: block;
+	width: 60%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.image-column {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container {
+	display: flex;
+	gap: 30px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container2 {
+	display: flex;
+	gap: 10px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container3 {
+	display: flex;
+	gap: 10px;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.coluna {
+	flex: 1;
+	background-color: #6925a7;
+}
+
+.coluna2 {
+	flex: 1;
+}

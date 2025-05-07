@@ -1,0 +1,163 @@
+/* Importa a fonte Fredoka */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
+body {
+    background-color: #009739;
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+body.pagina-inicial {
+    background-color: #009739;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    color: #FFCC00; /* Amarelo bandeira */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #009739;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 24px;
+    color: darkblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* CAIXA DE CONTEÚDO DA PÁGINA INICIAL */
+.caixa-inicial {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    color: #002776;
+    font-family: 'Fredoka', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* BOTÃO */
+.botao {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #002776; /* Azul bandeira */
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Fredoka', sans-serif;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #001c55;
+}
+
+/* GALERIA DE ITENS */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.item {
+    background-color: #002776; /* Azul bandeira */
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.item p {
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* IMAGENS DAS PÁGINAS INTERNAS */
+.img-tema {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* LAYOUT FLEX USADO PELO PROFESSOR LULA */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coluna {
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    color: #002776;
+    font-size: 18px;
+    font-family: 'Fredoka', sans-serif;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}

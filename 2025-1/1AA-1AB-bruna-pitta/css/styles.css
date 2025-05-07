@@ -1,0 +1,95 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+
+ body {
+    background: #FFFDDF;
+ }
+
+ body.fonte1 {
+ 	font-family: "Cascadia Code", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    color: #090074;
+ }
+  body.fonte2 {
+ 	font-family: "Cascadia Code", sans-serif;
+    font-size: 28px;
+    text-align: left;
+    color: #090074;
+ }
+ body.fonte3 {
+ 	font-family: "Cascadia Code", sans-serif;
+    font-size: 28px;
+    color: #090074;
+ }
+
+ body.fonte4 {
+ 	font-family: "Cascadia Code", sans-serif;
+    color: #090074;
+ }
+
+ img.imagem1 {
+    display: block;
+    width: 27%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ img.imagem2 {
+    display: block;
+    width: 45%;
+    height: auto;
+    margin-right: auto;
+ }
+
+ img.imagem3 {
+    display: block;
+    width: 40%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+ }
+body.fonte2 a.link-home {
+    top: 5px;
+    left: 5px;
+    font-size: 15px;
+ }
+
+  body.fonte2 h1 {
+    position: absolute;
+    top: 250px;
+    left: 575px;
+}
+
+body.fonte2 a.link-meulugar {
+    position: absolute;
+    top: 900px;
+    left: 600px;
+    color: #FFE68A;
+}
+
+body.fonte3 a.link-meulugar {
+    font-size: 15px;
+}
+
+body.fonte3 a.link-temmeumar {
+    position: absolute;
+    top: 680px;
+    left: 860px;
+    color: #FFE68A;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Faz o GIF cobrir toda a tela */
+.fullgif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* object-fit: cover; */
+  z-index: -1;

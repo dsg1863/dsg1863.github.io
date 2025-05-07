@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+body{
+	background: #fff5d8;
+}
+
+.teste {
+	width: 1100px;
+	margin-top: 80px;
+}
+
+.container {
+	display:flex;
+	gap: 30px;
+}
+
+.coluna {
+	flex:1;
+	height:auto;
+}
+
+.coluna img {
+	width: 100% ;
+}
+
+a {
+	color: #bfb74b;
+	font-size:30px;
+	text-align: center;
+}
+
+h1 {
+	color: #bfb74b;
+	font-size: 100px;
+	font-family: Acme;
+	text-align: center;
+	margin-top: 10px;
+}
+
+h2 {
+	color: #bfb74b;
+	font-size: 70px ;
+	font-family: Acme;
+	text-align: center;
+	margin-top: 20px;
+}
+
+h3 {
+	color: #bfb74b;
+	font-size: 50px ;
+	font-family: Tagesschrift;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.creditos {
+	color: black;
+	font-size: 30px;
+	font-family: Tagesschrift;
+	text-align: center;
+}
+.base {
+	color: white;
+	font-size: 30px;
+	font-family: Tagesschrift;
+	text-align: center;
+}
+
+.sub {
+	color: #100f01;
+	font-size: 30px;
+	font-family: Tagesschrift;
+	text-align: center;
+	margin-top: -60px;
+}
+
+.texto {
+	color: #100f01;
+	font-size: 28px;
+	font-family: Tagesschrift;
+	text-align: center;
+	margin-top: -30px
+}
