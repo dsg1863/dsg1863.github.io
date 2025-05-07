@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+body{
+	background-color: #204306;
+}
+
+h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 180px;
+	color: #C5A647;
+	text-align: center;
+}
+
+img.titulo-bio {
+	margin-top: 1000 px;
+	width: 15%;
+	height: 15%;
+	display: block;
+	margin: 0 auto;
+}
+
+.movimento {
+  background-color: #C7622B;
+  padding: 60px;
+  color: white;
+  text-align: center;
+  margin-top:  30px;
+}
+
+h2.movimento {
+	 font-family: 'Monoton', cursive;
+  font-size: 45px;
+	color: #C5A647;
+	text-align: center;
+	margin-top: 5px;
+}
+
+p.movimento {
+  font-family: 'Gabarito', sans-serif;
+   font-size: 26px;
+	color: #FAFAFA;
+	text-align: center;
+	margin-top:  0.5px;
+}
+
+h3.artistas {
+	 font-family: 'Monoton', cursive;
+  font-size: 45px;
+	color: #C5A647;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 1px;
+}
+
+p.artistas {
+  font-family: 'Gabarito', sans-serif;
+   font-size: 28px;
+	color: #C5A647;
+	text-align: center;
+	margin-top: 1px;
+}
+
+
+
+
+div.container{
+	justify-content: center;
+	display: flex;
+	gap: 50px;
+}
+
+.coluna {
+	background-color:#C5A647;
+	border-radius: 10px;
+	width: 25%;
+	margin-bottom: 40px;
+}
+	.coluna img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	width: 90%;
+	}
+p.coluna {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #204306;
+    display: block;
+    margin: -13px auto 26px auto;
+    min-width: 300px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+img.disco {
+		display: block;
+	margin: 0 auto;
+	width: 35%;
+}
+
+
+
+
+
+
+.capa {
+	 width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pagina-artistas {
+  background-color: #C7622B;
+}
+
+.gil-bio {
+	width: 70%;
+  background-color: #C5A647;
+  padding: 10px;
+  display: block;
+  border-radius: 20px;
+  margin: 30px auto;
+  margin-bottom: 130px;
+  text-align: center;
+}
+
+p.gil-bio {
+  font-family: 'Gabarito', sans-serif;
+   font-size: 24px;
+	color: #204306;
+	text-align: center;
+	margin: 0 px;
+	padding: 0px;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+ 
+h4.artistas {
+	 font-family: 'Monoton', cursive;
+  font-size: 45px;
+	color: #C5A647;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 1px;
+}
+
+p.artistas {
+  font-family: 'Gabarito', sans-serif;
+   font-size: 28px;
+	color: #C5A647;
+	text-align: center;
+	margin-top: 1px;
+}

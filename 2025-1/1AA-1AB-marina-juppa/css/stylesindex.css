@@ -1,0 +1,35 @@
+body {
+  background: url('../imagens/ipanemapb.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.nav {
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;              
+  padding: 10px 40px 10px 80px;  
+  font-size: 15px;
+  margin-top: 20px;
+  line-height: 1.6;              
+}
+
+.nav a {
+  font-size: 15px; 
+  text-decoration: none; 
+  font-family: 'monospace;', sans-serif;
+  text-align: center;
+  color: black;
+  padding-right: 35px;
+  align-items: center;
+}
+
+
+
+h1 {
+  font-family: 'monospace;', sans-serif;
+  padding: 20px;
+  font-size: 20px;
+}
+
+
+
+

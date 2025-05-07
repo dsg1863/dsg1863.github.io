@@ -1,0 +1,118 @@
+body {
+  background: url('../imagens/fundo.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.nav {
+  background-color: rgba(200, 200, 200, 0.5);
+  text-align: center;             
+  padding: 10px 40px 10px 80px;  
+  font-size: 15px;
+  margin-top: 20px;
+  line-height: 1.6;              
+}
+
+.nav a {
+  font-size: 15px; 
+  text-decoration: none; 
+  font-family: 'monospace;', sans-serif;
+  text-align: center;
+  color: black;
+  padding-right: 35px;
+  align-items: center;
+}
+
+
+
+h1 {
+  font-family: 'monospace;', sans-serif;
+  padding: 20px;
+  font-size: 20px;
+}
+
+p {
+  font-family: monospace;
+  font-size: 24px;
+}
+
+a {
+  font-family: monospace;
+  color: black;
+  padding-right: 35px;
+  align-items: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+
+
+.conteiner {
+  display: flex;
+  gap: 30px;
+}
+
+.coluna {
+  flex: 2;
+}
+
+.bio-bloco {
+  background-color: white;
+  width: 100%;
+  height: 400px;
+  margin-top: 80px;
+  display: flex;
+  align-items: center; 
+}
+
+
+
+
+
+.bio-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+
+.bio-foto {
+  flex: none;
+  max-width: 25vw;
+  width: 100%;
+  height: auto;
+  margin-left: 20px;
+  margin-right: 10px;
+  border-radius: 0;
+  display: block;
+}
+
+
+.bio-texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 100px;
+  margin-left: 15px;
+  max-width: 100%;
+}
+
+.bio-texto p {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #444;
+  line-height: 1.6;
+   white-space: normal;    
+  max-width: 1000px;   
+  text-align: justify; 
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+body{
+	background-color: lightyellow;	
+	font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 350px;
+}
+
+h1{
+	color: darkred;
+	font-size: 50px;
+	text-align: center;
+}
+
+p{
+	color: darkred;
+	font-size: 20px;
+	margin-left: auto;
+}
+
+div{
+	background-color: white;
+	border-radius: 50px;
+	width: 1000px;
+	align-content: center;
+	padding: 50px;
+	margin-bottom: 40px;
+}
+
+
+img{
+	border-radius: 20px;
+}
+
+.fotoAzul{
+	size: 150%;
+	margin-left: 150px;
+}
