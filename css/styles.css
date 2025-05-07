@@ -62,7 +62,7 @@ a:hover {
 hr {
     background-color: #000;
     border: none;
-/*    max-width: 1024px;*/
+    max-width: 80%;
     height: 1px;
     margin: 25px 0;
 }
