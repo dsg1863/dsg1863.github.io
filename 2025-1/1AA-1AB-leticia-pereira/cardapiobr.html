@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cardápio Nacional</title>
+  <link rel="stylesheet" href="estilocardapio.css">
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="home.html">Homepage</a></li>
+    <li><a href="#entradas">Entradas</a></li>
+    <li><a href="#principais">Pratos Principais</a></li>
+    <li><a href="#sobremesas">Sobremesas</a></li>
+  </ul>
+</nav>
+
+
+<section id="entradas">
+  <h2>✴︎ Entradas ✴︎</h2>
+  <div class="card-grid">
+    <div class="card" onclick="openModal('imagens/coxinha.png', 'Coxinha', 'Se existe um salgado que representa a alma da culinária brasileira, esse salgado seria a famosa coxinha. Com sua forma inconfundível, massa macia por dentro e crocante por fora, ela conquistou gerações e virou presença obrigatória no cardápio do barsileiro.Tradicionalmente recheada com frango desfiado e temperado, a coxinha é envolta por uma massa feita com farinha de trigo e caldo de frango, moldada no formato que lembra uma coxa de galinha (daí o nome!), empanada e frita até ficar douradinha!. Muitas vezes ela também apresenta catupiry, o que deixa ela ainda mais cremosa. Vai querer provar?!', 'R$ 7,00')">
+      <img src="imagens/coxinha.png" alt="Coxinha">
+      <h3>Coxinha</h3>
+      <p class="price">R$ 7,00</p>
+    </div>
+    <div class="card" onclick="openModal('imagens/pastel.png', 'Pastel', 'O pastel é uma das delícias mais amadas do Brasil — uma combinação perfeita de massa fina, crocante e recheios variados que conquistam à primeira mordida. Muito presente em feiras livres, lanchonetes e botecos de norte a sul do país, o pastel é símbolo de sabor, praticidade e tradição. Sua origem tem influências da cultura chinesa e japonesa, mas foi no Brasil que ele ganhou identidade própria. A receita básica é simples: uma massa leve, feita com farinha de trigo e um toque de cachaça ou vinagre (para garantir a crocância), recheada com ingredientes como carne moída, queijo, frango com catupiry, calabresa, palmito, e até doces como chocolate ou banana com canela. Depois, é só fritar em óleo quente até ficar dourado e sequinho. Mais do que um salgado, o pastel é uma experiência!', 'R$ 7,00')">
+      <img src="imagens/pastel.png" alt="Pastel">
+      <h3>Pastel</h3>
+      <p class="price">R$ 7,00</p>
+    </div>
+    <div class="card" onclick="openModal('imagens/paodequeijo.png', 'Pão de queijo', 'Macio por dentro, levemente crocante por fora e com um sabor inconfundível de queijo — o pão de queijo é um dos maiores tesouros do cardápio brasileiro. Originário de Minas Gerais, ele conquistou o país inteiro e hoje é presença garantida em cafés da manhã e lanches da tarde. Feito à base de polvilho (doce ou azedo), ovos, leite e muito queijo minas curado — o pão de queijo possui uma textura única: leve, elástica e cheia de sabor. Quentinho, recém-saído do forno, ele é quase impossível de resistir. ', 'R$ 6,00')">
+      <img src="imagens/paodequeijo.png" alt="Pão de queijo">
+      <h3>Pão de queijo</h3>
+      <p class="price">R$ 6,00</p>
+    </div>
+  </div>
+</section>
+
+<section id="principais">
+  <h2>✴︎ Pratos Principais ✴︎</h2>
+  <div class="card-grid">
+    <div class="card" onclick="openModal('imagens/feijoada.png', 'Feijoada', 'Rica, encorpada e cheia de história, a feijoada é uma iguaria tradicional é muito mais que uma refeição: é um ritual e um momento de confraternização dos sabores brasileiros. Feita com feijão preto e uma combinação de carnes como linguiça, costelinha, carne seca, paio e outras partes suínas, a feijoada é cozida lentamente até que os sabores se integrem em um caldo espesso. Ela é servida com acompanhamentos clássicos: arroz branco, farofa, couve refogada, laranja fatiada e torresmo crocante. Embora seja um prato consumido em todo o país, a feijoada tem raízes profundas na cultura popular, especialmente no Rio de Janeiro e em Minas Gerais. Se você quer experimentar o verdadeiro gosto do Brasil, a feijoada é o prato certo para você! ', 'R$ 25,00')">
+      <img src="imagens/feijoada.png" alt="Feijoada">
+      <h3>Feijoada</h3>
+      <p class="price">R$ 25,00</p>
+    </div>
+    <div class="card" onclick="openModal('imagens/bobo.png', 'Bobó de camarão', 'O bobó de camarão é um dos pratos mais emblemáticos do coração do Nordeste. Ele é uma explosão de sabores, cores e aromas que traduzem a riqueza da cozinha afro-brasileira. A receita tradicional leva camarões frescos, cozidos em um creme espesso de mandioca (aipim), leite de coco e azeite de dendê, além também dos temperos marcantes como cebola, alho, pimentão e coentro. O resultado é um prato encorpado, alaranjad, que aquece o corpo e encanta o paladar. Servido geralmente com arroz branco e farofa, o bobó de camarão é mais do que uma refeição: é uma celebração da ancestralidade, das raízes indígenas, africanas e portuguesas que moldaram a cozinha brasileira. Experimente!', 'R$ 30,00')">
+      <img src="imagens/bobo.png" alt="Bobó de camarão">
+      <h3>Bobó de camarão</h3>
+      <p class="price">R$ 30,00</p>
+    </div>
+    <div class="card" onclick="openModal('imagens/estrogonofe.png', 'Estrogonofe', 'O estrogonofe pode ter nascido na Rússia, mas foi no Brasil que ele ganhou o coração de todos. Cremoso e reconfortante, o estrogonofe, na versão brasileira, leva tirinhas de carne ou frango refogadas na cebola e no alho, combinadas com creme de leite, ketchup e mostarda. Esse conjunto acaba criando um molho suave, levemente adocicado e delicioso. Existem também outras variações do prato com camarão, cogumelos ou até opções vegetarianas. Sempre acompanhado de arroz branco e batata palha , o estrogonofe combina sabor, praticidade e afeto em um só prato na culinária brasileira.', 'R$ 20,00')">
+      <img src="imagens/estrogonofe.png" alt="Estrogonofe">
+      <h3>Estrogonofe</h3>
+      <p class="price">R$ 20,00</p>
+    </div>
+  </div>
+</section>
+
+<section id="sobremesas">
+  <h2>✴︎ Sobremesas ✴︎</h2>
+  <div class="card-grid">
+    <div class="card" onclick="openModal('imagens/brigadeiro.png', 'Brigadeiro', 'Se existe um doce que simboliza  a alegria da doçaria brasileira, esse doce é o brigadeiro. Pequeno no tamanho, mas gigante no sabor, o brigadeiro é presença obrigatória em aniversários, festas e até reuniões de família. Feito com apenas três ingredientes: leite condensado, chocolate em pó e manteiga, o brigadeiro é cozido até atingir o ponto perfeito e depois enrolado à mão, passando por granulado de chocolate. Pode parecer simples, mas é exatamente essa simplicidade que conquista os corações dos brasileiros e vem ganhando fama pelo mundo todo.', 'R$ 3,00')">
+      <img src="imagens/brigadeiro.png" alt="Brigadeiro">
+      <h3>Brigadeiro</h3>
+      <p class="price">R$ 3,00</p>
+    </div>
+    <div class="card" onclick="openModal('imagens/goiabada.png', 'Goiabada', 'A goiabada é um verdadeiro clássico nas sobremesas brasileiras. Especialmente vinda do Sudeste e Centro-Oeste, ela é feita a partir da goiaba vermelha e açúcar, esse doce tem raízes profundas na história do país e carrega o sabor das receitas passadas de geração em geração. Sua textura varia entre firme e cremosa, podendo ser degustada em fatias, usada como recheio ou acompanhada de queijo minas — formando a famosa dupla conhecida como “Romeu e Julieta”, uma combinação perfeita de doce e salgado que encanta o paladar.', 'R$ 2,00')">
+      <img src="imagens/goiabada.png" alt="Goiabada">
+      <h3>Goiabada</h3>
+      <p class="price">R$ 2,00</p>
+    </div>
+    <div class="card" onclick="openModal('imagens/acai.png', 'Açaí', 'Diretamente da Floresta Amazônica, o açaí é uma fruta colorida e cultural. Rico em antioxidantes, fibras e gorduras, o açaí conquistou o paladar dos brasileiros e virou febre em diversos países. Tradicionalmente consumido pelas populações do Norte do Brasil, o açaí é servido com peixe e farinha. Mas em outras regiões do país, especialmente no Sudeste, ele ganhou uma versão doce: batido com xarope de guaraná e servido como uma tigela acompanhado de frutas, granola, mel, leite em pó, castanhas e o que mais a imaginação permitir. Se ainda não provou, prepare-se para se apaixonar. O açaí é puro Brasil!', 'R$ 7,50')">
+      <img src="imagens/acai.png" alt="Açaí">
+      <h3>Açaí</h3>
+      <p class="price">R$ 7,50</p>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-img" src="" alt="">
+    <h2 id="modal-title"></h2>
+    <p id="modal-desc"></p>
+    <p class="price" id="modal-price"></p>
+  </div>
+</div>
+
+<script>
+  function openModal(imgSrc, title, desc, price) {
+    document.getElementById('modal-title').innerText = title;
+    document.getElementById('modal-img').src = imgSrc;
+    document.getElementById('modal-desc').innerText = desc;
+    document.getElementById('modal-price').innerText = price;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+</body>
+</html>

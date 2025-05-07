@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cardápio Nacional</title>
+  <style>
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fdfdfd;
+      color: #333;
+    }
+
+    nav {
+      background-color: #b71c1c;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 4rem 2rem;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #b71c1c;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .price {
+      color: #4caf50;
+      font-weight: bold;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.7);
+    }
+
+    .modal-content {
+      background-color: white;
+      margin: 10% auto;
+      padding: 2rem;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 600px;
+      position: relative;
+    }
+
+    .modal-content img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #b71c1c;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#entradas">Entradas</a></li>
+    <li><a href="#principais">Pratos Principais</a></li>
+    <li><a href="#sobremesas">Sobremesas</a></li>
+  </ul>
+</nav>
+
+<section id="entradas">
+  <h2>Entradas</h2>
+  <div class="card-grid">
+    <div class="card" onclick="openModal('coxinhaefect.png', 'Coxinha', 'Deliciosa coxinha de frango com catupiry.', 'R$ 7,00')">
+      <img src="imagens/coxinhaefect.png" alt="Coxinha">
+      <h3>Coxinha</h3>
+      <p class="price">R$ 7,00</p>
+    </div>
+    <div class="card" onclick="openModal('pastelefect.png', 'Pastel', 'Pastel crocante de queijo e presunto.', 'R$ 6,00')">
+      <img src="imagens/pastelefect.png" alt="Pastel">
+      <h3>Pastel</h3>
+      <p class="price">R$ 6,00</p>
+    </div>
+    <div class="card" onclick="openModal('paodequeijoefect.png', 'Pão de queijo', 'Pão recheado de queijo.', 'R$ 8,00')">
+      <img src="imagens/paodequeijoefect.png" alt="Pao de queijo>
+      <h3>Pao de queijo</h3>
+      <p class="price">R$ 4,00</p>
+    </div>
+  </div>
+</section>
+
+<section id="principais">
+  <h2>Pratos Principais</h2>
+  <div class="card-grid">
+    <div class="card" onclick="openModal('feijoadaefect.png', 'Feijoada', 'Feijoada completa com acompanhamentos.', 'R$ 25,00')">
+      <img src="imagens/feijoadaefect.png" alt="Feijoada">
+      <h3>Feijoada</h3>
+      <p class="price">R$ 25,00</p>
+    </div>
+    <div class="card" onclick="openModal('boboefect.png', 'Bobó', 'Bobó de camarão com arroz.', 'R$ 30,00')">
+      <img src="imagens/boboefect.png" alt="Bobó">
+      <h3>Bobó de camarão</h3>
+      <p class="price">R$ 30,00</p>
+    </div>
+    <div class="card" onclick="openModal('placeholder.png', 'Estrogonofe', 'Estrogonofe de frango com arroz e batata.', 'R$ 22,00')">
+      <img src="placeholder.png" alt="Estrogonofe">
+      <h3>Estrogonofe</h3>
+      <p class="price">R$ 22,00</p>
+    </div>
+  </div>
+</section>
+
+<section id="sobremesas">
+  <h2>Sobremesas</h2>
+  <div class="card-grid">
+    <div class="card" onclick="openModal('brigadeiroefect.png', 'Brigadeiro', 'Brigadeiro de chocolate tradicional.', 'R$ 3,00')">
+      <img src="imagens/brigadeiroefect.png" alt="Brigadeiro">
+      <h3>Brigadeiro</h3>
+      <p class="price">R$ 3,00</p>
+    </div>
+    <div class="card" onclick="openModal('placeholder.png', 'Pudim', 'Pudim de leite com calda de caramelo.', 'R$ 5,00')">
+      <img src="placeholder.png" alt="Pudim">
+      <h3>Pudim</h3>
+      <p class="price">R$ 5,00</p>
+    </div>
+    <div class="card" onclick="openModal('acaiefect.png', 'Açai', 'Açai com granola.', 'R$ 7,50')">
+      <img src="imagens/acaiefect.png" alt="Açai">
+      <h3>Açai</h3>
+      <p class="price">R$ 7,50</p>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-img" src="" alt="">
+    <h2 id="modal-title"></h2>
+    <p id="modal-desc"></p>
+    <p class="price" id="modal-price"></p>
+  </div>
+</div>
+
+<script>
+  function openModal(imgSrc, title, desc, price) {
+    document.getElementById('modal-title').innerText = title;
+    document.getElementById('modal-img').src = imgSrc;
+    document.getElementById('modal-desc').innerText = desc;
+    document.getElementById('modal-price').innerText = price;
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+
+</body>
+</html>

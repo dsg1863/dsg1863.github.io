@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    background-image: url('../imagens/estampa.png');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img.header {
+    width: 100%;
+    height: 100%;
+}
+img.capa {
+    width: 100%;
+    height: 100%;
+    margin-top: -5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top:170px;
+  margin-bottom:170px;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 60px; 
+}
+
+.coluna img {
+    width: 380px; 
+    height: auto;
+    display: block;
+}
+
+
+
+h1 {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    text-align: center;
+}
+
