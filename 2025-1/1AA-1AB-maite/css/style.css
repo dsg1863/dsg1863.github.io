@@ -1,0 +1,77 @@
+
+body {
+    text-align: center;
+
+}
+
+html {
+     cursor: url('imagens/gloss.png'), auto;
+     }
+     
+h1 {
+    color: #832421;
+    font-size: 35px;
+    font-family: Freckle Face;
+}
+
+h2 {
+    color: #832421;
+    font-size: 20px;
+    margin-top: -20px;
+    font-family: Freckle Face;
+}
+
+
+h3 {
+    color: #832421;
+    font-size: 70px;
+    margin-top: 375px;
+    font-family: Black And White Picture;
+}
+
+h4 {
+    color: #832421;
+    font-size: 70px;
+    margin-top: 100px;
+    margin-left: 400px;
+    font-family: Black And White Picture;
+}
+
+h5 {
+    color: #832421;
+    font-size: 70px;
+    margin-top: px;
+    margin-right: 300px;
+    font-family: Black And White Picture;
+}
+
+h6 {
+    color: #832421;
+    font-size: 70px;
+    margin-top: 250px;
+    font-family: Black And White Picture;
+}
+
+img.imgboca {
+    position: absolute;
+    width: 800px;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+}
+
+
+
+.black-and-white-picture-regular {
+  font-family: "Black And White Picture", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.freckle-face-regular {
+  font-family: "Freckle Face", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
