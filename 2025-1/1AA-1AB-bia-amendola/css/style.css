@@ -26,8 +26,6 @@ body{
 
 a {
 	color: #bfb74b;
-	font-size:30px;
-	text-align: center;
 }
 
 h1 {
@@ -61,7 +59,7 @@ h3 {
 	text-align: center;
 }
 .base {
-	color: white;
+	color: #bfb74b;
 	font-size: 30px;
 	font-family: Tagesschrift;
 	text-align: center;
@@ -81,4 +79,23 @@ h3 {
 	font-family: Tagesschrift;
 	text-align: center;
 	margin-top: -30px
+}
+
+.retorno {
+	color: #bfb74b;
+	font-family: Tagesschrift;
+	font-size: 20px;
+	margin-top: 110px;
+}
+.quadrado {
+	width: 900px;
+	height: 600px;
+	background-color:#fff5d8;
+	text-align: center;
+	}
+
+.central {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
