@@ -51,7 +51,9 @@ a {
 hr {
     background-color: #fff;
 }
-
+body.semestre-2024-2 h3 {
+    padding-bottom: 50px;
+}
 h3.ano-projetos {
   font-size: 2rem;
   padding-bottom: 0;
