@@ -78,13 +78,44 @@ p {
 }
 
 /* GALERIA DE ITENS */
-.galeria {
+
+/*.galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     margin-top: 30px;
     text-align: center;
+}*/
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+@media (max-width: 1220px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 929px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .galeria {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .item {
@@ -118,7 +149,8 @@ p {
 }
 
 /* IMAGENS DAS PÁGINAS INTERNAS */
-.img-tema {
+
+/*.img-tema {
     display: block;
     width: 50%;
     height: auto;
@@ -126,7 +158,19 @@ p {
     margin-right: auto;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}*/
+
+.img-tema {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    box-shadow:  0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 /* LAYOUT FLEX USADO PELO PROFESSOR LULA */
 .container {
