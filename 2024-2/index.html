@@ -46,6 +46,19 @@
         </ul>
     </div>
 
+    <script>
+        const backLink = document.querySelector('.back-link');
+        const backArrow = backLink.querySelector('.back-arrow');
+
+        backLink.addEventListener('mouseover', () => {
+          backArrow.src = '../imagens/back-yellow.png';
+        });
+
+        backLink.addEventListener('mouseout', () => {
+          backArrow.src = '../imagens/back-white.png';
+        });
+    </script>
+    
 </body>
 
 </html>
