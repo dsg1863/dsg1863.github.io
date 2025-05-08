@@ -74,12 +74,17 @@ li.projetos-turma {
   padding-bottom: 20px;
 }
 
+@media (min-width: 1440px) {
+    .lista-projetos ul {
+        max-width: 80%;
+    }
+}
+
 @media screen and (min-width: 768px) {
   .lista-projetos ul {
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
-    width: 80%;
   }
   
   .lista-projetos li {

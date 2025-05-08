@@ -62,9 +62,13 @@ a:hover {
 hr {
     background-color: #000;
     border: none;
-    max-width: 80%;
     height: 1px;
     margin: 25px 0;
+}
+@media (min-width: 1440px) {
+    hr {
+        max-width: 80%;
+    }
 }
 
 .brasao {
