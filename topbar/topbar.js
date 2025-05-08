@@ -30,3 +30,4 @@ window.onload = function() {
     // Add the top bar to the body as the first child
     document.body.insertBefore(topBar, document.body.firstChild);
 };
+

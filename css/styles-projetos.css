@@ -6,6 +6,18 @@ body {
     color: #fff;
 }
 
+
+img.back-arrow {
+    position: absolute;
+    left: 25px;
+    top: 9px;
+    width: 20px;
+}
+
+img.back-arrow:hover {
+    left: 23px;
+}
+
 h1, h2 {
     color: #fff;
 }
