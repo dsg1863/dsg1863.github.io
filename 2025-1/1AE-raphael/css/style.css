@@ -1,40 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
 
 body {
-	margin: 0;
-	padding: 0;
-	background-color: #000000;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
   font-family: "Special Gothic Expanded One", sans-serif;
 }
 
 h1 { 
-	color: #ff0000;
-	font-size: 80px;
-	margin: 0px;
-	border: 3px black;
-	padding: 35px;
-	background-color: #181BAD;
+  color: #ff0000;
+  font-size: 80px;
+  margin: 0px;
+  border: 3px black;
+  padding: 35px;
+  background-color: #181BAD;
 
 }
 
 p {
-	font-size: 25px;
-	border: 3px whitesmoke;
-	padding: 30px;
-	background-color: #181BAD;
-	color: #ffffff;
+  font-size: 25px;
+  border: 3px whitesmoke;
+  padding: 30px;
+  background-color: #181BAD;
+  color: #ffffff;
 }
 
 a {
-	color: #ffffff;
-	border: 3px red;
-	padding: 20px;
+  color: #ffffff;
+  border: 3px red;
+  padding: 20px;
   text-decoration: underline;
 }
 
 img{
-	width: 300;
-	height: auto;
+  width: 300;
+  height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -44,15 +44,15 @@ img{
 }
 
 .area-imagens {
-	display: flex;
-	gap: 35px;
+  display: flex;
+  gap: 35px;
 }
 
 .coluna {
-	flex: 1;
-	padding: 25px;
-	background-color: #181BAD;
-	border: 3px white;
+  flex: 1;
+  padding: 25px;
+  background-color: #181BAD;
+  border: 3px white;
   color: #ffffff;
   font-size: 20px;
 }
@@ -83,7 +83,7 @@ img{
 }
 
 .btn .icon {
-	position: absolute;
+  position: absolute;
   height: 30px;
   width: 200px;
   display: flex;
@@ -115,33 +115,11 @@ img{
 
 .gallery {
   display: flex;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  flex-wrap: wrap;
   gap: 10px;
 }
 
-/*.gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}*/
-
-@media (max-width: 1023px) {
-
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-}
-
-@media (max-width: 480px) {
-
-  .gallery {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-}
-
-.card{
+.card {
   border-radius: 20px;
   margin:15px;
   height: 200px;
@@ -153,6 +131,13 @@ img{
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+  .card {
+  flex: 1 1 calc(47% - 20px);
+  }
 }
 
 .card:hover{
