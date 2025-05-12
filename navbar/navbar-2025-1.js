@@ -1,5 +1,5 @@
 window.onload = function() {
-    // Check if current URL path includes /2024-2/
+    // Check if current URL path includes /2025-1/
     if (window.location.pathname.includes('/2025-1/')) {
         // Create the link element
         var navBar = document.createElement('div');
