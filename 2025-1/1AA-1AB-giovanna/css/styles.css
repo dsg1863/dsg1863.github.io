@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color:#DAF0EE ;
+	height: 100vh;
+}
+table {
+    height: 100%;
+}
+.container{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+
+}
+.coluna{
+	flex: 1;
+	height: auto;
+	display: inline-block;
+
+}
+.display{
+	height: 300px;
+	width: auto;
+	margin: 10px;
+}
+.description{
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 20px;
+	color: #201A23;
+	line-height: 1;
+	display: center;
+
+}
+.coluna1{
+	background-color: #DDA3B2;
+	height: 800px;
+	padding-top: 20px;
+	padding-right: 15px;
+	padding-left: 15px;
+	
+}
+.colunabody{
+	display: flex;	
+	width: 1080px;
+	height: 100%;
+	padding: 2px;
+	flex-direction: column;
+	justify-content:center;
+	text-align:auto ;
+}
+h2{
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 30px;
+	color: #595959;
+	margin-top: 20px;
+}
+h1{ 
+	font-family: "Bebas Neue", sans-serif ;
+	font-size: 150px;
+	font-style: normal  ;
+	color: #a63446;
+	line-height: 0.8;
+	margin-top: 25px;
+
+}
+h3{
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 30px;
+	color: #595959;
+
+	margin-top: 60px;
+}
+p{
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 45px;
+	color: #201A23;
+	line-height: 1;
+
+}
+a{
+	color:#595959;
+	text-decoration: none;
+}
+
+.prin{
+	font-family:"Roboto Condensed", sans-serif; ;
+	line-height: 1;
+	font-size: 60px;
+	font-weight: semi-bold;
+}
+.bodybody{
+	font-size: 35px;
+}
