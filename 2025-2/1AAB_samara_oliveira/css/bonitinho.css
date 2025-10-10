@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cagliostro&family=Slackey&display=swap');
+
+body {
+	background-image: url("imagenscss/fundo.png");
+	background-color: #e9d1b9;
+}
+
+.textos {
+	text-align: center;
+}
+
+h1 {
+	font-size: 70px;
+	background-color: #c33f4c;
+	color: white;
+	padding: 10px 30px;
+	font-family: "Slackey", sans-serif;
+	border-radius: 20px;
+	display: inline-block;
+	text-align: center;
+}
+
+p {
+  border: 8px solid #c33f4c;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Cagliostro", sans-serif;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 200px;
+	flex-wrap: wrap;
+}
+
+.icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.btn {
+	width: 200px;
+	transition: 0.3s;
+}
+
+.btn:hover {
+	transform: scale(1.1) rotate(10deg);
+	z-index: 2;
+}
+
+.legenda {
+	font-family: "Cagliostro", sans-serif;
+	background-color: #c33f4c;
+	color: white;
+	width: 200px;
+	margin-top: 8px;
+	padding: 10px 0;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.enasoladabota {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+	transition: 0.3s;
+}
+
+.enasoladabota:hover {
+	transform:rotate(10deg) scale(1.1);
+}
+

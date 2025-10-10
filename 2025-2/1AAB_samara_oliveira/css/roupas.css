@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cagliostro&family=Slackey&display=swap');
+
+body {
+	background-image: url("imagenscss/fundo.png");
+	background-color: #e9d1b9;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 70px;
+	background-color: #c33f4c;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	font-family:  "Slackey", sans-serif;
+	border-radius: 20px;
+}
+
+h2 {
+	font-size: 20px;
+	background-color: #c33f4c;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	font-family: "Cagliostro", sans-serif;
+	border-radius: 10px;
+}
+
+.icon  {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.legenda {
+	font-family: "Cagliostro", sans-serif;
+	background-color: #c33f4c;
+	color: white;
+	width: 200px;
+	margin-top: 8px;
+	padding: 10px 0;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+a {
+	text-decoration: none;
+}
+
+.galeria {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 100px;
+	margin: auto;
+}
+
+.galeria img {
+	width: 100%;
+	max-width: 200px;
+}
+
+.container {
+	position: relative;
+}
+
+.fundinho {
+	display: block;
+}
+
+
+/* vestidinho */
+
+.vestido {
+	position: absolute;
+	width: 100px;
+	transition: transform 0.3s ease;
+	top: 50%; left: 50%;
+}
+
+.central {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.vestido:hover {
+	transform: translate(-50%, -50%) scale(1.1) rotate(10deg);
+}
+
+/* botarrrr */
+
+.bota {
+	position: absolute;
+	width: 100px;
+	transition: transform 0.3s ease;
+	top: 50%; left: 50%;
+}
+
+.central {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.bota:hover {
+	transform: translate(-50%, -50%) scale(1.1) rotate(10deg);
+}
+
+/* farrapo */
+
+.retalho {
+	position: absolute;
+	width: 100px;
+	transition: transform 0.3s ease;
+	top: 50%; left: 50%;
+}
+
+.central {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.retalho:hover {
+	transform: translate(-50%, -50%) scale(1.1) rotate(10deg);
+}
+
+/* lenco */
+
+.lenco {
+	position: absolute;
+	width: 100px;
+	transition: transform 0.3s ease;
+	top: 50%; left: 50%;
+}
+
+.central {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.lenco:hover {
+	transform: translate(-50%, -50%) scale(1.1) rotate(10deg);
+}
+
+/* chapel ihihih */
+
+.chapeu {
+	position: absolute;
+	width: 100px;
+	transition: transform 0.3s ease;
+	top: 50%; left: 50%;
+}
+
+.central {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.chapeu:hover {
+	transform: translate(-50%, -50%) scale(1.1) rotate(10deg);
+}
+
+/* fitinha */
+
+.fita {
+	position: absolute;
+	width: 100px;
+	transition: transform 0.3s ease;
+	top: 50%; left: 50%;
+}
+
+.central {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.fita:hover {
+	transform: translate(-50%, -50%) scale(1.1) rotate(10deg);
+}

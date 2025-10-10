@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cagliostro&family=Slackey&display=swap');
+
+body {
+	background-image: url("imagenscss/fundo.png");
+	background-color: #e9d1b9;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.cabecalho {
+	display: flex;
+	align-items: center;
+ 	justify-content: center;
+  	gap: 20px;
+ 	margin-top: 40px;
+}
+
+.textos {
+	text-align: center;
+}
+
+h1 {
+	font-size: 70px;
+	background-color: #c33f4c;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	font-family:  "Slackey", sans-serif;
+	border-radius: 20px;
+}
+
+h2 {
+	font-size: 20px;
+	background-color: #c33f4c;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	font-family: "Cagliostro", sans-serif;
+	border-radius: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	border: 8px solid #c33f4c;
+	font-size: 20px;
+	text-align: center;
+	font-family: "Cagliostro", sans-serif;
+	background-color: white;
+	border-radius: 20px;
+	padding: 20px;
+	margin: 10px;
+	display: inline-block;
+	width: 600px;     
+	height: 240px;    
+	overflow: hidden;
+	text-align: justify;
+}
+
+.pacoca.esquerda {
+	transform: scaleX(-1);
+}
+
+.pacoca.direita {
+	transform: scaleX(1);
+}
