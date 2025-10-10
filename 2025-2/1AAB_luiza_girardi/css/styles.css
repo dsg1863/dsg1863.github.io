@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
+
+.conteudo {
+	max-width: 900px;
+	margin: auto;
+
+}
+
+
+h1 {
+	color: #f5efd7;
+	font-size: 24px;
+	font-family: "Lexend Giga", sans-serif;
+	font-weight: 200;
+}
+
+h2 {
+	color: #f5efd7;
+	font-size: 30px;
+	font-family: "Lexend Giga", sans-serif;
+}
+
+img {
+    max-width: 600px;
+    margin: auto;
+    display: block;
+}
+
+
+body{
+	background-color: #0f5569;
+}
+
+.menu {
+	background-color: #4e7ea6;
+	margin-bottom: 30px;
+	border-radius: 7px;
+	padding: 8px;
+}
+
+.menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+	font-family: "Lexend Giga", sans-serif;
+}
+
+.menu a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 600;
+	background-color: #0f5569;
+	color: white;
+	transition: background-color 0.2s;
+	padding: 7px 20px;
+	border-radius: 5px;
+}
+
+nav ul li a:hover {
+	background-color: #082e39;
+	color: #bdb6b6;
+}
+
+
+h3 {
+	color: #b9c1c7;
+	font-size: 12px;
+	font-family: "Lexend Giga", sans-serif;
+	text-align: center;
+	margin: 10px;
+	font-weight: 200;
+}
+
+h4 {
+	color: #f5efd7;
+	font-size: 30px;
+	font-family: "Lexend Giga", sans-serif;
+	text-align: center;
+}
