@@ -3,7 +3,7 @@
 .nav-bar {
     width: 120px;
     height: 32px;
-    background-color: #0005;
+    background-color: #000;
     display: flex;
     align-items: center; 
     justify-content: center;
