@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos do Lucas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: 300;
+            letter-spacing: 8px;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #a0a0a0;
+            letter-spacing: 2px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 60px 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .photo-block {
+            position: relative;
+            height: 400px;
+            background: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .photo-block:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+        }
+
+        .photo-block img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .photo-block:hover img {
+            transform: scale(1.05);
+        }
+
+        .photo-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+            padding: 30px 20px 20px;
+            transform: translateY(0);
+            transition: transform 0.4s ease;
+        }
+
+        .photo-block:hover .photo-overlay {
+            transform: translateY(-5px);
+        }
+
+        .photo-title {
+            font-size: 1.5em;
+            font-weight: 500;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .photo-location {
+            font-size: 0.95em;
+            color: #b0b0b0;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 1000;
+            overflow-y: auto;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            max-width: 900px;
+            margin: 50px auto;
+            background: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+            animation: slideUp 0.4s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .modal-info {
+            padding: 40px;
+        }
+
+        .modal-title {
+            font-size: 2.5em;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .info-item {
+            margin-bottom: 25px;
+        }
+
+        .info-label {
+            font-size: 0.9em;
+            color: #808080;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .info-text {
+            font-size: 1.1em;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-size: 2.5em;
+            color: #ffffff;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.7);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            border: none;
+            padding: 0;
+        }
+
+        .close-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: rotate(90deg);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+                letter-spacing: 4px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+                padding: 40px 20px;
+                gap: 20px;
+            }
+
+            .modal-content {
+                margin: 20px;
+            }
+
+            .modal-image {
+                height: 300px;
+            }
+
+            .modal-info {
+                padding: 25px;
+            }
+
+            .modal-title {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minha Biblioteca Fotográfica</h1>
+        <p class="subtitle">Por: Lucas Dias Polillo</p>
+    </header>
+
+    <div class="gallery" id="gallery"></div>
+
+    <div class="modal" id="modal">
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+
+    <script>
+        const photos = [
+            {
+                id: 1,
+                title: "Big Ben",
+                location: "📍Londres, Inglaterra",
+                date: "Setembro de 2023",
+                image: "./fotos/bigben.jpg", // DEIXE VAZIO E ADICIONE O CAMINHO DA SUA IMAGEM AQUI
+                curiosities: "O nome “Big Ben” na verdade se refere ao sino dentro da torre, e não ao relógio em si."
+            },
+            {
+                id: 2,
+                title: "Mykonos",
+                location: "📍Mar Egeu, Grécia",
+                date: "Setembro de 2023",
+                image: "./fotos/mykonos.jpg", // DEIXE VAZIO E ADICIONE O CAMINHO DA SUA IMAGEM AQUI
+                curiosities: "A ilha é famosa por seus moinhos de vento brancos, construídos no século XVI para moer grãos com a força dos ventos fortes do mar Egeu."
+            },
+            {
+                id: 3,
+                title: "Atenas",
+                location: "📍Atenas, Grécia",
+                date: "Setembro de 2023",
+                image: "./fotos/grecia.jpg", // DEIXE VAZIO E ADICIONE O CAMINHO DA SUA IMAGEM AQUI
+                curiosities: "É uma das cidades mais antigas do mundo, com registros de civilização contínua há mais de 3.400 anos."
+            },
+            {
+                id: 4,
+                title: "Veneza",
+                location: "📍Veneza, Itália",
+                date: "Setembro de 2023",
+                image: "./fotos/veneza.jpg", // DEIXE VAZIO E ADICIONE O CAMINHO DA SUA IMAGEM AQUI
+                curiosities: "A cidade tem mais de 400 pontes que ligam suas 118 pequenas ilhas."
+            },
+            {
+                id: 5,
+                title: "Stamford Bridge",
+                location: "📍Londres, Inglaterra",
+                date: "Setembro de 2023",
+                image: "./fotos/stamford.jpg", // DEIXE VAZIO E ADICIONE O CAMINHO DA SUA IMAGEM AQUI
+                curiosities: "O estádio do Chelsea foi inaugurado em 1877, originalmente para partidas de atletismo, antes mesmo da fundação do clube."
+            },
+            {
+                id: 6,
+                title: "Salvador",
+                location: "📍Bahia, Brasil",
+                date: "Dezembro de 2024",
+                image: "./fotos/salvador.jpg", // DEIXE VAZIO E ADICIONE O CAMINHO DA SUA IMAGEM AQUI
+                curiosities: "Foi a primeira capital do Brasil e abriga o maior carnaval de rua do mundo, reconhecido pelo Guinness Book."
+            }
+        ];
+
+        function createGallery() {
+            const gallery = document.getElementById('gallery');
+            photos.forEach(photo => {
+                if (photo.image) {
+                    const block = document.createElement('div');
+                    block.className = 'photo-block';
+                    block.onclick = () => openModal(photo);
+                    block.innerHTML = `
+                        <img src="${photo.image}" alt="${photo.title}">
+                        <div class="photo-overlay">
+                            <div class="photo-title">${photo.title}</div>
+                            <div class="photo-location">${photo.location}</div>
+                        </div>
+                    `;
+                    gallery.appendChild(block);
+                }
+            });
+        }
+
+        function openModal(photo) {
+            const modal = document.getElementById('modal');
+            const modalContent = document.getElementById('modalContent');
+            
+            modalContent.innerHTML = `
+                <img src="${photo.image}" alt="${photo.title}" class="modal-image">
+                <div class="modal-info">
+                    <h2 class="modal-title">${photo.title}</h2>
+                    <div class="info-item">
+                        <div class="info-label">Local</div>
+                        <div class="info-text">${photo.location}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Data</div>
+                        <div class="info-text">${photo.date}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Curiosidades</div>
+                        <div class="info-text">${photo.curiosities}</div>
+                    </div>
+                </div>
+            `;
+            
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        createGallery();
+    </script>
+</body>
+</html>
