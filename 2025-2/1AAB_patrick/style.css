@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: 'Montserrat', sans-serif; background-color: #0d0d0d; color: white; line-height: 1.6;}
+header {background-color: #111; position: fixed; top: 0; left: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; z-index: 1000; box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);}
+.logo {font-size: 1.5rem; font-weight: bold; color: #e30613;}
+nav a {color: white; text-decoration: none; margin-left: 25px; font-weight: 500; transition: 0.3s;}
+nav a:hover {color: #e30613;}
+.hero {height: 100vh; background: url('sao_januario.jpg') no-repeat center center/cover; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 20px; position: relative;}
+.hero-overlay {background: rgba(0, 0, 0, 0.6); position: absolute; top: 0; left: 0; height: 100vh; width: 100%;}
+.hero-content {position: relative; z-index: 2;}
+.hero h1 {font-size: 3rem; color: white; text-shadow: 0 0 10px black;}
+.hero p {margin-top: 15px; font-size: 1.2rem; color: #e0e0e0;}
+.main-content {padding: 120px 20px; max-width: 900px; margin: auto;}
+h2 {color: #e30613; margin-bottom: 20px;}
+ul {list-style: none;}
+ul li {margin-bottom: 10px;}
+footer {background: #111; text-align: center; padding: 20px; color: #aaa; margin-top: 40px;}
+@media (max-width: 768px) {nav a {margin-left: 10px; font-size: 0.9rem;} .hero h1 {font-size: 2rem;}}

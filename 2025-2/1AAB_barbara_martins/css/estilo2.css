@@ -1,0 +1,30 @@
+body {
+  background-color: #faecb6;
+}
+h1 {
+  position: absolute;
+  font-size: 46px;
+  font-family: knewave;
+  left: 1080px;
+  top: 20px;
+  color:#d87163;
+  }
+p {
+  font-size: 36px;
+  color:#d87163;
+  font-family: caveat;
+  position: absolute;
+  left: 1100px;
+  top: 270px;
+}
+iframe {
+  position: absolute;
+  right:100px;
+  top: 800px;
+  width: 800px;
+}
+image {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}

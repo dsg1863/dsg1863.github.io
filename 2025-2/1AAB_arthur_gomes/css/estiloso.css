@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+body {
+    background-color: #161414;
+    background-image: url('../imagens/fundo.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Isso aqui bloqueia o scroll */
+    zoom: 0.8;
+}
+
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 60px 80px;
+    box-sizing: border-box;
+}
+
+
+.header-text {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 10;
+}
+
+h1 {
+    font-family: "Archivo Black";
+    font-size: 45px;
+    font-weight: 400;
+    text-align: left;
+    color: white;
+    margin: 0 0 5px 0;
+
+    line-height: 1.1;
+}
+
+p {
+    font-family: "Archivo Black";
+    font-weight: 100;
+    text-align: left;
+    font-size: 28px;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex: 1;
+    padding-top: 100px;
+}
+
+.pad-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.pad {
+    width: 110px;
+    height: 110px;
+    background-color: #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 4px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.pad:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.pad:active {
+    transform: scale(0.95);
+}
+
+.disco-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Responsivo */
+@media (max-width: 1200px) {
+    .main-wrapper {
+        padding: 50px 60px;
+    }
+    
+    .header-text {
+        top: 60px;
+        left: 60px;
+    }
+    
+    h1 {
+        font-size: 38px;
+    }
+    
+    p {
+        font-size: 24px;
+    }
+    
+    .container {
+        gap: 35px;
+    }
+    
+    .pad {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-wrapper {
+        padding: 40px;
+    }
+    
+    .header-text {
+        top: 50px;
+        left: 50px;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+    
+    .container {
+        gap: 20px;
+        padding-top: 80px;
+    }
+    
+    .pad {
+        width: 70px;
+        height: 70px;
+    }
+}

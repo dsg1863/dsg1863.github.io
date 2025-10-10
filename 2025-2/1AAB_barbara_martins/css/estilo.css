@@ -1,0 +1,33 @@
+body {
+  background-color: #faecb6;
+}
+h1 {
+  color: white;
+  font-size: 56px;
+  font-family: knewave;
+  background-color: #b8cbd5;
+  border-radius: 10px;
+  padding: 50px;
+}
+a {background-color: #b8cbd5;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  font-family: caveat;
+}
+div.fotovinil{
+  position: absolute;
+  left: 0px;
+  top:0px;
+}
+div.playlist {
+  position: absolute;
+  left: 1120px;
+  top: 200px;
+
+}
+div.titulo {
+  position: absolute;
+  left: 1100px;
+  top: 10px;
+}

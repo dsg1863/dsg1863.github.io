@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+  background-image: url('../imagens/fundo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  margin-left: 35px;
+  font-size: 75px;
+  font-family: "Kirang Haerang", system ui;
+  font-style: normal;
+  text-align: center;
+}
+
+img {
+  max-width: 500px;
+}
+
+p {
+  color: whhite;
+  font-size: 30px;
+  font-family: "Outfit";
+  font-style: normal;
+  text-align: center;
+}
+
+a.btn {
+  background-color: white;
+  color: darkred;
+  font-size: 30px;
+  font-family: Kirang Haerang;
+  padding: 20px;
+  border-radius: 100px;  
+  text-decoration: none;
+  width: 200px;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color:darkred;
+  background-color: sandybrown;
+  font-weight: bold;
+}

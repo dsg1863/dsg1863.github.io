@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Outfit:wght@100..900&display=swap');
+
+body {
+  background-image: url('../imagens/fundo_1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  font-size: 65px;
+  font-family: "Kirang Haerang", system ui;
+  font-style: normal;
+  text-align: center;
+}
+
+p {
+  color: darkred;
+  font-size: 30px;
+  font-family: "Outfit";
+  font-style: normal;
+  text-align: center;
+  margin-right: 75px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  padding: 20px;
+  text-indent: 50px;
+}
+
+p1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Chelsea Market", system-ui;
+  font-style: normal;
+  text-align: center;
+  margin-right: 75px;
+  padding: 20px;
+  text-shadow: 2px 2px #ff0000;
+  text-transform: uppercase;
+}
+
+p2 {
+  color: darkred;
+  font-size: 40px;
+  font-family: "Kirang Haerang", system ui;
+  font-style: normal;
+  text-align: left;
+  margin-right: 75px;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+a.btn {
+  background-color: darkred;
+  color: white;
+  font-size: 40px;
+  font-family: Kirang Haerang;
+  padding: 20px;
+  border-radius: 100px;  
+  text-decoration: none;
+  width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color:darkred;
+  background-color: sandybrown;
+  font-weight: bold;
+}
+
+div.box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor:crosshair;
+  transition: 1s;
+}
+
+div.mapa{
+display: flex;
+justify-content: space-between;
+align-items:center;
+}
+
+.box:hover{
+  transform: scale(1.05);
+  z-index: 2;
+}

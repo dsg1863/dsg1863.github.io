@@ -1,0 +1,29 @@
+.disco {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-drag: none;
+    transform-origin: center center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s;
+    object-fit: cover;
+}
+
+.disco:active {
+    cursor: grabbing;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+}
+
+.disco:hover {
+    box-shadow: 0 15px 50px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+    .disco {
+        width: 350px;
+        height: 350px;
+    }
+}

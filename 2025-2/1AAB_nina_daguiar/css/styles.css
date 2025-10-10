@@ -1,0 +1,17 @@
+h1{
+	color: hotpink;
+	font-size: 64px;
+	font-family: sans-serif;
+}
+
+img{
+	max-width: 600px;
+}
+
+a.btn {
+	background-color:deeppink;
+	color:lightgoldenrodyellow;
+	margin: 50px;
+	padding: 20px;
+	border-radius: 7px;
+}

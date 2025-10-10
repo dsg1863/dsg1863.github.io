@@ -1,0 +1,16 @@
+h1{
+	color: orangered;
+	font-size: 15px;
+	font-family: sans-serif;
+}
+
+img{
+	max-width: 400px;
+}
+
+a.btn {
+	color:orangered;
+	margin: 0px;
+	padding: 10px;
+	border-radius: 7px;
+}

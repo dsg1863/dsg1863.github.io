@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+  background-image: url('../imagens/pernambuco_01.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  height: 100vh;
+  margin: 100px;
+  display: block;
+  border: 30px;
+}
+
+h1 {
+  color: white;
+  font-size: 65px;
+  font-family: "Kirang Haerang", system ui;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  color: darkred;
+  font-size: 30px;
+  font-family: "Outfit";
+  font-style: normal;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  padding: 50px;
+  text-indent: 50px;
+}
+
+a.btn {
+  background-color: darkred;
+  color: white;
+  font-size: 30px;
+  font-family: Kirang Haerang;
+  padding: 20px;
+  border-radius: 100px;  
+  text-decoration: none;
+  width: 200px;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color:darkred;
+  background-color: sandybrown;
+  font-weight: bold;
+}
+
+div.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}

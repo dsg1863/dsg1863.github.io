@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  font-family: "Courier Prime", monospace;
+  background-color: skyblue;
+  text-align: center;
+}
+
+h1 {
+  color: floralwhite;
+  font-size: 64px;
+  margin-bottom: 10px; 
+}
+
+p {
+  color: floralwhite;
+  font-size: 20px;
+  margin-bottom: 10px; /* Espaçamento entre os parágrafos */
+}
+
+img {
+  max-width: 600px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+a.btn {
+  display: inline-block;
+  background-color: transparent;
+  color: floralwhite; 
+  padding: 12px 24px;
+  border: 2px solid floralwhite;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out; /* Transição suave */
+  margin-top: 20px;
+  max-width: 100px;
+}
+
+a.btn:hover {
+  transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
+  background-color: floralwhite;
+  color: darkblue;
+}
+
+.menu {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.menu ul {
+list-style: none;
+gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.menu a {
+  text-decoration: none;
+  font-style: italic;
+  font-size: 18px;
+  padding: 10px 20px;
+  color: darkblue;
+    transition: color 0.2s, font-size 0.2s; 
+}
+
+.menu a:hover {
+ font-size: 22px;
+  color: royalblue;
+}
+
+}

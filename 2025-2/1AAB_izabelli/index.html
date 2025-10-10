@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Playlist Brasileira</title>
+  <link rel="stylesheet" href="css/cor.css">
+ 
+  <style>
+    body {
+      font-family: monospace; sans-serif;
+      background: #f9e4c8;
+      text-align: center;
+      padding: 20px;
+      background-image: url('imagens/fundo.jpg');
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+}
+    }
+
+    h1 {
+      margin-bottom: 50px;
+    }
+
+    
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 33px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .galeria img {
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    
+    .overlay:target {
+      display: flex;
+    }
+
+    
+    .overlay img {
+      max-width: 30%;
+      max-height: 30%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    
+    .fechar {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 40px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <h1>Minha Playlist Brasileira</h1>
+  <h2>Passe o Mouse, escolha e escute!</h2>
+
+  <div class="galeria">
+    <!-- Cada imagem vira um link -->
+    <a href="#elza"><img src="imagens/elza.jpg" alt="Elza Soares - Deus é Mulher"></a>
+    <a href="#elis"><img src="imagens/elis.jpg" alt="Elis Regina - Falso Brilhante"></a>
+    <a href="#angela"><img src="imagens/angelaroro.jpg" alt="Angela Ro Ro - Escândalo!"></a>
+    <a href="#alcione"><img src="imagens/alcione.jpg" alt="Alcione - A paixão tem memória"></a>
+    <a href="#gal"><img src="imagens/galcosta.jpg" alt="Gal Costa - Água Viva"></a>
+    <a href="#bethania"><img src="imagens/mariabethania.jpg" alt="Maria Bethânia - As Canções que Você Fez pra Mim"></a>
+    <a href="#rita"><img src="imagens/rita.jpg" alt="Rita lee - Rita Lee 1980"></a>
+    <a href="#casia"><img src="imagens/casia.jpg" alt="Cássia Eller - Cássia Eller 1994"></a>
+  </div>
+
+  <body>
+    <footer>
+  <p>© 2025 Izabelly Ito (Dsg1863)</p>
+</footer>
+</body>
+
+  <!-- Overlays -->
+  <div id="elza" class="overlay">
+    <a href="#" class="fechar">&times;</a>
+    <a href="https://music.youtube.com/watch?v=X61TGrVlgKU" target="_blank">
+    <img src="imagens/elzagif.gif" alt="Elza Soares - Deus é Mulher">
+  </div>
+
+  <div id="elis" class="overlay">
+    <a href="#" class="fechar">&times;</a>
+     <a href="https://music.youtube.com/watch?v=pmY-TIOjQJ4" target="_blank">
+    <img src="imagens/elisgif.gif" alt="Elis Regina - Falso Brilhante">
+  </div>
+
+  <div id="angela" class="overlay">
+    <a href="#" class="fechar">&times;</a>
+     <a href="https://music.youtube.com/watch?v=esIYAscZRtw" target="_blank">
+    <img src="imagens/angelagif.gif" alt="Angela Ro Ro - Escândalo!">
+  </div>
+
+  <div id="alcione" class="overlay">
+    <a href="#" class="fechar">&times;</a>
+    <a href="https://music.youtube.com/watch?v=7zAm_TFOZqQ" target="_blank">
+    <img src="imagens/alcionegif.gif" alt="Alcione - A paixão tem memória">
+  </div>
+
+  <div id="gal" class="overlay">
+    <a href="#" class="fechar">&times;</a>
+     <a href="https://music.youtube.com/watch?v=q_dJUjmHIIM" target="_blank">
+    <img src="imagens/galgif.gif" alt="Gal Costa - Água Viva">
+  </div>
+
+  <div id="bethania" class="overlay">
+    <a href="#" class="fechar">&times;</a>
+     <a href="https://music.youtube.com/watch?v=ItKUpH0ExY0&list=OLAK5uy_mCSotwOpStuADtSO79z3Wkz3v8_7tVB2o" target="_blank">
+    <img src="imagens/mariagif.gif" alt="Maria Bethânia - As canções que você fez pra mim">
+  </div>
+
+<div id="rita" class="overlay">
+    <a href="#" class="fechar">&times;</a>
+     <a href="https://music.youtube.com/watch?v=zFIqVUrh3zw" target="_blank">
+    <img src="imagens/ritagif.gif" alt="Rita lee - Rita Lee 1980">
+  </div>
+
+<div id="casia" class="overlay">
+    <a href="#" class="fechar">&times;</a>
+     <a href="https://music.youtube.com/watch?v=9putMYw4-tQ&list=OLAK5uy_kjfQQR0RYx9VZ2ROb3Q_JGGtyTpn7zfXc" target="_blank">
+    <img src="imagens/casiagif.gif" alt="Cássia Eller - Cássia Eller 1994">
+  </div>
+
+
