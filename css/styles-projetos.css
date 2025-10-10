@@ -52,12 +52,13 @@ a {
 }
 
 hr {
-    background-color: #fff5;
+    background-color: #fff4;
 }
 
 h3.ano-projetos {
-font-size: 2rem;
-  padding-bottom: 2rem;
+  font-size: 2rem;
+  margin-top: -10px;
+  padding-bottom: 3rem;
 }
 
 .lista-projetos ul {
@@ -73,7 +74,7 @@ li.projetos-turma {
 
 li.projetos-turma {
     margin-top: 20px;
-    border-top: 1px solid #fff5;
+    border-top: 1px solid #fff4;
     padding-top: 15px;
 }
 
