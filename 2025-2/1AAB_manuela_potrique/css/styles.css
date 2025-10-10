@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	color: white;
+	font-size: 165px;
+	font-family: "slackey", system ui;
+	font-style: normal;
+	text-align: center;
+	margin: 20px;
+	margin-top: 80px;
+	margin-bottom: 0px;
+}
+
+h2{
+	color: white;
+	font-size: 160px;
+	font-family: "slackey", system ui;
+	font-style: normal;
+	text-align: center;
+	margin: 20px;
+	margin-bottom: 0px;}
+
+h3 {
+	color: white;
+	font-size: 60px;
+	font-family:  "slackey", system ui;
+	margin: 30px;
+	margin-top: 200px;}
+
+h4 {
+	color: white;
+	font-size: 60px;
+	font-family:  "slackey", system ui;
+	margin: 30px;}
+
+div {
+  display: flex;
+	align-content: space-between;}
+
+.galeria{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 15px;
+	margin: auto;
+	max-width:1000px;}
+
+.img-galeria:hover {
+	border: 2px solid #5BAB5A;
+	margin: -2px;
+}
+
+.img-galeria{
+	width: 100%;
+    height: auto;
+	border: 5px solid transparent;
+	border-radius: 10px;
+    display: block;}
+
+.box{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#img3{
+    width: 20%;
+    height: auto;
+	border: 5px solid white;
+	border-radius: 10px;
+	margin: 35px;}
+
+#img2{
+	width: 25%;
+    height: auto;
+	border: 5px solid white;
+	border-radius: 10px;
+	margin: 35px;}
+
+#img1{
+	width: 50%;
+    height: auto;
+	border: 5px solid white;
+	border-radius: 10px;}
+
+p{  font-family: "inter", system-ui;
+	font-style: normal;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	padding: 35px;}
+
+.conhecendotext{
+	text-align: justify;}
+
+.textoco{
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	text-align: center;
+}
+
+.titulos{
+	font-size:50px;
+	font-family: "Kirang Haerang", system-ui;
+	color: white}
+
+.links:hover{
+	color: #5BAB5A;
+	margin: -2px;}
+
+.links{
+	font-size: 55px;
+	font-family: "slackey", system-ui;
+	text-decoration: none;
+	text-shadow: 2px 4px #ffd752;
+	padding: 15px 32px;
+}
+
+.legenda{
+	font-size: 30px;}
+
+a{  font-family: "slackey", system-ui;
+	color: white;
+	font-size: 40px;}
+
+.button:hover{
+	background-color: #5BAB5A;}
+
+.button{
+background: none;
+ border: 4px solid #5BAB5A;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 4px 2px;
+  cursor: pointer;}
+
+body {
+	background-image: url("../imagens/bg5.jpg")}
+
+body.fundo1 {
+	background-image: url("../imagens/bg3.jpg")}
+
+body.fundo2 {
+	background-image: url("../imagens/bg4.jpg")}
+
+body.fundo3 {
+	background-image: url("../imagens/bg2.jpg")}
+
+body.fundo4 {
+	background-image: url("../imagens/bg1.jpg")}
+
+body.fundo5 {
+	background-image: url("../imagens/bg6.jpg")}
+body.fundo7 {
+	background-image: url("../imagens/bg7.jpg")}
+
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 5px;
+	overflow: hidden;
+	top: 0;}
+
+ul li {
+	float: left;}
+
+ul li a {
+	color: white;
+	padding: 15px 17px;
+	display: block;
+	font-family: "slackey", system-ui;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;}
+
+ul li a:hover:not(.active) {
+	background-color: #A0A0A0;}
+
+ul li a.active {
+	background-color: #5BAB5A;}
