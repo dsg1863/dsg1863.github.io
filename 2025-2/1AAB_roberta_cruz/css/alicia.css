@@ -1,0 +1,29 @@
+h1{font-family: "Russo One", sans-serif;
+	color: #db6a14;
+  font-size: 100px;
+  font-style: normal;
+  text-align: center;
+}
+
+h2{color: #db6a14;
+font-family: "Space Grotesk", sans-serif;
+font-weight: 500;
+font-size: 25px;
+font-style: italic;
+text-align: center;
+}
+
+p{color: #26083f;
+font-family: "Space Grotesk", sans-serif;
+font-weight: 500;
+font-size: 25px;
+font-style: normal;
+margin-left: 200px;
+margin-right: 200px;
+text-align: left;
+}
+
+img{max-height: 500px;
+    margin-left: 200px;
+}
+

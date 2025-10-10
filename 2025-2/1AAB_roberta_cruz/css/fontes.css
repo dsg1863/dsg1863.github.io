@@ -1,0 +1,265 @@
+#home 
+h1{
+    font-family: "Russo One", sans-serif;
+	color: #dc6d38;
+    font-size: 100px;
+    font-style: normal;
+    text-align: center;
+}
+
+#home 
+p{
+    color: #ffebe3;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    font-style: normal;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: left;
+}
+
+#home  
+h3{
+    color: #dc6d38;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px
+}
+
+#gabriel 
+h1 {
+  font-family: "Russo One", sans-serif;
+  color: #ffda25;
+  font-size: 100px;
+  font-style: normal;
+  text-align: center;
+}
+
+#gabriel 
+h2 {
+color:#927f26;
+font-family: "Space Grotesk", sans-serif;
+font-weight: 500;
+font-size: 25px;
+font-style: italic;
+text-align: center;
+}
+
+#gabriel 
+p {
+    color: #281a0c;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    font-style: normal;
+    margin-left: 50px;
+    margin-right: 200px;
+    margin-bottom: 200px;
+    text-align: left;
+    margin-top: 0;
+}
+
+
+
+#alicia 
+h1 {
+  font-family: "Russo One", sans-serif;
+  color: #cd7eea;
+  font-size: 100px;
+  font-style: normal;
+  text-align: center;
+}
+
+#alicia 
+h2 {
+color: #cf21a4;
+font-family: "Space Grotesk", sans-serif;
+font-weight: 500;
+font-size: 25px;
+font-style: italic;
+text-align: center;
+}
+
+#alicia 
+p {
+color: #410c54;
+font-family: "Space Grotesk", sans-serif;
+font-weight: 500;
+font-size: 25px;
+font-style: normal;
+margin-left: 50px;
+margin-right: 200px;
+margin-bottom: 200px;
+text-align: left;
+margin-top: 0;
+}
+
+#alan 
+h1 {
+  font-family: "Russo One", sans-serif;
+  color: #247a24;
+  font-size: 100px;
+  font-style: normal;
+  text-align: center;
+}
+
+#alan 
+h2 {
+color: #2b3720;
+font-family: "Space Grotesk", sans-serif;
+font-weight: 500;
+font-size: 25px;
+font-style: italic;
+text-align: center;
+}
+
+#alan 
+p {
+color: #000000;
+font-family: "Space Grotesk", sans-serif;
+font-weight: 500;
+font-size: 25px;
+font-style: normal;
+margin-left: 50px;
+margin-right: 200px;
+margin-bottom: 200px;
+text-align: left;
+margin-top: 0;
+}
+
+#iande 
+h1 {
+  font-family: "Russo One", sans-serif;
+  color: #9c0f0f;
+  font-size: 100px;
+  font-style: normal;
+  text-align: center;
+}
+
+#iande 
+h2 {
+color: #bb2121;
+font-family: "Space Grotesk", sans-serif;
+font-weight: 500;
+font-size: 25px;
+font-style: italic;
+text-align: center;
+}
+
+#iande 
+p {
+color: #140606;
+font-family: "Space Grotesk", sans-serif;
+font-weight: 500;
+font-size: 25px;
+font-style: normal;
+margin-left: 50px;
+margin-right: 200px;
+margin-bottom: 200px;
+text-align: left;
+margin-top: 0;
+}
+
+#marina 
+h1 {
+  font-family: "Russo One", sans-serif;
+  color: #2acdff;
+  font-size: 100px;
+  font-style: normal;
+  text-align: center;
+}
+
+#marina 
+h2 {
+color: #089191;
+font-family: "Space Grotesk", sans-serif;
+font-weight: 500;
+font-size: 25px;
+font-style: italic;
+text-align: center;
+}
+
+#marina 
+p {
+color: #000f3c;
+font-family: "Space Grotesk", sans-serif;
+font-weight: 500;
+font-size: 25px;
+font-style: normal;
+margin-left: 50px;
+margin-right: 200px;
+margin-bottom: 200px;
+text-align: left;
+margin-top: 0;
+}
+
+#clara 
+h1 {
+  font-family: "Russo One", sans-serif;
+  color: #ff9dca;
+  font-size: 100px;
+  font-style: normal;
+  text-align: center;
+}
+
+#clara 
+h2 {
+color: #ba3d85;
+font-family: "Space Grotesk", sans-serif;
+font-weight: 500;
+font-size: 25px;
+font-style: italic;
+text-align: center;
+}
+
+#clara 
+p {
+color: #6c063f;
+font-family: "Space Grotesk", sans-serif;
+font-weight: 500;
+font-size: 25px;
+font-style: normal;
+margin-left: 50px;
+margin-right: 200px;
+margin-bottom: 200px;
+text-align: left;
+margin-top: 0;
+}
+
+#samuel 
+h1 {
+  font-family: "Russo One", sans-serif;
+  color: #5000ac;
+  font-size: 100px;
+  font-style: normal;
+  text-align: center;
+}
+
+#samuel 
+h2 {
+color: #361863;
+font-family: "Space Grotesk", sans-serif;
+font-weight: 500;
+font-size: 25px;
+font-style: italic;
+text-align: center;
+}
+
+#samuel 
+p {
+color: #18032f;
+font-family: "Space Grotesk", sans-serif;
+font-weight: 500;
+font-size: 25px;
+font-style: normal;
+margin-left: 50px;
+margin-right: 200px;
+margin-bottom: 200px;
+text-align: left;
+margin-top: 0;
+}
+

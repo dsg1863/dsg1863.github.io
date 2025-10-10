@@ -1,0 +1,159 @@
+#home a.btn {background-color: #dc6d38;
+color: #18185b;
+font-family: "Russo One", sans-serif;
+font-size: 25px;
+padding:30px;
+text-align:center;
+border-radius:10px;
+margin-left: 10px;
+margin-right: 10px;
+align-content: center;
+transition: background-color 0.3s ease;
+text-decoration-line: none;
+cursor: pointer;
+ }
+
+#home a:hover{
+	background-color: #ffebe3;
+	color: #18185b;
+}
+
+#gabriel a.btn {background-color: #ffda25;
+color: #281a0c;
+font-family: "Russo One", sans-serif;
+font-size: 25px;
+padding:30px;
+text-align:center;
+border-radius:10px;
+margin-left: 10px;
+margin-right: 10px;
+align-content: center;
+transition: background-color 0.3s ease;
+text-decoration-line: none;
+cursor: pointer;
+ }
+
+#gabriel a:hover{
+	background-color: #281a0c;
+	color: #ffda25 ;
+}
+
+#alicia a.btn {background-color: #cd7eea;
+color: #410c54;
+font-family: "Russo One", sans-serif;
+font-size: 25px;
+padding:30px;
+text-align:center;
+border-radius:10px;
+margin-left: 10px;
+margin-right: 10px;
+align-content: center;
+transition: background-color 0.3s ease;
+text-decoration-line: none;
+cursor: pointer;
+ }
+
+#alicia a:hover{
+	background-color: #410c54;
+	color: #cd7eea ;
+}
+
+#alan a.btn {background-color: #247a24;
+color: #edffdc;
+font-family: "Russo One", sans-serif;
+font-size: 25px;
+padding:30px;
+text-align:center;
+border-radius:10px;
+margin-left: 10px;
+margin-right: 10px;
+align-content: center;
+transition: background-color 0.3s ease;
+text-decoration-line: none;
+cursor: pointer;
+ }
+
+#alan a:hover{
+	background-color: #edffdc;
+	color: #247a24 ;
+}
+
+#iande a.btn {background-color: #9c0f0f;
+color: #ffe9dd;
+font-family: "Russo One", sans-serif;
+font-size: 25px;
+padding:30px;
+text-align:center;
+border-radius:10px;
+margin-left: 10px;
+margin-right: 10px;
+align-content: center;
+transition: background-color 0.3s ease;
+text-decoration-line: none;
+cursor: pointer;
+ }
+
+#iande a:hover{
+	background-color: #ffe9dd;
+	color: #9c0f0f ;
+}
+
+#marina a.btn {background-color: #2acdff;
+color: #000f3c;
+font-family: "Russo One", sans-serif;
+font-size: 25px;
+padding:30px;
+text-align:center;
+border-radius:10px;
+margin-left: 10px;
+margin-right: 10px;
+align-content: center;
+transition: background-color 0.3s ease;
+text-decoration-line: none;
+cursor: pointer;
+ }
+
+#marina a:hover{
+	background-color: #000f3c;
+	color: #ffe9dd ;
+}
+
+#clara a.btn {background-color: #ff9dca;
+color: #6c063f;
+font-family: "Russo One", sans-serif;
+font-size: 25px;
+padding:30px;
+text-align:center;
+border-radius:10px;
+margin-left: 10px;
+margin-right: 10px;
+align-content: center;
+transition: background-color 0.3s ease;
+text-decoration-line: none;
+cursor: pointer;
+ }
+
+#clara a:hover{
+	background-color: #6c063f;
+	color: #ff9dca ;
+}
+
+#samuel a.btn {background-color: #5000ac;
+color: #e9e3ee;
+font-family: "Russo One", sans-serif;
+font-size: 25px;
+padding:30px;
+text-align:center;
+border-radius:10px;
+margin-left: 10px;
+margin-right: 10px;
+align-content: center;
+transition: background-color 0.3s ease;
+text-decoration-line: none;
+cursor: pointer;
+ }
+
+#samuel a:hover{
+	background-color: #e9e3ee;
+	color: #5000ac ;
+}

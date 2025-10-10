@@ -1,0 +1,287 @@
+#home div.menusuperior{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+#home table {
+    width: 100%;
+    background-color: #dc6d38;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+#home td {
+    text-align: center;
+}
+#home td .menu {
+    color: #18185b;
+    padding: 20px ;
+    font-family: "Space Grotesk", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration-line: none; 
+    transition: background-color 0.3s ease;
+}
+#home td .menu:hover {
+    background-color: #ffebe3;
+    color: #18185b;
+}
+#home div.menusuperior{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+
+
+
+
+#gabriel div.menusuperior{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+#gabriel table {
+    width: 100%;
+    background-color: #ffda25;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+#gabriel td {
+    text-align: center;
+}
+#gabriel td .menu {
+    color: #281a0c;
+    padding: 20px ;
+    font-family: "Space Grotesk", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration-line: none; 
+    transition: background-color 0.3s ease;
+}
+#gabriel td .menu:hover {
+    background-color: #281a0c;
+    color: #ffda25;
+}
+#gabriel div.menusuperior{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+
+
+
+#alicia div.menusuperior{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+#alicia table {
+    width: 100%;
+    background-color: #cd7eea;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+#alicia td {
+    text-align: center;
+}
+#alicia td .menu {
+    color: #410c54;
+    padding: 20px ;
+    font-family: "Space Grotesk", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration-line: none; 
+    transition: background-color 0.3s ease;
+}
+#alicia td .menu:hover {
+    background-color: #410c54;
+    color: #cd7eea;
+}
+#alicia div.menusuperior{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+
+
+
+#alan div.menusuperior{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+#alan table {
+    width: 100%;
+    background-color: #247a24;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+#alan td {
+    text-align: center;
+}
+#alan td .menu {
+    color: #edffdc;
+    padding: 20px ;
+    font-family: "Space Grotesk", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration-line: none; 
+    transition: background-color 0.3s ease;
+}
+#alan td .menu:hover {
+    background-color: #edffdc;
+    color: #247a24;
+}
+#alan div.menusuperior{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+
+
+
+#iande div.menusuperior{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+#iande table {
+    width: 100%;
+    background-color: #9c0f0f;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+#iande td {
+    text-align: center;
+}
+#iande td .menu {
+    color: #ffe9dd;
+    padding: 20px ;
+    font-family: "Space Grotesk", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration-line: none; 
+    transition: background-color 0.3s ease;
+}
+#iande td .menu:hover {
+    background-color: #ffe9dd;
+    color: #9c0f0f;
+}
+#iande div.menusuperior{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+
+
+
+#marina div.menusuperior{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+#marina table {
+    width: 100%;
+    background-color: #2ac0ff;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+#marina td {
+    text-align: center;
+}
+#marina td .menu {
+    color: #000f3c;
+    padding: 20px ;
+    font-family: "Space Grotesk", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration-line: none; 
+    transition: background-color 0.3s ease;
+}
+#marina td .menu:hover {
+    background-color: #000f3c;
+    color: #2ac0ff;
+}
+#marina div.menusuperior{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+
+
+
+
+#clara div.menusuperior{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+#clara table {
+    width: 100%;
+    background-color: #ff9dca;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+#clara td {
+    text-align: center;
+}
+#clara td .menu {
+    color: #6c063f;
+    padding: 20px ;
+    font-family: "Space Grotesk", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration-line: none; 
+    transition: background-color 0.3s ease;
+}
+#clara td .menu:hover {
+    background-color: #6c063f;
+    color: #ff9dca;
+}
+#clara div.menusuperior{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+
+
+
+#samuel div.menusuperior{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+#samuel table {
+    width: 100%;
+    background-color: #5000ac;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+#samuel td {
+    text-align: center;
+}
+#samuel td .menu {
+    color: #e9e3ee;
+    padding: 20px ;
+    font-family: "Space Grotesk", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration-line: none; 
+    transition: background-color 0.3s ease;
+}
+#samuel td .menu:hover {
+    background-color: #e9e3ee;
+    color: #5000ac;
+}
+#samuel div.menusuperior{
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}

@@ -1,0 +1,243 @@
+#gabrieltab {
+    background-color: #ffda25;
+    border-collapse: collapse;
+    border-radius: 8px;
+    max-width: 1000px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    color: #281a0c;
+    padding: 50px;
+    max-width: 500px;
+    margin-left: 200px;
+    margin-left: 200px;
+    margin-top: 50px;
+    float: left;
+    margin-right: 50px;
+}
+#gabrieltab th, #gabrieltab td {
+    border: 1px solid #281a0c;
+    text-align: left;
+    padding: 15px;
+}
+#gabrieltab .titulo-tabela {
+    background-color: #ffffff;
+    color: #281a0c; 
+    font-size: 24px; 
+    text-align: center;
+}
+#tabgab {
+    background-color: #ffffff;
+    margin-bottom:200px;
+}
+#tabgab .celula-texto-topo {
+    vertical-align: top;
+}
+
+#aliciatab {
+    background-color: #cd7eea;
+    border-collapse: collapse;
+    border-radius: 8px;
+    max-width: 1000px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    color: #410c54;
+    padding: 25px;
+    max-width: 500px;
+    margin-left: 200px;
+    margin-top: 50px;
+    float: left;
+    margin-right: 50px;
+}
+#aliciatab th, #aliciatab td {
+    border: 1px solid #410c54;
+    text-align: left;
+    padding: 15px;
+}
+#aliciatab .titulo-tabela {
+    background-color: #fcf1ff;
+    color: #410c54; 
+    font-size: 24px; 
+    text-align: center;
+}
+#tablica {
+    background-color: #ffffff;
+    margin-bottom:200px;
+}
+#tablica .celula-texto-topo {
+    vertical-align: top;
+}
+
+
+#alantab {
+    background-color: #247a24;
+    border-collapse: collapse;
+    border-radius: 8px;
+    max-width: 1000px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    color: #edffdc;
+    padding: 25px;
+    max-width: 500px;
+    margin-left: 200px;
+    margin-top: 50px;
+    float: left;
+    margin-right: 50px;
+}
+#alantab th, #alantab td {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 15px;
+}
+#alantab .titulo-tabela {
+    background-color: #edffdc;
+    color: #247a24; 
+    font-size: 24px; 
+    text-align: center;
+}
+#tablan {
+    background-color: #ffffff;
+    margin-bottom:200px;
+}
+#tablan .celula-texto-topo {
+    vertical-align: top;
+}
+
+
+#iandetab {
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-radius: 8px;
+    max-width: 1000px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    color: #ffe9dd;
+    padding: 25px;
+    max-width: 500px;
+    margin-left: 200px;
+    margin-top: 50px;
+    float: left;
+    margin-right: 50px;
+}
+#iandetab th, #iandetab td {
+    border: 1px solid #140606;
+    text-align: left;
+    padding: 15px;
+}
+#iandetab .titulo-tabela {
+    background-color: #ffe9dd;
+    color: #9c0f0f; 
+    font-size: 24px; 
+    text-align: center;
+}
+#tabde {
+    background-color: #ffffff;
+    margin-bottom:200px;
+}
+#tabde .celula-texto-topo {
+    vertical-align: top;
+}
+
+
+#marinatab {
+    background-color: #2acdff;
+    border-collapse: collapse;
+    border-radius: 8px;
+    max-width: 1000px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    color: #000f3c;
+    padding: 25px;
+    max-width: 500px;
+    margin-left: 200px;
+    margin-top: 50px;
+    float: left;
+    margin-right: 50px;
+}
+#marinatab th, #marinatab td {
+    border: 1px solid #000f3c;
+    text-align: left;
+    padding: 15px;
+}
+#marinatab .titulo-tabela {
+    background-color: #e7f7ff;
+    color: #000f3c; 
+    font-size: 24px; 
+    text-align: center;
+}
+#tabmari {
+    background-color: #ffffff;
+    margin-bottom:200px;
+}
+#tabmari .celula-texto-topo {
+    vertical-align: top;
+}
+
+
+#claratab {
+    background-color: #fff3f8;
+    border-collapse: collapse;
+    border-radius: 8px;
+    max-width: 1000px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    color: #6c063f;
+    padding: 25px;
+    max-width: 500px;
+    margin-left: 200px;
+    margin-top: 50px;
+    float: left;
+    margin-right: 50px;
+}
+#claratab th, #claratab td {
+    border: 1px solid #6c063f;
+    text-align: left;
+    padding: 15px;
+}
+#claratab .titulo-tabela {
+    background-color: #fff3f8;
+    color: #6c063f; 
+    font-size: 24px; 
+    text-align: center;
+}
+#tablara {
+    background-color: #ffffff;
+    margin-bottom:200px;
+}
+#tablara .celula-texto-topo {
+    vertical-align: top;
+}
+
+
+#samueltab {
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-radius: 8px;
+    max-width: 1000px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    color: #e9e3ee;
+    padding: 25px;
+    max-width: 500px;
+    margin-left: 200px;
+    margin-top: 50px;
+    float: left;
+    margin-right: 50px;
+}
+#samueltab th, #samueltab td {
+    border: 1px solid #18032f;
+    text-align: left;
+    padding: 15px;
+}
+#samueltab .titulo-tabela {
+    background-color: #e9e3ee;
+    color: #5000ac; 
+    font-size: 24px; 
+    text-align: center;
+}
+#tabsamu {
+    background-color: #ffffff;
+    margin-bottom:200px;
+}
+#tabsamu .celula-texto-topo {
+    vertical-align: top;
+}
