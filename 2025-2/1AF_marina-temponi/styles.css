@@ -1,0 +1,41 @@
+body { 
+	background-color: lightskyblue;
+	 }
+
+h1 { 
+	color: deeppink;
+	font-family: cursive;
+	font-size: 48px; 
+	text-align: center;
+	 }	
+
+h2 { 
+	color: magenta;
+	font-family: cursive;
+	font-size: 35px; 
+	text-align: center;
+	 }	
+
+a {
+	display: block;
+	border: solid;
+	background-color: pink;
+	margin: 10px;
+	align-items: center;
+	width: fit-content;
+	padding: 10px;
+
+}
+
+img{
+	width: 600px;
+	border: solid;
+	border-width: 4px;
+	border-color: deeppink;
+	}
+
+	h3 {
+		color: darkred;
+		font-family: monospace;
+		text-align: center;
+	}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos - The Legend of Zelda</title>
+  <link rel="stylesheet" href="CORES.css">
+
+          <script src="../../navbar/navbar-2025-2.js"></script>
+<link rel="stylesheet" type="text/css" href="../../navbar/navbar-styles.css">
+
+  <style>
+    body {
+      background: url('Hyrule.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f0e6c8;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      backdrop-filter: brightness(0.6);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+    }
+
+    nav a {
+      color: gold;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+      text-shadow: 0 0 10px gold;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 30px 0;
+      text-shadow: 2px 2px 10px #000;
+    }
+
+    h2 {
+      color: gold;
+      text-shadow: 1px 1px 5px black;
+      margin-top: 50px;
+      font-size: 2em;
+    }
+
+    .grid-jogos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px auto;
+      max-width: 1200px;
+    }
+
+    .card {
+      background-color: rgba(0, 0, 0, 0.7);
+      border: 1px solid gold;
+      border-radius: 10px;
+      padding: 15px;
+      width: 280px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px gold;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid gold;
+      margin-bottom: 10px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+    }
+
+    .card h3 {
+      color: gold;
+      margin-bottom: 5px;
+    }
+
+    .card p {
+      font-size: 0.95em;
+      color: #ddd;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: gold;
+      padding: 15px;
+      margin-top: 50px;
+      border-top: 1px solid gold;
+    }
+
+    a.voltar {
+      display: inline-block;
+      margin: 30px;
+      padding: 10px 25px;
+      border: 1px solid gold;
+      border-radius: 8px;
+      text-decoration: none;
+      color: gold;
+      transition: 0.3s;
+    }
+
+    a.voltar:hover {
+      background-color: gold;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="historia.html">História</a>
+      <a href="personagens.html">Personagens</a>
+      <a href="jogos.html" class="ativo">Jogos</a>
+    </nav>
+  </header>
+
+  <h1>Jogos da Série The Legend of Zelda</h1>
+
+  <!-- ERA CLÁSSICA -->
+  <h2>Era Clássica / 2D</h2>
+  <div class="grid-jogos">
+    <div class="card">
+      <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda/1/10/Link_triforce.png" alt="The Legend of Zelda 1986">
+      <h3>The Legend of Zelda (1986)</h3>
+      <p>O início da jornada. Link deve resgatar a Princesa Zelda e derrotar Ganon em Hyrule.</p>
+    </div>
+    <div class="card">
+      <img src="https://assets-prd.ignimgs.com/2025/02/20/lttpequipment-1740069624023.jpg" alt="A Link to the Past">
+      <h3>A Link to the Past (1991)</h3>
+      <p>Uma das maiores aventuras em 2D, apresenta o Reino das Trevas e a Master Sword pela primeira vez.</p>
+    </div>
+    <div class="card">
+      <img src="https://gamingheartscollection.net/wp-content/uploads/2016/09/zelda-links-awakening.png" alt="Link's Awakening">
+      <h3>Link's Awakening (1993)</h3>
+      <p>Primeiro jogo portátil, com uma história introspectiva e um mundo fora de Hyrule.</p>
+    </div>
+  </div>
+
+  <!-- ERA 3D -->
+  <h2>Era 3D / Moderna</h2>
+  <div class="grid-jogos">
+    <div class="card">
+      <img src="https://multiplayer.net-cdn.it/thumbs/images/2014/07/30/ocarina_of_time__1_2_jpg_800x0_crop_upscale_q85.jpg" alt="Ocarina of Time">
+      <h3>Ocarina of Time (1998)</h3>
+      <p>Primeiro Zelda em 3D. Link viaja no tempo para impedir Ganondorf e salvar Hyrule.</p>
+    </div>
+    <div class="card">
+      <img src="https://infinityretro.com/wp-content/uploads/2024/02/Legend-of-Zelda-Majoras-Mask-screenshot-1-650x488.png" alt="Majora’s Mask">
+      <h3>Majora’s Mask (2000)</h3>
+      <p>Três dias antes do fim do mundo, Link revive o tempo para salvar Termina de uma lua em queda.</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn.mos.cms.futurecdn.net/eXkgH9Bw6BRMSihu2WPgQV-1920-80.jpg" alt="The Wind Waker">
+      <h3>The Wind Waker (2002)</h3>
+      <p>Estilo cel-shading e mundo marítimo. Link navega entre ilhas e descobre os segredos do novo Hyrule.</p>
+    </div>
+    <div class="card">
+      <img src="https://game-port.online/upload/iblock/3b5/breas721ugrba7jbhafvvdrq2berflac.jpeg" alt="Twilight Princess">
+      <h3>Twilight Princess (2006)</h3>
+      <p>Um tom mais sombrio e maduro, Link alterna entre humano e lobo para combater as forças da escuridão.</p>
+    </div>
+    <div class="card">
+      <img src="https://nintendoboy.com.br/wp-content/uploads/2021/07/IMG_20210708_105410.jpg" alt="Skyward Sword">
+      <h3>Skyward Sword (2011)</h3>
+      <p>A origem da Master Sword. Link e Zelda enfrentam o destino e o mal primordial nas nuvens de Skyloft.</p>
+    </div>
+  </div>
+
+  <!-- ERA CONTEMPORÂNEA -->
+  <h2>Era Contemporânea / Mundo Aberto</h2>
+  <div class="grid-jogos">
+    <div class="card">
+      <img src="https://www.outerspace.com.br/wp-content/uploads/2017/02/zelda-botw-3.jpg" alt="Breath of the Wild">
+      <h3>Breath of the Wild (2017)</h3>
+      <p>Revolucionou a franquia com um vasto mundo aberto e liberdade total de exploração.</p>
+    </div>
+    <div class="card">
+      <img src="https://s2-techtudo.glbimg.com/IVmW2qLLqN6J15pJXMe1d4Ovhrg=/0x0:1920x1080/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/R/C/XSOe9ZT5mQk5bvTFAkyw/sukurinshiyotsuto-2023-03-28-114126.png" alt="Tears of the Kingdom">
+      <h3>Tears of the Kingdom (2023)</h3>
+      <p>Expande o mundo e introduz mecânicas de construção e exploração aérea e subterrânea.</p>
+    </div>
+  </div>
+
+  <a href="index.html" class="voltar">Voltar à Página Inicial</a>
+
+  <footer>
+    <p>&copy; 2025 - Projeto Zelda | Desenvolvido por Rodrigo</p>
+  </footer>
+</body>
+</html>
