@@ -65,7 +65,7 @@ hr {
     height: 1px;
     margin: 25px 0;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
     hr {
         max-width: 80%;
     }
