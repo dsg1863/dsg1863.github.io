@@ -1,6 +1,14 @@
-body.semestre-2024-2 {background-color: #1d1d1d;}
-body.semestre-2025-1 {background-color: #a00;}
-body.semestre-2025-2 {background-color: #803;}
+body.semestre-2024-2 {
+    background-color: #1d1d1d;
+}
+
+body.semestre-2025-1 {
+    background-color: #a00;
+}
+
+body.semestre-2025-2 {
+    background-color: #803;
+}
 
 body {
     color: #fff;
@@ -29,7 +37,8 @@ img.back-arrow {
     left: 25px;
 }*/
 
-h1, h2 {
+h1,
+h2 {
     color: #fff;
 }
 
@@ -56,34 +65,30 @@ hr {
 }
 
 h3.ano-projetos {
-  font-size: 2rem;
-  margin-top: -10px;
-  padding-bottom: 3rem;
+    font-size: 2rem;
+    margin-top: -10px;
+    padding-bottom: 3rem;
 }
 
 .lista-projetos ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 li.projetos-turma {
-    font-size: 16px;    
+    font-size: 16px;
     padding-bottom: 30px;
-}
-
-li.projetos-turma {
     margin-top: 20px;
     border-top: 1px solid #fff4;
     padding-top: 15px;
 }
 
-
-.lista-projetos ul li a {
-  display: block;
-  font-size: 24px;
-  line-height: 1.15;
-  padding-bottom: 20px;
+.lista-projetos a {
+    display: block;
+    font-size: 24px;
+    line-height: 1.15;
+    padding-bottom: 20px;
 }
 
 @media (min-width: 1440px) {
@@ -92,19 +97,18 @@ li.projetos-turma {
     }
 }
 
-@media screen and (min-width: 768px) {
-  .lista-projetos ul {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
-  }
-  
-  .lista-projetos li {
-    width: calc((100% - 90px) / 4); /* 3 columns with 30px gaps */
-  }
-  
-  /* Make the course headings span the full width */
-  .lista-projetos li.projetos-turma {
-    width: 100%;
-  }
+@media (min-width: 769px) {
+    .lista-projetos ul {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+    }
+
+    .lista-projetos li {
+        width: calc((100% - 90px) / 4);
+    }
+
+    .lista-projetos li.projetos-turma {
+        width: 100%;
+    }
 }
