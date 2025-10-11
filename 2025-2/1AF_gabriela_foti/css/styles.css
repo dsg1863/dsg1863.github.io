@@ -1,0 +1,33 @@
+body {
+	background-color: #ff00b1;
+}
+h1 {								
+	font-size: 72px;
+}
+.menu {
+	background-color: white;
+	margin-bottom: 30px;
+	border-radius: 7px;
+	padding: 8px;
+}
+
+.menu ul{
+	list-style: nome;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.menu a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 600;
+	background-color: black;
+	color: white;
+	transition: background-color;
+	padding: 7px 20px;
+	border-radius: 5px;
+}
