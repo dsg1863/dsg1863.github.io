@@ -17,19 +17,21 @@
 }
 
 .nav-bar a {
-    color: #fff;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 0.8rem;
-    font-weight: normal;
-    text-decoration: none;
-    margin: 5px 0;
-    padding: 0 0 2px 0;
-    position: static;
+    color: #fff !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-size: 0.8rem !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+    margin: 5px 0 !important;
+    border: revert;
+    padding: 0 0 2px 0 !important;
+    position: static !important;
+    background-color: #000 !important;
 }
 
 .nav-bar a:hover {
     color: #ff0 !important;
-    text-decoration: underline;
+    text-decoration: underline !important;
     background-color: #000 !important;
 }
 
