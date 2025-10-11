@@ -91,7 +91,7 @@ li.projetos-turma {
     padding-bottom: 20px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
     .lista-projetos ul {
         max-width: 80%;
     }
