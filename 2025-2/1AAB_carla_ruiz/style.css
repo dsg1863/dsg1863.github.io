@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('Fundos/background2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f0f0f0;
+    font-family: "Indie Flower", cursive;
+    overflow-x: hidden;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+    position: relative;
+}
+
+/* Título principal */
+h1 {
+    font-family: "Ballet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 6em;
+    color: maroon;
+    
+    position: relative;
+    text-align: center;
+    z-index: 500;
+
+    background-image: url("Molduras/frame1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+    /* REDUZIR O PADDING - ESSA É A CORREÇÃO PRINCIPAL */
+    padding: 75px 100px; /* Reduzi o padding vertical de 100px para 60px */
+    width: fit-content;
+    margin-top: -50px; 
+}
+
+/* Container do texto */
+.texto-container {
+    font-family: "Indie Flower", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.5em;
+    color: rgb(48, 48, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -50px 0px 0px 0px; 
+    width: 100%;
+    z-index: 1000;
+    position: relative;
+}
+
+/* Moldura para o texto */
+.texto-background {
+    background-image: url('Molduras/frame2.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; 
+    min-width: 500px; 
+    max-width: 800px; 
+    text-align: center;
+    padding: 150px;
+}
+
+/* Container dos links*/
+.links-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0 40px 0;
+    z-index: 1000;
+    position: relative;
+}
+
+/* Estilo dos links com imagens */
+.image-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.image-link:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo das imagens dos links */
+.image-link img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid maroon;
+}
+
+/* Estilo do texto abaixo das imagens */
+.image-link span {
+    font-family: "Indie Flower", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgb(48, 48, 48);
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 2.1em;
+}
+
+/* Estilo base para imagens */
+.imagem-ilustrativa {
+    position: absolute;
+    z-index: 100;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Posicição das imagens */
+.img-1 {
+    top: 50%;
+    left: 5%;
+    transform: scale(2.0);
+    z-index: 1;
+}
+
+.img-2 {
+    top: 80%;
+    right: 5%;
+    transform: scale(5.0);
+    z-index: 1;
+}
+
+/* Quando passar o mouse sobre */
+.imagem-decorativa:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Rodapé */
+.rodape {
+    width: 100%;
+    background-color: rgba(128, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Indie Flower", cursive;
+    font-size: 1.3em;
+    margin-top: auto;
+}
+
+.instagram-link {
+    color: #e4405f;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.instagram-link:hover {
+    color: white;
+}
+
+.spotify-widget iframe {
+    border-radius: 12px;
+    opacity: 0.9; 
+}
+
+
+/* Links das receitas */
+.links-receitas ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.links-receitas li {
+    margin-bottom: 8px;
+}
+
+.links-receitas a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links-receitas a:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
+/* botão de voltar */
+.botao-voltar {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    background-color: #B5D9FF;
+    color: #303030;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    position: relative;
+    top: -20px;
+}
+
+.botao-voltar:hover {
+    background-color: #D94949;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
