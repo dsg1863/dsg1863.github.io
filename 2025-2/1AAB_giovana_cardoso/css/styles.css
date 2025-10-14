@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-	background-color:black;
+  background-image: url("../imagens/fundo.png"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: black;
 }
 
 h1 {
@@ -19,11 +24,12 @@ border-style: solid;
 
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: center;
-  background-color: #9D9D9D;
+list-style-type: none;
+width: fit-content; /* Or a specific width */
+margin-left: auto;
+margin-right: auto;
+border-style: solid;
+  border-width: 5px;
 }
 
 ul li {
