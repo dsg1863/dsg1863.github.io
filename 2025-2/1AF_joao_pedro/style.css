@@ -1,0 +1,97 @@
+/* ----------------- Fonte personalizada ----------------- */
+@font-face {
+    font-family: 'KanopiBrazil';
+    src: url('fonts/KanopiBrazil-regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ----------------- Estilos gerais ----------------- */
+body {
+    font-family: 'KanopiBrazil', Arial, sans-serif;
+    background-color: #fff3e0;
+    text-align: center;
+    color: #4e342e;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 60px; 
+    margin-left: 60px;
+    font-family: 'KanopiBrazil', Arial, sans-serif;
+    font-size: 81px; 
+}
+
+/* ----------------- Área da roda ----------------- */
+.roda {
+    position: relative;
+    width: 600px;
+    height: 700px;
+    margin: 80px auto 60px auto; 
+    border-radius: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------- Instrumentos ----------------- */
+.instrumento {
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Imagens */
+.instrumento img {
+    width: 156px;
+    height: 156px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.instrumento p {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Efeito de clique */
+.instrumento:active img {
+    transform: scale(0.9);
+    box-shadow: 0 0 15px rgba(255, 87, 34, 0.7);
+}
+
+/* ----------------- Distribuição circular para 9 instrumentos ----------------- */
+.instrumento:nth-child(1) { transform: rotate(0deg) translate(280px) rotate(0deg); }
+.instrumento:nth-child(2) { transform: rotate(40deg) translate(280px) rotate(-40deg); }
+.instrumento:nth-child(3) { transform: rotate(80deg) translate(280px) rotate(-80deg); }
+.instrumento:nth-child(4) { transform: rotate(120deg) translate(280px) rotate(-120deg); }
+.instrumento:nth-child(5) { transform: rotate(160deg) translate(280px) rotate(-160deg); }
+.instrumento:nth-child(6) { transform: rotate(200deg) translate(280px) rotate(-200deg); }
+.instrumento:nth-child(7) { transform: rotate(240deg) translate(280px) rotate(-240deg); }
+.instrumento:nth-child(8) { transform: rotate(280deg) translate(280px) rotate(-280deg); }
+.instrumento:nth-child(9) { transform: rotate(320deg) translate(280px) rotate(-320deg); }
+
+/* Efeito quando o mouse passa por cima */
+.instrumento img:hover {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 0 20px rgba(255, 87, 34, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito quando o ícone é clicado */
+.instrumento:active img {
+    animation: pulsar 0.2s ease;
+    box-shadow: 0 0 25px rgba(255, 87, 34, 0.8);
+}
+
+/* Define a animação de pulsação */
+@keyframes pulsar {
+    0% { transform: scale(1.15) rotate(5deg); }
+    50% { transform: scale(0.9) rotate(-5deg); }
+    100% { transform: scale(1.15) rotate(5deg); }
+}

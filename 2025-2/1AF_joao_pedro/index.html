@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roda de Samba Interativa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Roda de Samba Interativa</h1>
+  <div class="roda">
+    <div class="instrumento" data-som="sons/agogo.mp3"><img src="imagens/agogo.png"><p>Agogo</p></div>
+    <div class="instrumento" data-som="sons/cavaco.mp3"><img src="imagens/cavaco.png"><p>Cavaco</p></div>
+    <div class="instrumento" data-som="sons/cuica.mp3"><img src="imagens/cuica.png"><p>Cuica</p></div>
+    <div class="instrumento" data-som="sons/pandeiro.mp3"><img src="imagens/pandeiro.png"><p>Pandeiro</p></div>
+    <div class="instrumento" data-som="sons/reco-reco.mp3"><img src="imagens/reco-reco.png"><p>Reco-reco</p></div>
+    <div class="instrumento" data-som="sons/repique.mp3"><img src="imagens/repique.png"><p>Repique</p></div>
+    <div class="instrumento" data-som="sons/surdo.mp3"><img src="imagens/surdo.png"><p>Surdo</p></div>
+    <div class="instrumento" data-som="sons/tamborim.mp3"><img src="imagens/tamborim.png"><p>Tamborim</p></div>
+    <div class="instrumento" data-som="sons/tanta.mp3"><img src="imagens/tanta.png"><p>Tanta</p></div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.instrumento').forEach(instr => {
+      instr.addEventListener('click', () => {
+        const som = new Audio(instr.getAttribute('data-som'));
+        som.play();
+      });
+    });
+  </script>
+</body>
+
+</html>
