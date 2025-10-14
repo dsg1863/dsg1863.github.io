@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    color: #f5f5f5;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000; /* Fundo do cabeçalho também preto */
+}
+
+.logo {
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+/* Menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f00;
+}
+
+.fantasmas {
+    display: block;         /* transforma a imagem em bloco */
+    margin: 0 auto;         /* margem automática centraliza */
+    width: 70%;             /* tamanho da imagem */
+}
+
+
+/* Redes Sociais */
+#redes {
+    display: flex;           /* coloca lado a lado */
+    align-items: left;     /* alinha no meio verticalmente */
+    justify-content: left; /* opcional — centraliza tudo na seção */
+    gap: 20px;               /* espaço entre imagem e texto */
+}
+
+#logoinsta {
+    width: 90px;            /* define o tamanho da imagem */
+    border-radius: 10px;     /* opcional */
+    margin-left: 16%;
+}
+
+#ederfont {
+    width: 10%;            /* define o tamanho da imagem */
+    margin-right: 15%;
+    margin-left: 43%;
+}
+
+
+#redes p {
+    font-size: 1.3em;
+    color: #f5f5f5;
+}
+
+
+.poema {
+    max-width: 800px;        /* largura máxima do texto */
+    margin: 50px auto;       /* centraliza horizontalmente e dá espaçamento vertical */
+    padding: 20px;
+    text-align: center;      /* centraliza o texto */
+    line-height: 1.8;        /* espaçamento entre linhas */
+    font-size: 1.2em;        /* aumenta um pouco o texto */
+    background-color: #111;  /* fundo levemente diferente do body */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+.nostalgia{
+    display: block;         
+    margin: 0 auto;    
+    width: 62%;
+}
+.imagem-ilustracao {
+    display: block;
+    margin: 0 auto;
+    width: 70%; /* diminui o tamanho da imagem */
+    max-width: 1000px; /* limite máximo */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+section.secao-animacao {
+    width: 900px;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contexto {
+    width: 50%;
+    margin: 0 auto;
+    text-align: margin-left;
+    padding: 40px 0;
+    font-size: 1.2rem;
+
+}
+
+.foto-insta {
+    width: 75%;            /* ocupa 60% da largura da seção */
+    display: block;
+    margin: 30px auto;     /* centraliza e dá espaço acima */
+    border-radius: 10px;   /* bordas suaves, combina com o estilo indie */
+}
+
