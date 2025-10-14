@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+h1 {
+	color: cadetblue;
+	font-size: 45px;
+	text-align: left;
+	margin: 40px;
+}
+
+h1.title-hp {
+	font-size: 65px;
+	color: darkcyan;	
+}
+
+.imgsereia {
+    display: block;
+    width: 700px;
+    margin: auto;
+}
+
+.imgbio {
+    display: block;
+    width: 500px;
+    margin: auto;
+}
+
+.imgorigem {
+    display: block;
+    width: 500px;
+    margin: auto;
+}
+
+.imgcuriosidades {
+    display: block;
+    width: 500px;
+    margin: auto;
+}
+
+.imgiara {
+    display: block;
+    width: 500px;
+    margin: auto;
+}
+
+
+.btn {
+	background-color: cadetblue;
+	color: white;
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 7px;
+	text-align: center;
+	width: 200px;
+}
+
+.btn a {
+	text-decoration: none;
+	color: white;
+}
+
+h2 {
+	color: cadetblue;
+	font-size: 30px;
+	margin: 40px;
+	text-align: initial;
+	margin: 0px 20px -10px 40px;
+}
+
+h3 {
+	color: darkcyan;
+	font-size: 20px;
+	text-align: justify;
+	margin: 40px;
+}
+
+body {
+	background-color: #add9c6;
+	  font-family: "Nunito", sans-serif;
+}
+
+.menu {
+
+	background-color: darkcyan;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.menu ul {
+
+list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: left;
+}
+
+.menu a {
+	
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 600;
+	background-color: cadetblue;
+	color: white;
+	transition: background-color 0.2s;
+	padding: 7px 20px;
+	border-radius: 5px;
+}
+
+
+nav ul li a:hover {
+  background-color: #0f7d72;
+  color: white; 
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+h4 {
+	color: darkcyan;
+	font-size: 15px;
+	text-align: center;
+	margin: 40px;
+}
+
+h5 {
+	color: darkcyan;
+	font-size: 20px;
+	margin: 20px 0 -35px 40px;
+
+}
