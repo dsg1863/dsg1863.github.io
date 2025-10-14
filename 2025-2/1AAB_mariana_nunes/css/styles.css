@@ -1,0 +1,30 @@
+h1 {
+	color: orange;
+	background-color: white;
+	font-size: 120px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	text-align: center;
+	margin-top: 200px;
+	margin-bottom: 5px;
+
+}
+
+h2 {
+	color: lightblue;
+	font-size: 12px;
+	font-family: sans-serif;
+	text-align: left;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+a {
+	color: orange;
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight: lighter;
+
+	
+}
+
