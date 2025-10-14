@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jogo da Memória</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Título -->
+  <img id="gameTitle" src="./cards/logo.png" alt="Título do Jogo">
+
+  <!-- Tela inicial -->
+  <div id="startScreen">
+    <h1>Jogo da Memória</h1>
+    <div class="buttons-container">
+      <button id="startBtn">Iniciar</button>
+      <button id="aboutBtnStart">Sobre as Frutas</button>
+    </div>
+  </div>
+
+  <!-- Tabuleiro -->
+  <div class="board hidden"></div>
+
+  <!-- Mensagem de vitória -->
+  <div id="winMessage" class="hidden">
+    <h2>Parabéns! Você ganhou!</h2>
+    <p id="playsCount"></p>
+  </div>
+
+  <!-- Botões abaixo do tabuleiro -->
+  <button id="restartBtn" class="hidden">Reiniciar jogo</button>
+  <button id="aboutBtnBottom" class="hidden">Sobre as Frutas</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
