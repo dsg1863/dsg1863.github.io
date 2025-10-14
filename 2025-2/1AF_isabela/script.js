@@ -1,10 +1,10 @@
 const CARDS_IMGS = [
   "./cards/abacaxi.png",
-  "./cards/açai.png",
+  "./cards/acai.png",
   "./cards/amora-preta.png",
   "./cards/caja.png",
   "./cards/caju.png",
-  "./cards/cupuaçu.png",
+  "./cards/cupuacu.png",
   "./cards/jabuticaba.png",
   "./cards/maracuja.png",
   "./cards/pequi.png",
