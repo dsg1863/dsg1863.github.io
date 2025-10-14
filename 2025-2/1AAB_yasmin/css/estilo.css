@@ -1,0 +1,114 @@
+body{margin: 0px;
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color: #f7f8f9;}
+
+e {color:#f7f8f9;
+	background-color:#1f2226;
+	padding: 15px;
+	border-radius: 0 0 0 10px;
+	font-family: sans-serif;
+	font-size: 12px;
+	text-align: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: 0.4s ease;}
+
+	e:hover {transform-origin: top right;
+			transform: scale(1.5);}
+
+h1 {background-color: #1f2226;
+	padding: 30px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border-radius: 0px;
+	color: #f7f8f9;
+	font-size: 60px;
+	font-family: sans-serif;
+	text-align: center;}
+
+h3 {color: #1f2226;
+	font-size: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: sans-serif;
+	text-align: center;}
+
+h5{	margin: 5px;
+	margin-bottom: 0;
+	color: #4e6e41;
+	font-size: 45px;
+	font-family: sans-serif;}
+
+	h5:hover {transition: 0.3s ease;
+			transform: scale(1.20);
+			background-color: #1f2226;
+			border-radius: 10px;
+			padding: 2px;}
+
+p {color: #1f2226;
+	font-size: 18px;
+	font-family: sans-serif;
+	text-align: left;
+	align-content: center;
+	margin-left: 150px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: auto;
+	max-width: 100ch;}
+	
+p1 {color: #1f2226;
+	font-size: clamp(12px, 2.5vw, 16px);
+	font-family: sans-serif;
+	text-align: left;
+	padding-bottom: 10px;
+	margin: 0;
+	margin-top: 0;}
+
+a{color: #1f2226;
+	font-size: 45px;
+	font-family: sans-serif;
+	text-decoration: none;}
+
+	a:hover{color: #f7f8f9;
+			padding-bottom: 5px;
+			transition: 0.3s ease;
+			transform: scale(1.15);}
+	
+a.btn {background-color:  #1f2226;
+		color: #f7f8f9;
+		font-size: 15px;
+		font-family: sans-serif;
+		font-weight: 600;
+		padding: 20px;
+		border-radius: 0 0 10px 10px;
+		display: inline-flex;
+		align-content: center;
+		justify-content: center;
+		transition: 0.4s ease;
+		text-decoration: none;}
+
+	a.btn:hover {background-color: #f7f8f9;
+					color: #1f2226;
+					transform-origin: top left;
+					transform: scale(1.2);}
+
+
+a.img:hover img {transition: 0.3s ease;
+				transform: scale(1.07);}
+
+img {display: block;}
+
+.grid-container {display: grid;
+				grid-template-columns: repeat(4, 1fr);
+
+	.item-grid {text-align: center;}
+	
+	.item-grid img {width: 99%;
+					display: block;
+					margin: auto;}
+
+	
+
+
