@@ -1,17 +1,23 @@
+body {
+	background-color: #fdefe9;
+}
+
+
+
+
 h1{
-	color: hotpink;
-	font-size: 64px;
+	color: saddlebrown;
+	font-size: 15px;
 	font-family: sans-serif;
 }
 
 img{
-	max-width: 600px;
+	max-width: 400px;
 }
 
 a.btn {
-	background-color:deeppink;
-	color:lightgoldenrodyellow;
-	margin: 50px;
-	padding: 20px;
+	color:orangered;
+	margin: 0px;
+	padding: 10px;
 	border-radius: 7px;
 }
