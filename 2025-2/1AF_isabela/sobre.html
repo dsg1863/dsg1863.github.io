@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre as Frutas</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 40px;
+      background-color: #1d49a6;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: self-start;
+      text-align: self-start;
+      min-height: 100vh;
+    }
+
+    /* Título como imagem */
+    #pageTitle {
+      width: 400px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 700px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    /* Botão igual aos do jogo */
+    #backBtn {
+      margin-top: 30px;
+      background-color: #ffffff;
+      color: #1d49a6;
+      border: none;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: 0.3s ease;
+    }
+
+    #backBtn:hover {
+      background-color: #e2e2e2;
+    }
+  </style>
+</head>
+<body>
+  <!-- Imagem do título -->
+  <img id="pageTitle" src="./cards/logo.png" alt="Sobre as Frutas">
+
+  <p>
+    As frutas nativas do Brasil vêm diretamente dos diversos biomas do país, como a Amazônia, o Cerrado e a Mata Atlântica. 
+    Exemplos famosos são o açaí, a jabuticaba e o caju, mas há muitas outras menos conhecidas que também fazem parte da riqueza natural brasileira. 
+    Elas têm grande valor nutricional, além de representarem um importante patrimônio cultural e econômico. 
+    As frutas podem ser apreciadas frescas ou incorporadas em sucos, doces e receitas típicas, mostrando a diversidade de sabores que nosso país oferece.
+  </p>
+
+  <!-- Botão de voltar -->
+  <button id="backBtn" onclick="window.location.href='index.html'">Voltar ao Jogo</button>
+</body>
+</html>
+

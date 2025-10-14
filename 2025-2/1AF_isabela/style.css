@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1d49a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  position: relative;
+}
+
+/* ---------- TELA INICIAL ---------- */
+#startScreen {
+  position: absolute;
+  inset: 0;
+  background-color: #1d49a6;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 10;
+}
+
+#startScreen h1 {
+  margin-bottom: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- BOTÕES ---------- */
+button {
+  background-color: #ffffff;
+  color: #1d49a6;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #e2e2e2;
+}
+
+/* ---------- TABULEIRO ---------- */
+.board {
+  display: grid;
+  gap: 12px;
+  justify-content: center;
+  align-content: center;
+  width: 90vw;
+  max-width: 1400px;
+  grid-template-columns: repeat(10, minmax(80px, 1fr));
+  grid-template-rows: repeat(2, auto);
+  margin-top: 20px;
+}
+
+@media (max-width: 1100px) {
+  .board {
+    grid-template-columns: repeat(5, minmax(80px, 1fr));
+    grid-template-rows: repeat(4, auto);
+    width: 85vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .board {
+    grid-template-columns: repeat(4, minmax(80px, 1fr));
+    grid-template-rows: repeat(5, auto);
+    width: 95vw;
+  }
+}
+
+/* ---------- CARTAS ---------- */
+.card {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+/* ---------- IMAGENS DAS CARTAS ---------- */
+.card-front img,
+.card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+
+/* ---------- MENSAGEM DE VITÓRIA ---------- */
+#winMessage {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 20;
+  gap: 20px;
+  text-align: center;
+}
+
+#winMessage.hidden {
+  display: none;
+}
+
+/* ---------- TÍTULO DO JOGO ---------- */
+#gameTitle {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: auto;
+  z-index: 15;
+  pointer-events: none;
+}
+
+/* ---------- BOTÃO REINICIAR ---------- */
+#restartBtn {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 25;
+  display: none;
+}
+
+/* ---------- BOTÃO SOBRE ABAIXO DO TABULEIRO ---------- */
+#aboutBtnBottom {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 25;
+  display: none;
+}
+
+/* ---------- UTILITÁRIOS ---------- */
+.hidden {
+  display: none;
+}
