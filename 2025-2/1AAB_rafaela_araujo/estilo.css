@@ -11,12 +11,31 @@ float: left;
 width: 200px
 }
 body{
+  cursor: url(imagens/estrelacursor.png), auto; 
     background-color: #ad90ad;
-    display: block;
-    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+*:active {
+  cursor: url(imagens/estrelacursorclick.png), auto !important;
+
 }
 .body-container{
   display: flex;
   flex-direction:column;
   align-items: center;
-}
+
+  .body-container2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  iframe{
+    display: block;
+    position: relative;
+    opacity: 1;
+    z-index: 10;
+    margin: 20px 0;
+    border: none;
+  }
