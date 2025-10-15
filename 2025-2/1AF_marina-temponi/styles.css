@@ -27,15 +27,15 @@ a {
 
 }
 
-img{
+img {
 	width: 600px;
 	border: solid;
 	border-width: 4px;
 	border-color: deeppink;
-	}
+}
 
-	h3 {
-		color: darkred;
-		font-family: monospace;
-		text-align: center;
-	}
+h3 {
+	color: darkred;
+	font-family: monospace;
+	text-align: center;
+}
