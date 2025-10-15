@@ -21,6 +21,12 @@ img.back-arrow {
     top: 85px;
     width: 20px;
 }
+img.back-arrow:hover {
+  background: black;
+  padding: 5px;
+  border-radius: 100px;
+  transform: scale(2);
+}
 
 @media (max-width: 992px) {
     img.back-arrow {
