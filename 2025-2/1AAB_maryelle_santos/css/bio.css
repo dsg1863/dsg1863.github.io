@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  vertical-align: baseline;
+}
+
+body
+{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.parallax 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blur_box
+{
+
+    width: 100%;
+    height: 800px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px); /* Para compatibilidade com Safari */
+    
+    background-color: rgba(255, 255, 255, 0.1); /* Um branco bem sutil e transparente */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.inter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    height: 20vh;
+    width: 100%;
+}
+
+.text {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.parallax_text
+{
+    align-self:self-start
+}
+
+#image-1
+{
+    text-align: center;
+    background-image: url("../imagens/Bandeira.jpeg");
+}
+
+#image-2
+{
+    background-image: url("../imagens/Centro.jpeg");
+}
+
+#image-3
+{
+    text-align: center;
+    background-image: url("../imagens/futebol.jpeg");
+}
+
+#image-4
+{
+    text-align: center;
+    background-image: url("../imagens/fabrica.jpg");
+}
+
+#image-5
+{
+    text-align: center;
+    background-image: url("../imagens/caixa.jpg");
+}
+
+#image-6
+{
+    text-align: center;
+    background-image: url("../imagens/estacao.jpg");
+}
