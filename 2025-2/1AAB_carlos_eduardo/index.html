@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@tristeh_corazon - Home</title>
+
+        <script src="../../navbar/navbar-2025-2.js"></script>
+<link rel="stylesheet" type="text/css" href="../../navbar/navbar-styles.css">
+
+  <style>
+    /* ======= FONTE DATILOGRAFIA ======= */
+    @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: url('fundo1.png') no-repeat center center/cover;
+      overflow: hidden;
+      position: relative;
+      font-family: 'Special Elite', monospace;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* ======= CHUVA VERMELHA ======= */
+    .rain {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background-image: linear-gradient(rgba(255, 0, 0, 0.3) 1px, transparent 1px);
+      background-size: 2px 100px;
+      animation: rainMove 0.5s linear infinite;
+      z-index: 1;
+    }
+
+    @keyframes rainMove {
+      from { background-position: 0 0; }
+      to { background-position: 0 100px; }
+    }
+
+    /* ======= NEBLINA ======= */
+    .fog {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(ellipse at center, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.0) 70%);
+      animation: fogMove 60s linear infinite;
+      opacity: 0.3;
+      z-index: 2;
+      mix-blend-mode: lighten;
+    }
+
+    @keyframes fogMove {
+      0% { transform: translate(-20%, -20%); }
+      50% { transform: translate(10%, 10%); }
+      100% { transform: translate(-20%, -20%); }
+    }
+
+    /* ======= CONTEÚDO ======= */
+    h1 {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      font-size: 1.8em;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+      text-shadow: 0 0 10px red;
+    }
+
+    .logo {
+      width: 350px;
+      height: 350px;
+      position: relative;
+      z-index: 3;
+      margin-bottom: 50px;
+      object-fit: contain;
+    }
+
+    /* ======= BOTÕES ======= */
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      position: relative;
+      z-index: 3;
+    }
+
+    .button {
+      width: 230px;
+      height: 80px;
+      background: url('botão1.png') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+      padding: 10px;
+      transition: transform 0.2s ease, text-shadow 0.3s ease;
+      line-height: 1.3em;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      text-shadow: 0 0 10px red;
+    }
+  </style>
+</head>
+<body>
+  <div class="rain"></div>
+  <div class="fog"></div>
+
+  <h1>você está no site do @tristeh_corazon?</h1>
+  <img src="logo.png" alt="Logo" class="logo">
+
+  <div class="buttons">
+    <a href="figurino.html" class="button">
+      FIGURINO<br>Alguma coisa escapa ao naufrágio.
+    </a>
+    <a href="planoaberto.html" class="button">
+      PROJETO<br>PLANO ABERTO
+    </a>
+    <a href="jucs2024.html" class="button">
+      PROJETO<br>JUCS 2024
+    </a>
+    <a href="jogo.html" class="button">
+      JOGO<br>O Último Convite
+    </a>
+  </div>
+</body>
+</html>
