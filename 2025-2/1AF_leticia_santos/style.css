@@ -14,6 +14,11 @@
     min-height: 100vh;
 }
 
+.footer {
+    display: block;
+    position: absolute;
+    bottom: 50px;
+}
 
 .container {
     text-align: center;
