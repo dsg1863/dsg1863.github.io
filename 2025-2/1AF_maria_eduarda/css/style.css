@@ -1,0 +1,59 @@
+body {
+	
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+h1 {
+	font-size: 72px;
+	color: yellow;
+	
+}
+
+audio {
+	display: inline-block;
+	margin: 50px auto;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	color: yellow;
+}
+
+.player {
+	background-color: #222;
+	padding: 10px;
+	border border-radius: 10px;
+	display: inline-grid;
+}
+
+.menu {
+	background-color: whitesmoke;
+	margin-bottom: 30px;
+	border-radius: 7px;
+	padding: 8px;
+}
+.menu ul {
+	list-style: none;
+	padding: 0;
+	margin:0;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu a {
+	display: block;
+	text-align: center;
+	text-decoration: blink;
+	font-weight: 600;
+	background-color: whitesmoke;
+	color: black;
+	transition: background-color 0.3s;
+	padding: 7px 20px;
+	border-radius: 5px;
+}
+.menu text-decoration {
+	container-type: normal;
+}
+
