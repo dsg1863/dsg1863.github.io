@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    font-family: 'Press Start 2P', system-ui;
+    color: #ff5926;
+    background-color: #efbaf5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    background-color: #ff5926;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: justify-content;
+    visibility: hidden;
+    object-fit: cover;
+}
+
+.card.flipped img {
+    visibility: visible;
+}
+
+.card.matched {
+    background-color: #a4e4a4;
+    cursor: default;
+}
+
+.reset-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #552cb7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background-color: #5a53e5;
+}
