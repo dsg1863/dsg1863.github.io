@@ -1,143 +1,242 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>@tristeh_corazon - Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@tristeh_corazon - Portfólio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
-        <script src="../../navbar/navbar-2025-2.js"></script>
-<link rel="stylesheet" type="text/css" href="../../navbar/navbar-styles.css">
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Special Elite', cursive;
+    background: url('img1/fundo1.jpg') no-repeat center center/cover;
+    cursor: url('img1/cursor.png'), auto;
+    color: white;
+    text-align: center;
+  }
 
-  <style>
-    /* ======= FONTE DATILOGRAFIA ======= */
-    @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+  .rain {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    top: 0; left: 0;
+    background: repeating-linear-gradient(to bottom, rgba(255,0,0,0.3) 0, rgba(255,0,0,0.3) 2px, transparent 2px, transparent 20px);
+    animation: rain 0.3s linear infinite;
+    z-index: 1;
+  }
+  @keyframes rain { from { background-position-y: 0; } to { background-position-y: 20px; } }
 
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      background: url('fundo1.png') no-repeat center center/cover;
-      overflow: hidden;
-      position: relative;
-      font-family: 'Special Elite', monospace;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+  .fog {
+    position: fixed;
+    width: 200%; height: 100%;
+    top: 0; left: -50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.08), rgba(0,0,0,0.3));
+    animation: fogmove 60s linear infinite;
+    z-index: 2;
+  }
+  @keyframes fogmove { from { transform: translateX(0); } to { transform: translateX(-25%); } }
 
-    /* ======= CHUVA VERMELHA ======= */
-    .rain {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      background-image: linear-gradient(rgba(255, 0, 0, 0.3) 1px, transparent 1px);
-      background-size: 2px 100px;
-      animation: rainMove 0.5s linear infinite;
-      z-index: 1;
-    }
+  .content { position: relative; z-index: 3; padding-top: 80px; }
 
-    @keyframes rainMove {
-      from { background-position: 0 0; }
-      to { background-position: 0 100px; }
-    }
+  .logo-container { display: inline-block; perspective: 1000px; }
+  .logo {
+    width: 350px; height: 350px;
+    position: relative; transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+    margin-bottom: 10px; cursor: pointer;
+    transform-origin: center center;
+  }
+  .logo.flipped { transform: rotateY(180deg); }
+  .logo img { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 5px; }
+  .logo .back { transform: rotateY(180deg); }
 
-    /* ======= NEBLINA ======= */
-    .fog {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(ellipse at center, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.0) 70%);
-      animation: fogMove 60s linear infinite;
-      opacity: 0.3;
-      z-index: 2;
-      mix-blend-mode: lighten;
-    }
+  h1 { font-size: 28px; margin: 20px 0 10px; }
 
-    @keyframes fogMove {
-      0% { transform: translate(-20%, -20%); }
-      50% { transform: translate(10%, 10%); }
-      100% { transform: translate(-20%, -20%); }
-    }
+  /* 🔸 NOVOS BOTÕES DE PROJETOS */
+  .buttons {
+    display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; margin: 40px 0;
+  }
+  .button {
+    position: relative; width: 230px; height: 80px; background: transparent;
+    background-image: url('img1/botão1.png'); background-size: cover; background-position: center;
+    border: none; cursor: pointer; color: white; font-weight: bold; font-size: 16px;
+  }
+  .button span { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
-    /* ======= CONTEÚDO ======= */
-    h1 {
-      position: relative;
-      z-index: 3;
-      text-align: center;
-      font-size: 1.8em;
-      letter-spacing: 2px;
-      margin-bottom: 25px;
-      text-shadow: 0 0 10px red;
-    }
+  .dump-section { margin-top: 70px; }
+  .dump-section h2 { font-size: 24px; margin-bottom: 20px; }
+  .carousel-container {
+    position: relative; width: 90%; max-width: 900px; margin: 0 auto; overflow: hidden; border-radius: 8px;
+  }
+  .carousel-track { display: flex; transition: transform 0.6s ease; }
+  .carousel-item {
+    min-width: 100%; display: flex; justify-content: center; align-items: center;
+    background: rgba(0,0,0,0.4); aspect-ratio: 16/9;
+  }
+  .carousel-item img, .carousel-item video {
+    max-width: 100%; max-height: 100%; object-fit: contain;
+  }
+  .carousel-btn {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    background: none; border: none; cursor: pointer; width: 50px; height: 50px; z-index: 5;
+  }
+  .carousel-btn img { width: 100%; height: 100%; }
+  .carousel-btn.left { left: 10px; }
+  .carousel-btn.right { right: 10px; }
 
-    .logo {
-      width: 350px;
-      height: 350px;
-      position: relative;
-      z-index: 3;
-      margin-bottom: 50px;
-      object-fit: contain;
-    }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center; align-items: center;
+    backdrop-filter: blur(8px);
+  }
+  .modal-content img, .modal-content video {
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid white;
+  }
 
-    /* ======= BOTÕES ======= */
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 25px;
-      position: relative;
-      z-index: 3;
-    }
+  .contacts { margin-top: 60px; }
+  .contact-icons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+  .contact-icons img { width: 60px; height: 60px; cursor: pointer; transition: transform 0.2s; }
+  .contact-icons img:hover { transform: scale(1.1); }
 
-    .button {
-      width: 230px;
-      height: 80px;
-      background: url('botão1.png') no-repeat center center/cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      text-align: center;
-      padding: 10px;
-      transition: transform 0.2s ease, text-shadow 0.3s ease;
-      line-height: 1.3em;
-    }
-
-    .button:hover {
-      transform: scale(1.05);
-      text-shadow: 0 0 10px red;
-    }
-  </style>
+  .music-player {
+    position: fixed; top: 20px; right: 20px;
+    z-index: 15; width: 250px; height: 80px;
+    border-radius: 12px; overflow: hidden;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+  }
+  iframe.spotify { width: 100%; height: 100%; border: none; }
+</style>
 </head>
 <body>
-  <div class="rain"></div>
-  <div class="fog"></div>
+
+<div class="rain"></div>
+<div class="fog"></div>
+
+<div class="content">
+  <div class="logo-container">
+    <div class="logo" id="logoFlip">
+      <img src="img1/logo.png" alt="Logo" class="front">
+      <img src="img1/bio.png" alt="Bio" class="back">
+    </div>
+  </div>
 
   <h1>você está no site do @tristeh_corazon?</h1>
-  <img src="logo.png" alt="Logo" class="logo">
 
+  <!-- 🔸 NOVOS BOTÕES DE PROJETOS -->
   <div class="buttons">
-    <a href="figurino.html" class="button">
-      FIGURINO<br>Alguma coisa escapa ao naufrágio.
-    </a>
-    <a href="planoaberto.html" class="button">
-      PROJETO<br>PLANO ABERTO
-    </a>
-    <a href="jucs2024.html" class="button">
-      PROJETO<br>JUCS 2024
-    </a>
-    <a href="jogo.html" class="button">
-      JOGO<br>O Último Convite
-    </a>
+    <button class="button" onclick="location.href='figurino.html'"><span>FIGURINO</span></button>
+    <button class="button" onclick="location.href='render.html'"><span>RENDER</span></button>
+    <button class="button" onclick="location.href='ilustracao.html'"><span>ILUSTRAÇÃO</span></button>
   </div>
+
+  <!-- 🧩 Dump de Processos -->
+  <div class="dump-section">
+    <h2>Dump de Processos</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left" id="prev"><img src="img1/setaesquerda.png"></button>
+      <div class="carousel-track" id="carouselTrack"></div>
+      <button class="carousel-btn right" id="next"><img src="img1/setadireita.png"></button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal"><div class="modal-content" id="modalContent"></div></div>
+
+  <div class="contacts">
+    <h2>Contatos</h2>
+    <div class="contact-icons">
+      <a href="https://www.instagram.com/tristehcorazon" target="_blank"><img src="img1/insta1.png"></a>
+      <a href="https://www.instagram.com/foi_tristeh" target="_blank"><img src="img1/insta2.png"></a>
+      <a href="mailto:" target="_blank"><img src="img1/gmail.png"></a>
+      <a href="https://www.behance.net/carlosribeiro97" target="_blank"><img src="img1/behance.png"></a>
+      <a href="https://br.linkedin.com/in/carlos-eduardo-ribeiro-dos-anjos-4a1a9b216" target="_blank"><img src="img1/linkedin.png"></a>
+    </div>
+  </div>
+</div>
+
+<div class="music-player">
+  <iframe class="spotify"
+    src="https://open.spotify.com/embed/playlist/2ZONg885GRx1XlgcsNVzLk?utm_source=generator"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+  </iframe>
+</div>
+
+<script>
+// 🌀 Animação da logo
+const logo=document.getElementById('logoFlip');
+let flipped=false, flipTimer=null;
+logo.addEventListener('click',()=>{
+  if(!flipped){
+    flipped=true;
+    logo.classList.add('flipped');
+    flipTimer=setTimeout(()=>{
+      logo.classList.remove('flipped');
+      flipped=false;
+    },5000);
+  } else {
+    window.location.href='bio.html';
+  }
+});
+
+// 🧩 Dump fixo de 1 a 77 (img2/)
+const carouselTrack=document.getElementById('carouselTrack');
+const extensoes=['jpg','jpeg','png','gif','mp4'];
+for(let i=1;i<=77;i++){
+  for(const ext of extensoes){
+    const src=`img2/${i}.${ext}`;
+    const item=document.createElement('div');
+    item.className='carousel-item';
+    if(ext==='mp4'){
+      const vid=document.createElement('video');
+      vid.src=src; vid.loop=true; vid.autoplay=true; vid.muted=true;
+      vid.onerror=()=>item.remove();
+      item.appendChild(vid);
+    } else {
+      const img=document.createElement('img');
+      img.src=src;
+      img.onerror=()=>item.remove();
+      item.appendChild(img);
+    }
+    carouselTrack.appendChild(item);
+  }
+}
+
+let index=0;
+document.getElementById('next').addEventListener('click',()=>{
+  index=(index+1)%carouselTrack.children.length;
+  carouselTrack.style.transform=`translateX(-${index*100}%)`;
+});
+document.getElementById('prev').addEventListener('click',()=>{
+  index=(index-1+carouselTrack.children.length)%carouselTrack.children.length;
+  carouselTrack.style.transform=`translateX(-${index*100}%)`;
+});
+
+// 🔍 Modal expandido
+const modal=document.getElementById('modal');
+const modalContent=document.getElementById('modalContent');
+carouselTrack.addEventListener('click',(e)=>{
+  if(e.target.tagName==='IMG'||e.target.tagName==='VIDEO'){
+    modal.style.display='flex';
+    modalContent.innerHTML='';
+    const clone=e.target.cloneNode(true);
+    clone.controls=true;
+    modalContent.appendChild(clone);
+  }
+});
+modal.addEventListener('click',(e)=>{
+  if(e.target===modal){ modal.style.display='none'; }
+});
+</script>
 </body>
 </html>

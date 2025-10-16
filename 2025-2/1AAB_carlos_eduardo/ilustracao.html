@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ILUSTRAÇÃO - @tristeh_corazon</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+body{margin:0;padding:0;font-family:'Special Elite',cursive;color:white;background:url('img1/fundo1.jpg')no-repeat center center/cover;cursor:url('img1/cursor.png'),auto;overflow-x:hidden;}
+.rain,.fog{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:1;}
+.rain{background:repeating-linear-gradient(to bottom,rgba(255,0,0,0.3)0,rgba(255,0,0,0.3)2px,transparent2px,transparent20px);animation:rain.3slinear infinite;}
+@keyframes rain{from{background-position-y:0;}to{background-position-y:20px;}}
+.fog{width:200%;left:-50%;background:radial-gradient(circle,rgba(255,255,255,0.08),rgba(0,0,0,0.3));animation:fogmove60s linear infinite;}
+@keyframes fogmove{from{transform:translateX(0);}to{transform:translateX(-25%);}}
+.content{position:relative;z-index:3;text-align:center;padding-top:80px;}
+.back-arrow{position:fixed;top:20px;left:20px;width:60px;height:60px;z-index:10;cursor:pointer;}
+.contacts{margin-bottom:40px;}
+.contact-icons{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;}
+.contact-icons img{width:60px;height:60px;cursor:pointer;transition:transform.2s;}
+.contact-icons img:hover{transform:scale(1.1);}
+h1{font-size:30px;margin-bottom:10px;}
+p.description{max-width:800px;margin:0 auto 40px auto;font-size:16px;line-height:1.6;}
+.images{display:flex;flex-direction:column;gap:10px;align-items:center;}
+.images img,.images video{width:100%;max-width:900px;object-fit:contain;}
+.music-player{position:fixed;top:20px;right:20px;z-index:15;width:250px;height:80px;border-radius:12px;overflow:hidden;background:rgba(0,0,0,0.4);backdrop-filter:blur(5px);}
+iframe.spotify{width:100%;height:100%;border:none;}
+</style>
+</head>
+<body>
+
+<div class="rain"></div><div class="fog"></div>
+<a href="index.html"><img src="img1/setaesquerda.png" class="back-arrow"></a>
+
+<div class="music-player">
+  <iframe class="spotify"
+    src="https://open.spotify.com/embed/playlist/2ZONg885GRx1XlgcsNVzLk?utm_source=generator"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+  </iframe>
+</div>
+
+<div class="content">
+  <div class="contacts">
+    <div class="contact-icons">
+      <a href="https://www.instagram.com/tristehcorazon"><img src="img1/insta1.png"></a>
+      <a href="https://www.instagram.com/foi_tristeh"><img src="img1/insta2.png"></a>
+      <a href="mailto:"><img src="img1/gmail.png"></a>
+      <a href="https://www.behance.net/carlosribeiro97"><img src="img1/behance.png"></a>
+      <a href="https://br.linkedin.com/in/carlos-eduardo-ribeiro-dos-anjos-4a1a9b216"><img src="img1/linkedin.png"></a>
+    </div>
+  </div>
+
+  <h1>ILUSTRAÇÃO</h1>
+  <p class="description">'</p>
+  <div class="images" id="ilustracaoImages"></div>
+</div>
+
+<script>
+const container=document.getElementById('ilustracaoImages');
+const exts=['.png','.jpg','.jpeg','.gif','.mp4','.pdf'];
+for(let i=1;i<=50;i++){
+  for(const ext of exts){
+    const path=`img5/${i}${ext}`;
+    const el=document.createElement(ext==='.mp4'?'video':'img');
+    el.src=path;
+    if(ext==='.mp4'){el.controls=true;el.loop=true;}
+    el.onerror=()=>el.remove();
+    container.appendChild(el);
+  }
+}
+</script>
+</body>
+</html>

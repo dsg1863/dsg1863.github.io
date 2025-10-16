@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bio - @tristeh_corazon</title>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+  body {
+    margin: 0; padding: 0; overflow-x: hidden;
+    font-family: 'Special Elite', cursive;
+    background: url('img1/fundo1.jpg') no-repeat center center/cover;
+    cursor: url('img1/cursor.png'), auto;
+    color: white; text-align: center;
+  }
+
+  .rain, .fog { position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; pointer-events: none; }
+  .rain { background: repeating-linear-gradient(to bottom, rgba(255,0,0,0.3) 0, rgba(255,0,0,0.3) 2px, transparent 2px, transparent 20px); animation: rain 0.3s linear infinite; }
+  @keyframes rain { from { background-position-y: 0; } to { background-position-y: 20px; } }
+  .fog { background: radial-gradient(circle, rgba(255,255,255,0.08), rgba(0,0,0,0.3)); animation: fogmove 60s linear infinite; width:200%; left:-50%; }
+  @keyframes fogmove { from { transform: translateX(0);} to { transform: translateX(-25%);} }
+
+  .content { position: relative; z-index: 3; padding-top: 100px; }
+
+  .back-arrow {
+    position: absolute; top: 20px; left: 20px;
+    width: 50px; height: 50px; cursor: pointer; z-index: 10;
+  }
+
+  .bio-container { display: inline-block; perspective: 1000px; }
+  .bio-flip {
+    width: 350px; height: 350px; position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+    margin-bottom: 20px;
+    transform-origin: center center;
+  }
+  .bio-flip.flipped { transform: rotateY(180deg); }
+  .bio-flip img { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 5px; }
+  .bio-flip .back { transform: rotateY(180deg); }
+
+  .box { max-width: 600px; margin: 20px auto; background: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px; }
+
+  .contacts { margin-top: 50px; }
+  .contact-icons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+  .contact-icons img { width: 60px; height: 60px; cursor: pointer; transition: transform 0.2s; }
+  .contact-icons img:hover { transform: scale(1.1); }
+
+  .music-player {
+    position: fixed; top: 20px; right: 20px;
+    z-index: 15; width: 250px; height: 80px;
+    border-radius: 12px; overflow: hidden;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+  }
+  iframe.spotify { width: 100%; height: 100%; border: none; }
+</style>
+
+</head>
+<body>
+
+<div class="rain"></div>
+<div class="fog"></div>
+
+<a href="index.html"><img src="img1/setaesquerda.png" class="back-arrow"></a>
+
+<div class="content">
+  <div class="bio-container">
+    <div class="bio-flip" id="bioFlip">
+      <img src="img1/bio.png" class="front" alt="Bio frente">
+      <img src="img1/bio1.jpg" class="back" alt="Bio verso">
+    </div>
+  </div>
+
+  <div class="box">
+    <h2>Sobre mim</h2>
+    <p>Gente eu sou designer, e é isso :D</p>
+  </div>
+
+  <div class="box">
+    <h3>Habilidades e Softwares</h3>
+    <p>Vários</p>
+  </div>
+
+  <div class="box">
+    <h3>Currículo</h3>
+    <p>depois eu coloco :D</p>
+  </div>
+
+  <div class="contacts">
+    <h2>Contatos</h2>
+    <div class="contact-icons">
+      <a href="https://www.instagram.com/tristehcorazon" target="_blank"><img src="img1/insta1.png"></a>
+      <a href="https://www.instagram.com/foi_tristeh" target="_blank"><img src="img1/insta2.png"></a>
+      <a href="https://wa.me/5521968434909" target="_blank"><img src="img1/gmail.png"></a>
+      <a href="https://www.behance.net/carlosribeiro97" target="_blank"><img src="img1/behance.png"></a>
+      <a href="https://br.linkedin.com/in/carlos-eduardo-ribeiro-dos-anjos-4a1a9b216" target="_blank"><img src="img1/linkedin.png"></a>
+    </div>
+  </div>
+</div>
+
+<div class="music-player">
+  <iframe class="spotify"
+    src="https://open.spotify.com/embed/playlist/2ZONg885GRx1XlgcsNVzLk?utm_source=generator"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+  </iframe>
+</div>
+
+<script>
+const bio=document.getElementById('bioFlip');
+setInterval(()=>{ bio.classList.toggle('flipped'); },10000);
+</script>
+
+</body>
+</html>
