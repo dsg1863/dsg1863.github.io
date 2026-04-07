@@ -10,6 +10,10 @@ body.semestre-2025-2 {
     background-color: #803;
 }
 
+body.semestre-2026-1 {
+    background-color: #404;
+}
+
 body {
     color: #fff;
 }
@@ -20,6 +24,7 @@ img.back-arrow {
     left: 25px;
     top: 85px;
     width: 20px;
+    filter: brightness(20);
 }
 img.back-arrow:hover {
   background: black;
@@ -38,13 +43,7 @@ img.back-arrow:hover {
 }
 
 
-
-/*img.back-arrow:hover {
-    left: 25px;
-}*/
-
-h1,
-h2 {
+h1, h2 {
     color: #fff;
 }
 
@@ -62,8 +61,17 @@ p {
     color: #fff;
 }
 
+body.semestre-2026-1 a {
+    color: #f90;
+}
+
 a {
     color: #ff0;
+}
+
+
+hr.divider1 {
+    background-color: transparent;
 }
 
 hr {
@@ -73,7 +81,7 @@ hr {
 h3.ano-projetos {
     font-size: 2rem;
     margin-top: -10px;
-    padding-bottom: 1rem;
+    padding-bottom: 0;
 }
 
 .lista-projetos ul {
@@ -84,10 +92,10 @@ h3.ano-projetos {
 
 li.projetos-turma {
     font-size: 16px;
-    padding-bottom: 30px;
     margin-top: 20px;
     border-top: 1px solid #fff4;
     padding-top: 15px;
+    padding-bottom: 40px;
 }
 
 .lista-projetos a {
