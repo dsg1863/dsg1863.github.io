@@ -1,0 +1,14 @@
+div.bloco{
+	font-size: 80px;
+	background-color: #ff0000;
+	width: 200px;
+	padding: 20px;
+	text-align: right;
+	position: absolute;
+	left: 200px;
+	top: 100px;
+}
+
+body{
+	margin: 0px;
+}
