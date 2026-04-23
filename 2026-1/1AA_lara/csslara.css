@@ -1,0 +1,55 @@
+h1{
+	font-size: 300px;
+	color: #bd0600;;
+}
+
+
+h2{
+	font-size: 60px;
+	color: #ffe7ab;
+	font-family: aboreto;
+	position: absolute;
+	left: 2300px;
+	top: 150px;
+	width: 1500px;
+
+
+}
+
+h3{
+	font-size: 25px;
+	color: #1f58d1;
+	font-family: aboreto;
+	position: absolute;
+	top: 2300px;
+	left: 380px;
+
+
+}
+
+
+img.imagempanfleto{
+	position: absolute;
+	top: 2000px;
+	left: 550px;
+}
+
+img.imagemmordida{ 
+	position: absolute;
+	top: 1800px;
+	left: px;
+	scale: 1000px;
+ }
+
+h4{ 
+	font-size: 90px;
+	color:  #bd0600;
+	position: absolute;
+	top: 2800px;
+	left: 760px;
+
+ }
+
+body{
+	background-color: #ffd166;
+}

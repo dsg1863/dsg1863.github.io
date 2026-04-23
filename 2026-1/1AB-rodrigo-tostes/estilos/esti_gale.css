@@ -1,0 +1,21 @@
+body {
+		padding: 50px 10px 10px 150px;
+		background-color: darkcyan;
+
+		h1{
+		font-family: "Raleway", sans-serif;	
+		font-size: 80px;
+		color:lightcyan;
+
+div.galeria {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+		margin-top: 40px;
+	}
+
+a {
+font-family: "Raleway", sans-serif;	
+		font-size: 80px;
+		color:lightcyan;
+}

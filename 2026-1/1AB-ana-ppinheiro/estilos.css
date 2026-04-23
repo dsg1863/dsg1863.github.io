@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Noto Serif", serif;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background-color: seagreen;
+    position: fixed;
+    top: 0;
+    left: 0;
+       z-index: 1000;
+}
+main {
+    padding-top: 120px;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    font-family: "Bungee", sans-serif;
+    font-size: 24px;
+}
+
+/* LINKS */
+.links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.links a:hover {
+    color: lightblue;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: seagreen;
+    min-width: 150px;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* CONTEÚDO */
+main {
+    padding: 120px 40px;
+}
+
+h1 {
+    font-family: "Bungee", sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* GALERIA */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+}
+
+.galeria img:hover {
+    opacity: 0.7;
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    transition: 0.3s;
+}
+
+.galeria img:hover {
+    opacity: 0.7;
+}
+
+.intro {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    line-height: 1.6;
+}

@@ -1,0 +1,27 @@
+body{ 
+background-color: #ceeb5c;
+}
+
+h1{ 
+font-family: monospace;
+font-size: 25px;
+color: #ffa268;
+}
+
+img{
+width: 600px; 
+height: auto; 
+}
+
+p{
+font-family: monospace;
+font-size: 55px;
+font-weight: bold;
+color: #ffa268;	
+}
+
+h2{
+font-family: monospace;
+font-size: 100px;
+color: #ffa268
+}

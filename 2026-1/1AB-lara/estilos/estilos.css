@@ -1,0 +1,30 @@
+body {
+    background-color: #b5193e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+p {
+	font-size: 21px;
+}
+
+img {
+	width: 75%;
+	height: outo; 
+}
+
+div.galeria {
+	display:grid;
+	grid-template-columns:repeat(3, 1fr);
+	gap: 10px;
+	margin-top: 20px;
+}
+
+div.galeria img {
+	width: 100%;
+}

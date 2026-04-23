@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da Memória Místico</title>
+    <link rel="stylesheet" type="text/css" href="estilos/estilo_memoria.css">
+    <link rel="icon" type="image/png" href="imagens/marcelo.png">
+    <script src="../../navbar/navbar-universal.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Memória Mística</h1>
+        <div class="contadores">
+            <span>Tentativas: <span id="tentativas">0</span></span>
+        </div>
+    </header>
+
+    <main class="tabuleiro-memoria" id="tabuleiro">
+        </main>
+
+    <div class="controles">
+    <button onclick="reiniciarJogo()">Reiniciar Jogo</button>
+    
+    <div class="menu-jogos">
+        <a href="jogo_velha_test.html">
+            <img src="imagens/icone_velha.png" alt="Jogo da Velha" class="icone-link">
+        </a>
+        <a href="index.html">
+            <img src="imagens/icone_hub.png" alt="Voltar ao Hub" class="icone-link">
+        </a>
+    </div>
+</div>
+
+    <script src="js/memoria.js"></script>
+</body>
+</html>

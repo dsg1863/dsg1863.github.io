@@ -1,0 +1,69 @@
+.titulo{
+text-align:center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: #775c56;
+font-weight: 500;
+font-size:40px;
+margin-top:30px;
+}
+
+.subtitulo{
+text-align:center;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: #9d7a72;
+font-weight:200;
+font-size:18px;
+margin-bottom:160px;
+}
+
+body{
+margin:auto;
+background:
+radial-gradient(circle at center, rgba(30, 30, 30, 0.15), rgba(61, 56, 56, 0) 70%),
+radial-gradient(circle, rgba(53, 48, 48, 0.07) 3px, transparent 3px) 0 0/40px 40px,
+radial-gradient(circle, rgba(57, 52, 52, 0.07) 3px, transparent 3px) 20px 20px/40px 40px,
+linear-gradient(180deg,#fffdfa,#ffead3);
+background-size:40px 40px, 100% 100%;
+display:flex;
+flex-direction:column;
+align-items: center;
+height:100vh;
+}
+
+.carrossel{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.imagens{
+display:flex;
+gap:15px;
+}
+
+.imagens img{
+width:260px;
+height:260px;
+object-fit:cover;
+opacity:0.6;
+transform:scale(1.3);
+transition:0.4s;
+}
+
+.imagens img.ativa{
+opacity:1;
+transform:scale(2.3);
+}
+
+button{
+color: #775c56;
+width: 60px;
+height: 60px;
+font-size: 35px;
+border-style:solid;
+border-width: 0.2ch; 
+border-color: #775c56;
+border-radius: 10ch;
+background:#ffd3d4;
+cursor:pointer;
+}

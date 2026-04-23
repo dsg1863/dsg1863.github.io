@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("../imagens/clara_fundo.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #ded1e0ff;
+	font-family: serif;
+	max-width: 2560px;
+	padding: clamp(20px, 5vw, 70px);
+	margin: auto ;
+}
+
+h1 {
+	color: #390640ff;
+	font-size: 150px;
+	font-family: "Croissant One", serif;
+	margin-bottom: 20px;
+}
+
+h2, h3 {
+	color: #390640ff;
+	font-size: 42px;;
+	font-family: "Croissant One", serif;
+	margin-top: 20px;
+}
+
+h4 {
+	color: #66217aff;
+	font-size: 28px;
+	font-family: "Croissant One", serif;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+h5 {
+	color: #390640ff;
+	font-size: 42px;
+	font-family: "Croissant One", serif;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+a {
+	color: #27042cff;
+	font-size: 25px;
+	font-family: "Croissant One", serif;
+	margin-bottom: 20px;
+}
+
+img {
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+}
+
+.topo-geral {
+	display: flex;
+	align-items: flex-start;
+	gap: 40px;
+}
+
+.lado-direito {
+	width: 50%;
+	max-width: 800px;
+	display: flex;
+	justify-content: center;
+}
+
+.imagem-area {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	margin-top: 40px;
+}
+
+.imagem-area img {
+	width: 50%;
+	max-width: 1050px;
+}
+
+.texto-imagem {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.texto-area {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	margin-top: 40px;
+}
+
+.bloco {
+	text-align: center;
+}
+
+.img2 {
+	width: 100%;
+	max-width: 1000px;
+}
+
+.img3 {
+	max-width: 500px;
+}
+
+
+img:hover {
+	transform: scale(1.05);
+	transition: 0.3s;
+}
+
+
+@media (max-width: 800px) {
+	.topo-geral {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.lado-esquerdo,
+	.lado-direito {
+		flex: 1;
+		width: 100%;
+		text-align: center;
+	}
+
+	.imagem-area {
+		flex-direction: column;
+	}
+
+	.imagem-area img,
+	.texto-imagem {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1440px) {
+	h1 {
+		font-size: 150px;
+	}
+
+	h2, h3, h5 {
+		font-size: 42px;
+	}
+
+	h4, p {
+		font-size: 28px;
+	}
+}
+
+@media (min-width: 2560px) {
+	h1 {
+		font-size: 250px;
+	}
+
+	h2, h3, h5 {
+		font-size: 72px;
+	}
+
+	h4, p {
+		font-size: 52px;
+	}
+}

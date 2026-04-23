@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Jacquard+12+Charted&family=Yuji+Syuku&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+body {
+	font-family: "Henny Penny";
+	margin: 60px;
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+body.home {
+		background-image: url(../imagens/sol3.jpg);
+		
+}
+
+body.lua {
+	background-image: url(../imagens/lua3.jpg);
+	background-size: cover;
+	background-position: center 30%;
+	background-repeat: no-repeat;
+
+}
+
+body.lua p {
+	margin-left: auto;
+	margin-right: 0;
+	text-align: right;
+}
+
+body.sollua {
+	background-image: url(../imagens/sollua.jpg);
+}
+
+
+/* botões */
+
+body.home nav.links a {
+	color: #ff3b3b;
+}
+
+body.lua nav.links a {
+	color: royalblue;
+}
+
+body.sollua nav.links a {
+	color: #9000ff;
+}
+
+body.home nav.links a:hover {
+	color: #ffe14a;
+}
+
+body.lua nav.links a:hover {
+	color: #ffe14a;
+}
+
+body.sollua nav.links a:hover {
+	color: #ffe14a;
+}
+
+
+nav.links {
+    padding-bottom: 50px;
+}
+
+nav.links p {
+		padding-bottom: 10px;
+	}
+
+		nav.links a {
+			display: block;
+			font-family: "Henny Penny";
+			color: red;
+			font-size: 20px;
+			text-decoration: none;
+			margin-bottom: 10px;
+			transition: transform 0.3s ease, color 0.3s ease;
+		}
+
+		nav.links a.ativo {
+			font-weight: bold;
+		}
+
+		.links {
+			display: block;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 30px;
+			padding: 20px 40px;
+			background-image: url("../imagens/borrao90_1.png");
+			background-size: 101% auto;
+			background-position: center 20%;
+			background-repeat: no-repeat;
+			padding: 30px 30px;
+			position: fixed;
+	
+
+		
+		}
+
+			
+
+
+
+/* poema */
+p {
+	font-family: "Yuji Syuku", serif;
+	font-size: 16px;
+	color: #fff;
+	width: 40%;
+	padding-bottom: 50px;
+	text-shadow: 0 0 4px #000000
+}
+
+.letra {
+	line-height: 1.6;
+}

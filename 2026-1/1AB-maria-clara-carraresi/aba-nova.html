@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos</title>
+  <link rel="stylesheet" href="style.css">
+    <script src="../../navbar/navbar-universal.js" defer></script>
+</head>
+
+<body class="exemplos">
+
+  <a href="index.html" class="voltar">← Voltar</a>
+
+  <h1 class="titulo-exemplos">Pratos Brasileiros</h1>
+
+  <div class="carrossel">
+    <button class="seta" onclick="anterior()">←</button>
+
+    <div class="area-cards">
+
+      <div class="card" onclick="virarCard(this)">
+        <div class="card-interno">
+          <div class="card-frente">
+            <img src="feijoada.jpg" alt="Feijoada">
+          </div>
+          <div class="card-verso">
+            <h2>Feijoada</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="virarCard(this)">
+        <div class="card-interno">
+          <div class="card-frente">
+            <img src="acaraje.jpeg" alt="Acarajé">
+          </div>
+          <div class="card-verso">
+            <h2>Acarajé</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="virarCard(this)">
+        <div class="card-interno">
+          <div class="card-frente">
+            <img src="paoqueijo.jpg" alt="Pão de Queijo">
+          </div>
+          <div class="card-verso">
+            <h2>Pão de Queijo</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="virarCard(this)">
+        <div class="card-interno">
+          <div class="card-frente">
+            <img src="moqueca.jpg" alt="Moqueca">
+          </div>
+          <div class="card-verso">
+            <h2>Moqueca</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="virarCard(this)">
+        <div class="card-interno">
+          <div class="card-frente">
+            <img src="baiao.webp" alt="Baião de Dois">
+          </div>
+          <div class="card-verso">
+            <h2>Baião de Dois</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="virarCard(this)">
+        <div class="card-interno">
+          <div class="card-frente">
+            <img src="tacaca.jpg" alt="Tacacá">
+          </div>
+          <div class="card-verso">
+            <h2>Tacacá</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="virarCard(this)">
+        <div class="card-interno">
+          <div class="card-frente">
+            <img src="pacu.jpeg" alt="Pacu Assado">
+          </div>
+          <div class="card-verso">
+            <h2>Pacu Assado</h2>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="seta" onclick="proximo()">→</button>
+  </div>
+
+  <script>
+    let atual = 0;
+    const cards = document.querySelectorAll(".card");
+
+    function mostrarCard(index) {
+      cards.forEach(card => {
+        card.style.display = "none";
+        card.classList.remove("virado");
+      });
+
+      cards[index].style.display = "block";
+    }
+
+    function proximo() {
+      atual++;
+      if (atual >= cards.length) {
+        atual = 0;
+      }
+      mostrarCard(atual);
+    }
+
+    function anterior() {
+      atual--;
+      if (atual < 0) {
+        atual = cards.length - 1;
+      }
+      mostrarCard(atual);
+    }
+
+    function virarCard(card) {
+      card.classList.toggle("virado");
+    }
+
+    mostrarCard(atual);
+  </script>
+
+</body>
+</html>

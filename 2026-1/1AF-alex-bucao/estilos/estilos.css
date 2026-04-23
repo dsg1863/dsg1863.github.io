@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightblue;
+	font-family: serif;
+	margin: 100px;
+}
+h1{
+	color:darkred;
+	font-size: 200px;
+	font-family: "Croissant One", serif;
+}
+
+h2{
+	color:darkblue;
+	font-size: 50px;
+	font-family: "Croissant One", serif;
+}
+
+img {
+	margin-top: 50px;
+	width: 350px;
+}
+

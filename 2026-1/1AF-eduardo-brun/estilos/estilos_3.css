@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+
+	float: right;
+
+	height: auto;
+
+	width: auto;
+
+	margin: 40px auto;
+
+	border-radius: 5px;
+}
+
+.conteudo::after {
+
+	content: "";
+
+	display: block;
+
+	align-items: flex-start;
+}
+
+.conteudo {
+
+	display: flex;
+
+	justify-content: space-between;
+
+	align-items: flex-start;
+
+}
+
+.texto {
+
+	width: 45%;
+}
+
+.imagem {
+
+	width: 45%;
+}
+
+.imagem img {
+
+	width: 100%;
+
+	height: auto;
+
+	border-radius: 5px;
+}
+
+

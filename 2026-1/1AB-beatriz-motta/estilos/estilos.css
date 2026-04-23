@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: 0;
+
+}
+
+
+
+body {
+	background-color: whitesmoke;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+h1, h2 {
+  color: royalblue;
+}
+
+h1 {
+	font-family: "Audiowide", sans-serif;
+	font-size:70px ;
+	text-align: center;
+  margin-top: 80px; margin-bottom: 50px;
+
+ h2 {
+  margin-bottom: 50px;
+}
+
+p {
+  color: black;}
+
+}
+img {
+  width: 300px;
+  height: 250px;
+}
+
+.menu {
+  background-color: #1e2a38;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.menu a:hover {
+  color: yellow;
+}
+
+video {
+  width: 600px;
+  max-width: 100%;
+}
+
+.imagens {
+  display: free;
+  justify-content: center; 
+  gap: 20px; 
+}
+
+.imagens img {
+  width: 30%; 
+  height: auto;
+}
+
+.grupo-imagens {
+  text-align: center;
+}
+
+.grupo-imagens figcaption {
+  margin-top: 10px;
+  margin-bottom: 40pxS;
+  font-size: 14px;
+}
+
+
+.duas-imagens {
+  display: block;
+  justify-content: center; 
+  gap: 20px;
+}
+
+.duas-imagens img {
+  width: 48%;
+  height: auto;
+
+.duas-imagens {
+  text-align: center;
+}
+  
+
+.grupo-imagens figcaption {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+
+
+.index {
+  text-align: center;
+}

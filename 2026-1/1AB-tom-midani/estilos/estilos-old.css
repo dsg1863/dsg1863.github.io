@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Jacquard+12+Charted&family=Yuji+Syuku&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+body {
+	background-color: #bdc9c1;
+	font-family: "Henny Penny";
+	font-weight: 400;
+  	font-style: normal;
+  	margin: 50px;
+  	border: 5px dotted;
+  	border-color: white;
+  	padding:50px 20px 0 20px;
+}
+
+
+body.tom {
+  	border-color: white;
+  }
+
+div.galeria {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+		margin-top: 20px;
+}
+
+h1 {
+	font-size: 60px;
+	color: #320d6d;
+}
+
+
+p {
+	font-family: "Yuji Syuku", serif;
+	font-size: 19px;
+	color: #0e131f;
+}
+
+
+a {
+	font-family: ;
+	font-size:20px;
+}
+
+
+img {
+	display: block;      
+	margin-left: auto; 
+	margin-right: auto;
+	width: 30%;  
+	border: 5px;
+	border-style: groove;
+  	border-color: red;   
+}

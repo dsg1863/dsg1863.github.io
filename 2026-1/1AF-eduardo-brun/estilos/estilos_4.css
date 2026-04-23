@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main p {
+
+	max-width: 50%;
+
+	margin-bottom: 20px;
+}
+
+main a {
+
+	display: inline-block;
+
+	margin-top: 30px;
+
+	margin-bottom: 20px;
+}
+
+footer {
+
+	margin-top: 50px;
+}
