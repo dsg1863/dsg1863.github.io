@@ -110,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
             currentSemester,
             "semester-nav semester-nav-mobile"
         );
+        var backToTopButton = document.createElement("button");
 
         if (oldBackLink) {
             oldBackLink.remove();
@@ -173,6 +174,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
         topBar.insertAdjacentElement("afterend", hero);
 
+        backToTopButton.className = "back-to-top-button";
+        backToTopButton.type = "button";
+        backToTopButton.setAttribute("aria-label", "Back to top");
+        backToTopButton.innerHTML =
+            '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>';
+        body.appendChild(backToTopButton);
+
+        function updateBackToTopVisibility() {
+            var threshold = window.innerHeight * 0.2;
+            backToTopButton.classList.toggle(
+                "is-visible",
+                window.scrollY > threshold
+            );
+        }
+
         menuButton.addEventListener("click", function () {
             var isOpen = hero.classList.toggle("menu-open");
             menuButton.setAttribute("aria-expanded", String(isOpen));
@@ -191,6 +207,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 body.classList.remove("semester-menu-open");
             });
         });
+
+        backToTopButton.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        window.addEventListener("scroll", updateBackToTopVisibility, {
+            passive: true,
+        });
+        window.addEventListener("resize", updateBackToTopVisibility);
+        updateBackToTopVisibility();
     }
 
     var topBar = injectTopBar();
