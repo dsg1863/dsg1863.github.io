@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function injectSemesterHeader(topBar, currentSemester) {
         var body = document.body;
         var oldBackLink = document.querySelector(".back-link");
+        var brasao = document.querySelector(".brasao");
         var heading = document.querySelector("h1");
         var subheading = document.querySelector("h2");
         var professors = document.querySelector("p");
@@ -99,6 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var menuButton = document.createElement("button");
         var buttonLabel = document.createElement("span");
         var mobileOverlay = document.createElement("div");
+        var overlayBrasao = brasao ? brasao.cloneNode(true) : null;
         var overlayPanel = document.createElement("div");
         var overlayWordmark = document.createElement("div");
         var overlayTextGroup = document.createElement("div");
@@ -147,7 +149,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         mobileOverlay.className = "semester-menu-overlay";
         mobileOverlay.id = "semester-overlay-nav";
-        mobileOverlay.hidden = true;
+
+        if (overlayBrasao) {
+            overlayBrasao.classList.add("semester-overlay-brasao");
+            mobileOverlay.appendChild(overlayBrasao);
+        }
 
         overlayPanel.className = "semester-menu-panel";
         overlayWordmark.className = "semester-overlay-wordmark";
@@ -174,7 +180,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 "aria-label",
                 isOpen ? "Close semester menu" : "Open semester menu"
             );
-            mobileOverlay.hidden = !isOpen;
             body.classList.toggle("semester-menu-open", isOpen);
         });
 
@@ -183,7 +188,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 hero.classList.remove("menu-open");
                 menuButton.setAttribute("aria-expanded", "false");
                 menuButton.setAttribute("aria-label", "Open semester menu");
-                mobileOverlay.hidden = true;
                 body.classList.remove("semester-menu-open");
             });
         });
