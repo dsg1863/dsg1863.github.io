@@ -29,45 +29,84 @@
         return url.href;
     }
 
-    function injectStylesheet() {
-        if (document.querySelector('link[data-navbar-universal="true"]')) {
-            return;
-        }
-
-        const currentScript =
-            document.currentScript ||
-            document.querySelector('script[src*="navbar-universal.js"]');
-
-        if (!currentScript) {
-            return;
-        }
-
-        const linkTag = document.createElement("link");
-        linkTag.rel = "stylesheet";
-        linkTag.href = new URL("navbar-styles.css", currentScript.src).href;
-        linkTag.dataset.navbarUniversal = "true";
-        document.head.appendChild(linkTag);
-    }
-
     function injectNavbar() {
         const semesterInfo = getSemesterInfo(window.location.pathname);
 
-        if (!semesterInfo || document.querySelector(".nav-bar")) {
+        if (!semesterInfo || document.querySelector("[data-navbar-universal-host='true']")) {
             return;
         }
 
-        const nav = document.createElement("div");
-        nav.className = "nav-bar";
+        const host = document.createElement("div");
+        host.dataset.navbarUniversalHost = "true";
+        host.style.position = "fixed";
+        host.style.right = "0";
+        host.style.bottom = "0";
+        host.style.zIndex = "2147483647";
+        host.style.margin = "0";
+        host.style.padding = "0";
+        host.style.lineHeight = "0";
+        host.style.pointerEvents = "auto";
 
+        const shadow = host.attachShadow({ mode: "open" });
         const link = document.createElement("a");
         link.href = getSemesterIndexUrl(semesterInfo);
         link.textContent = "Projetos " + semesterInfo.semester;
 
-        nav.appendChild(link);
-        document.body.prepend(nav);
-    }
+        const style = document.createElement("style");
+        style.textContent = `
+            :host {
+                all: initial;
+            }
 
-    injectStylesheet();
+            .nav-bar {
+                width: 120px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                background: #000;
+                box-sizing: border-box;
+            }
+
+            a {
+                color: #fff;
+                font-family: "Space Grotesk", sans-serif;
+                font-size: 0.8rem;
+                font-weight: 400;
+                line-height: 1;
+                text-decoration: none;
+                white-space: nowrap;
+                padding: 0 0 2px;
+            }
+
+            a:hover {
+                color: #ff0;
+                text-decoration: underline;
+            }
+
+            @media (max-width: 1023px) {
+                .nav-bar {
+                    width: 120px;
+                    height: 32px;
+                    border-radius: 0;
+                }
+
+                a {
+                    font-size: 0.8rem;
+                }
+            }
+        `;
+
+        const wrapper = document.createElement("div");
+        wrapper.className = "nav-bar";
+        wrapper.appendChild(link);
+
+        shadow.appendChild(style);
+        shadow.appendChild(wrapper);
+        document.body.appendChild(host);
+    }
 
     if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", injectNavbar);
