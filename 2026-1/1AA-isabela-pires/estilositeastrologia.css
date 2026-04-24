@@ -1,0 +1,35 @@
+h1{
+	font-family: "Sekuya", system-ui;
+	font-size: 65px;
+	color: skyblue;
+}
+h2{ font-family:"Gelasio", serif; 
+	font-size: 27px;
+	color: whitesmoke;
+}
+h3{ font-family:"Gelasio", serif;
+	font-size: 27px;
+	color: whitesmoke;
+ }
+ h1{ font-family: "Sekuya", system-ui;
+ 	font-size: 65px;
+ 	color: skyblue;
+
+ }
+ h4{ font-family:"Gelasio", serif;
+ 	font-size: 27px;
+ 	color: whitesmoke;
+  }
+  h1{ font-family: "Sekuya", system-ui;
+  	font-size: 65px;
+  	color: skyblue;
+
+  }
+h5{font-family:"Gelasio", serif;
+ 	font-size: 27px;
+ 	color: whitesmoke;}
+
+ h6{font-family:"Gelasio", serif;
+ 	font-size: 27px;
+ 	color: whitesmoke;}
+body{background-color: #091220;}
