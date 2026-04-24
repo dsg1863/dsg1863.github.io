@@ -20,6 +20,8 @@
 
   <audio id="blinkSound" src="som/eye-blink.mp3"></audio>
   <audio id="honkSound" src="som/clown-honk.mp3"></audio>
+  <!-- Fireworks sound: remove this audio tag and fireworks-sound.js if the student wants to disable it later. -->
+  <audio id="fireworksSound" src="som/fireworks.wav"></audio>
 
   <!-- botao loja -->
   <button class="btn-loja" id="btnLoja">
@@ -311,6 +313,8 @@ document.addEventListener("mousemove", (event) => {
   bola.style.transform = `translate(-50%, -50%) translate(${dx}px, ${dy}px)`;
 });
 </script>
+<!-- Fireworks sound: separate helper so it can be removed without editing the student's main script. -->
+<script src="fireworks-sound.js"></script>
 
 </body>
 </html>
