@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+
+	--cor-fundo: #DCF2F1;
+	--cor-destaque1: #7FC7D9;
+	--cor-destaque2: #365486;
+	--cor-texto: #0F1035;
+}
+
+body {
+
+	background-color: var(--cor-fundo);
+
+	color: var(--cor-texto);
+
+	font-family: "Roboto", sans-serif;
+
+	font-size: 20px;
+
+	margin: 50px;
+}
+
+h1 {
+
+	color: var(--cor-destaque2);
+
+	font-family: "Boldonse", system-ui;
+
+	font-size: 35px;
+
+	margin-top: 50px;
+
+	margin-bottom: 25px;
+}
+
+h2 {
+
+	color: var(--cor-destaque2);
+
+	font-family: "Roboto", sans-serif;
+
+	font-size: 35px;
+
+	margin-top: 50px;
+
+	margin-bottom: 25px;
+}
+
+p {
+
+	margin-bottom: 15px;
+}
+
+img {
+
+	width: 100%;
+
+	max-width: 500px;
+
+	margin: 40px auto;
+
+	border-radius: 5px;
+}

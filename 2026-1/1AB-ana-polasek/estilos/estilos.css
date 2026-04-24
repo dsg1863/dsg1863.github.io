@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body.index {
+	background-color: ghostwhite;
+	font-family: "Tauri";
+	text-align: center;
+}
+
+
+h1{
+
+	font-size: 100px;
+	font-family:"Tauri";
+	color: seagreen;
+	 padding: 50px; 
+}
+
+h2{
+
+	font-size: 20px;
+	color: black;
+	margin: 100px;
+}
+
+h3{
+
+	font-size: 15px;
+	color: black;
+	margin: 20px;
+}
+
+a{
+	color: darkgreen;
+	margin: center;
+}
+
+
+body.fotos-rio-de-janeiro {
+	background-color: ghostwhite;
+	font-family: "Tauri";
+	text-align: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galeria1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: start; 
+}
+
+div.galeria1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+

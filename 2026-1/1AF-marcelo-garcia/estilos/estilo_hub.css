@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&family=New+Rocker&display=swap');
+
+body { 
+    font-family: "New Rocker", system-ui, sans-serif; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background-image: url(../imagens/ceu-escuro.gif);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+h1 {
+	font-size: 80px;
+	letter-spacing: 8px;
+}
+
+/* Container para controlar o espaçamento entre os textos */
+.personagem-container {
+    margin-top: 50px;    /* Espaço acima da imagem */
+    margin-bottom: 50px; /* Espaço abaixo da imagem (afasta o h2) */
+    display: flex;
+    justify-content: center;
+}
+
+.foto-personagem {
+    width: 250px;       /* Ajuste o tamanho conforme preferir */
+    height: auto;       /* Mantém a proporção da imagem */
+    filter: drop-shadow(0 0 15px rgba(232, 161, 255, 0.5)); /* Brilho místico em volta */
+    transition: transform 0.3s;
+}
+
+.foto-personagem:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Ajuste no h2 para garantir que o texto não fique colado */
+h2 {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 40px;  
+}
+
+.menu-jogos {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.icone-link {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 3px solid #e8a1ff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    object-fit: cover;
+}
+
+.icone-link:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 15px rgba(232, 161, 255, 0.4);
+    border-color: white;
+}

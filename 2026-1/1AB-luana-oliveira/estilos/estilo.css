@@ -1,0 +1,128 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+</style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "IBM Plex Mono", monospace;
+    color: white;
+    background-color: lightblue;
+}
+
+/* menu */
+header {
+    width: 100%;
+    background-color: seagreen;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.links a:hover {
+    color: lightblue;
+}
+
+/* submenu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: seagreen;
+    min-width: 320px;
+    border: 1px solid #ccc;
+    z-index: 2000;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.submenu a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+/* fotos */
+div.galeria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+div.galeria img {
+    max-width: 100%;
+    transition: 0.3s;
+}
+
+.galeria a img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+html {
+    scroll-padding-top: 100px;
+}
+
+

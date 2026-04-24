@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0px;
+}
+
+body {
+	background-color: #F6AA9D;
+	font-family: "Lexend Giga", sans-serif;
+	margin: 20px 150px;
+	cursor: url('../imagens/chuudoloona2.png'), auto;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+h1 {
+	color: #FFFFFF;
+	font-size: 25.3px;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.conteudo {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 50px;
+	margin-left: 200px;
+}
+
+h2,
+h3 {
+	font-size: 14px;
+	padding-bottom: 11px;
+	text-indent: 2em;
+	text-align: justify;
+}
+
+div.links {
+	margin-top: 15px;
+	margin-bottom: 35px;
+	font-size: 13px;
+}
+
+div.links :hover{
+	transform: rotate(2deg);
+	color: #FFFFFF;
+}
+
+p {
+	line-height: 2;
+}
+
+div.social a {
+	text-decoration: none;
+	padding-right: 10px;
+}
+
+div.social a img:hover {
+	transform: rotate(10deg);
+}
+
+img.w, 
+img.ig, 
+img.twt {
+	width: auto;
+	height: 30px;
+}
+
+img.chuu {
+	width: 60%;
+	height: auto;
+}

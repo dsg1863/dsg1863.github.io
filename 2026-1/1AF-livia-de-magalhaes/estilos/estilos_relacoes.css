@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #F6AA9D;
+	font-family: "Lexend Giga", sans-serif;
+	margin: 20px 150px;
+	cursor: url('../imagens/chuudoloona2.png'), auto;
+}
+
+h1 {
+	color: #FFFFFF;
+	font-size: 25.3px;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+h2,
+h4 {
+	font-size: 20px;
+	color: #4A0F61;
+	padding-bottom: 5px;
+	text-indent: 5em;
+}
+
+h4,
+h5,
+h6 {
+	margin-inline: 100px;
+}
+
+h3,
+h5,
+h6 {
+	font-size: 16px;
+	color: #000000;
+	padding-bottom: 5px;
+	text-indent: 5em;
+	text-align: justify;
+}
+
+.conteudo {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 50px;
+	margin-left: 100px;
+	padding-bottom: 20px;
+}
+
+.conteudo2,
+.conteudo3 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 50px;
+	margin-left: 100px;
+	padding-bottom: 5px;
+}
+
+.conteudo2 img {
+	width: 85%;
+}
+
+.img33 img {
+	width: 85%;
+}
+
+.img3 img {
+	width: 78%;
+}
+
+.img3 a {
+	color: #000000;
+	font-size: 10px;
+}
+
+.img22 a {
+	color: #000000;
+	font-size: 10px;
+}
+
+img {
+		border-radius: 15px;
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	background-image: url("../imagens/pagina_principal_fundo.png");
+	background-size: cover;
+	background-position: center;
+	background-color: lightblue;
+	font-family: serif;
+	max-width: 2560px;
+	padding: clamp(30px, 5vw, 90px);
+	margin: auto ;
+}
+h1{
+	color:darkred;
+	font-size: 150px;
+	font-family: "Croissant One", serif;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+h2, h3, h5{
+	color:#12394e;
+	font-size: 42px;
+	font-family: "Croissant One", serif;
+	text-align: center;
+	margin-top: 40px;
+}
+
+h4{
+	color: #1d5b7dff;
+	font-size: 28px;
+	margin-top: 10px;
+	font-family: "Croissant One", serif;
+	text-align: center;
+}
+
+p{
+	color: #1d5b7dff;
+	font-size: 28px;
+	font-family: "Croissant One", serif;
+	text-align: justify;
+	font-weight: bold;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+h6{
+	color:#12394e;
+	font-size: 42px;
+	font-family: "Croissant One", serif;
+	text-align: left;
+}
+
+@media (max-width: 900px) {
+	h1 {
+		font-size: clamp(30px, 6vw, 120px);
+	}
+
+	h2 {
+		font-size: clamp(18px, 3vw, 40px);	}
+}
+
+img {
+	margin-top: 50px;
+	width: 100%;
+	max-width: 335px;
+	height: auto;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.container a {
+	flex: 1 1 150px;
+}
+
+img:hover {
+	transform: scale(1.1);
+	transition: 0.2s;
+}
+
+@media (min-width: 1440px) {
+	h1 {
+		font-size: 120px;
+	}
+
+	h2, h3, h5 {
+		font-size: 42px;
+	}
+
+	h4, p {
+		font-size: 28px;
+	}
+}
+
+@media (min-width: 2560px) {
+	h1 {
+		font-size: 230px;
+	}
+
+	h2, h3, h5 {
+		font-size: 72px;
+	}
+
+	h4, p {
+		font-size: 52px;
+	}
+}

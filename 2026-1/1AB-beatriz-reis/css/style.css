@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Slackey&display=swap');
+body{
+    background-image: linear-gradient(to top right, #F2EF38, #85F238);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Patrick Hand;
+}
+
+header{
+    background-color: honeydew;
+    color: #3876F2;
+    padding: 20px 0;
+}
+
+/*cabeçalho*/
+nav{
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: #3876F2;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/*TÍTULO DA HOMEPAGE*/
+.titulo h1{
+    margin-top: 50px;
+    margin-right: 0px;
+    color: #1e1763;
+    text-align: center;
+    font-size: 60px;
+}
+
+/*TÍTULO DAS OUTRAS PÁGINAS*/
+h1{
+    margin-top:50px;
+    margin-right: 320px;
+    font-size:50px;
+    font-family: Slackey;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    font-family: Slackey;
+}
+
+/*SLIDER HOMEPAGE*/
+.slider{
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.item{
+    position: absolute;
+    width: 280px;
+    height: 400px;
+    text-align: left;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+    overflow: hidden;
+}
+
+/*BOTÕES DE NAVEGAÇÃO*/
+#next, #prev{
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: 70px;
+    font-family: monospace;
+    font-weight: bold;
+    left: 50px;
+    transition: color 0.2s ease;
+}
+
+#next{
+    left: unset;
+    right: 50px;
+}
+
+#next:hover,
+#prev:hover {
+    color: #1e1763;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+/* flip on hover */
+.item:hover .card-inner,
+.item-sobre:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* front */
+.card-front img {
+    width: 100%;
+    height: 100%;
+}
+
+/* back */
+.card-back {
+    background-color: #222;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 40px;
+}
+
+.card-back a {
+    color: #7fc8ff;
+}
+
+.card-back a:hover {
+    color: #b7e2ff;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 900px;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.personagens{
+    width: 33%;
+}
+.personagens img {
+    scale: 80%;
+    border-radius: 10px;
+}
+
+.texto h1{
+    color: #1e1763;
+    width: 67%;
+    font-size: 60px;
+    margin-left: 350px;
+    margin-top:60px;
+}
+
+.texto p{
+    width: 67%;
+    font-size: 24px;
+    margin-left: 350px;
+    text-align: justify;
+}
+
+footer {
+    background-color: honeydew;
+    color: #3876F2;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}

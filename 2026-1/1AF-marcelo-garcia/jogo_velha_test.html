@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste Jogo da Velha</title>
+    <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+    <link rel="icon" type="image/png" href="imagens/marcelo.png">
+    <script src="../../navbar/navbar-universal.js" defer></script>
+</head>
+<body>
+
+    <h1>Jogo da Velha</h1>
+    <div class="tabuleiro" id="tabuleiro">
+        <div class="celula" onclick="fazerJogada(this)"></div>
+        <div class="celula" onclick="fazerJogada(this)"></div>
+        <div class="celula" onclick="fazerJogada(this)"></div>
+        <div class="celula" onclick="fazerJogada(this)"></div>
+        <div class="celula" onclick="fazerJogada(this)"></div>
+        <div class="celula" onclick="fazerJogada(this)"></div>
+        <div class="celula" onclick="fazerJogada(this)"></div>
+        <div class="celula" onclick="fazerJogada(this)"></div>
+        <div class="celula" onclick="fazerJogada(this)"></div>
+    </div>
+    <h2 id="status">Vez do: X</h2>
+
+    <script>
+
+        let turno = "X";
+        let jogoAtivo = true;
+
+        function fazerJogada(celula) {
+    
+            if (celula.innerText === "" && jogoAtivo) {
+                celula.innerText = turno;
+                verificarVencedor();
+                if (jogoAtivo) {
+                    turno = turno === "X" ? "O" : "X";
+                    document.getElementById("status").innerText = "Vez do: " + turno;
+                }
+            }
+        }
+
+        function verificarVencedor() {
+    const celulas = document.querySelectorAll(".celula");
+    const combinacoes = [
+        [0,1,2], [3,4,5], [6,7,8],
+        [0,3,6], [1,4,7], [2,5,8],
+        [0,4,8], [2,4,6]  
+    ];
+
+    for (let combo of combinacoes) {
+        const [a, b, c] = combo;
+        if (celulas[a].innerText && 
+            celulas[a].innerText === celulas[b].innerText && 
+            celulas[a].innerText === celulas[c].innerText) {
+            
+            document.getElementById("status").innerText = "Vencedor: " + turno + "!";
+            jogoAtivo = false;
+
+            
+            celulas[a].classList.add("vencedora");
+            celulas[b].classList.add("vencedora");
+            celulas[c].classList.add("vencedora");
+            // ----------------------------------------------------
+            
+            return;
+        }
+    }
+
+    if ([...celulas].every(c => c.innerText !== "")) {
+        document.getElementById("status").innerText = "Empate!";
+        jogoAtivo = false;
+    }
+}
+
+            if ([...celulas].every(c => c.innerText !== "")) {
+                document.getElementById("status").innerText = "Empate!";
+                jogoAtivo = false;
+            }
+        
+
+        function reiniciar() {
+    const celulas = document.querySelectorAll(".celula");
+    celulas.forEach(c => {
+        c.innerText = "";
+        c.classList.remove("vencedora");
+    });
+    turno = "X";
+    jogoAtivo = true;
+    document.getElementById("status").innerText = "Vez do: X";
+}
+    </script>
+
+    <div class="controles">
+    <button onclick="reiniciar()">Reiniciar Jogo</button>
+    
+    <div class="menu-jogos">
+        <a href="jogo_memoria.html">
+            <img src="imagens/icone_memoria.png" alt="Jogo da Memória" class="icone-link">
+        </a>
+        <a href="index.html">
+            <img src="imagens/icone_hub.png" alt="Voltar ao Hub" class="icone-link">
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

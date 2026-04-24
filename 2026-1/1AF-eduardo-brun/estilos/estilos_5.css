@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+
+	width: auto;
+
+	height: auto;
+
+	max-width: 300px;
+
+	margin-top: 40px;
+
+	margin-bottom: 40px;
+
+	margin-right: 20px;
+
+	border-radius: 5px;
+}
+
+.parede img {
+
+	width: 100%;
+
+	max-width: none;
+
+	height: auto;
+
+	display: block;
+}
+
+.img-link,
+.img-link * {
+  all: unset;
+}
+
+.img-link {
+
+	text-decoration: none;
+
+	background: none;
+
+	color: inherit;
+}
+
+.img-link img {
+
+	width: auto;
+
+	height: auto;
+
+	max-height: 500px;
+
+	display: block;
+
+	margin-top: 40px;
+
+	margin-bottom: 40px;
+
+	border-radius: 5px;
+}
+
+.img-link:visited,
+.img-link:hover,
+.img-link:active {
+
+	background: none;
+
+	color: inherit;
+}
+
+footer {
+
+	margin-top: 50px;
+}
+
+

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 5px;
+}
+
+body {
+	background-color: #F6AA9D;
+	font-family: "Lexend Giga", sans-serif;
+	margin: 20px 150px;
+	cursor: url('../imagens/chuudoloona2.png'), auto;
+}
+
+h1 {
+	color: #FFFFFF;
+	font-size: 25.3px;
+	text-align: center;
+}
+
+h2 {
+	margin-left: 10px;
+	padding-bottom: 5px;
+	text-indent: 2em;
+	font-size: 16px;
+}
+
+div.imgs_controversias {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.imgs_controversias img {
+	width: 100%;
+	border-radius: 15px;
+}
+
+img:hover {
+	transform: scale(1.3);
+}
