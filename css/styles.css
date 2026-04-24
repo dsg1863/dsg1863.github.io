@@ -30,6 +30,10 @@ h1 {
     font-size: 3rem;
 }
 
+body.start-page h1 {
+    margin-top: 36px;
+}
+
 h2 {
     font-size: 2rem;
 }
@@ -114,5 +118,9 @@ body.semestre-2026-1 .brasao img {
         width: auto; /* Maintain aspect ratio */
         position: relative; /* Allow positioning */
         right: -40%; /* Move the image 50% of its width to the right */
+    }
+
+    body.start-page h1 {
+        margin-top: 48px;
     }
 }
