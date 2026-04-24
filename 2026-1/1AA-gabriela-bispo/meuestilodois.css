@@ -1,0 +1,26 @@
+h1{
+	font-family: helvetica;
+	font-size: 100px;
+	color: black;
+	text-align: center;
+}
+
+p{
+	font-family: helvetica ;
+	font-size: 27px;
+	color: black;
+}
+
+body {
+    background-image: url("imagem.jpg");
+    background-size: cover;   
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}

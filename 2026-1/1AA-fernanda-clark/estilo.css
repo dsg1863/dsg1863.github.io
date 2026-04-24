@@ -1,0 +1,104 @@
+body {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	background-color: #fff8f0;
+	text-align: center;
+}
+
+header {
+	background-color: #2e7d32;
+	color: white;
+	padding: 40px;
+}
+
+.regioes a {
+	display: inline-block;
+	margin: 30px;
+	padding: 15px 20px;
+	background-color: #f4a261;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+.regioes a:hover {
+	background-color: #e76f51;
+}
+
+.prato {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.prato img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.prato h2 {
+  text-align: center;
+}
+
+.prato h3 {
+	text-align: center;
+	font-size: 18px;
+	color: #2e7d32;
+}
+
+.prato p {
+	text-align: left;
+	color: #2e7d32
+}
+
+.prato img:hover {
+  transform: scale(1.05);
+}
+
+h2 {
+	color: #2e7d32;
+}
+
+.nordeste h1,
+.sudeste h1,
+.sul h1 {
+	color: #2e7d32;
+}
+
+.imagem-home {
+	display: block;
+	margin: 20px auto;
+	width: 35%;
+	border-radius: 10px;
+}
+
+.intro {
+  width: 60%;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+nav a {
+  margin: 10px;
+  text-decoration: none;
+  color: #2e7d32;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #2e7d32;
+  color: white;
+}
+
+.intro {
+  color: #2e7d32;
+}

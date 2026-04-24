@@ -1,0 +1,30 @@
+
+body{background-color: #091220}
+h1{font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  font-size: 65px;
+  font-style: normal;
+color: skyblue;}
+
+h2
+{
+  font-family: "Gelasio", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: italic;
+  color: #c7f1fc;
+  font-size: 30px;
+}
+
+p
+{
+  font-family: "Gelasio", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color: whitesmoke;
+  font-size: 27px;
+}s
+
+
+
