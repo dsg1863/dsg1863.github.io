@@ -4,7 +4,7 @@ This project uses a shared navbar runtime plus a small injector script to add th
 
 Files:
 - Runtime: `navbar/navbar-universal.js`
-- Styles: `navbar/navbar-styles.css`
+- Legacy styles: `navbar/navbar-styles.css`
 - Injector: `navbar/inject-navbar.py`
 
 This workflow is intended for macOS.
@@ -20,9 +20,9 @@ The injector scans semester folders and adds this script tag to student project 
 The exact relative path is calculated automatically for each file.
 
 The runtime script then:
-- injects the navbar CSS automatically
 - detects the semester from the page path
 - creates the bottom-right "Projetos YYYY-S" navbar link
+- applies its own isolated styling for `2026-1` onward
 
 ## What it does not change
 
@@ -119,6 +119,18 @@ The injector can replace old semester navbar script tags such as:
 ```
 
 with the universal script tag.
+
+## Legacy CSS note
+
+Older student pages from previous semesters may still reference:
+
+```html
+<link rel="stylesheet" type="text/css" href="../../navbar/navbar-styles.css">
+```
+
+Keep `navbar/navbar-styles.css` in the repo for backward compatibility with those older pages.
+
+For `2026-1` onward, the universal runtime is self-styled and does not depend on that external CSS file.
 
 ## Recommended check after running
 
