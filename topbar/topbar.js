@@ -86,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var oldBackLink = document.querySelector(".back-link");
         var brasao = document.querySelector(".brasao");
         var heading = document.querySelector("h1");
+        var headingLink = heading.querySelector("a");
         var subheading = document.querySelector("h2");
         var professors = document.querySelector("p");
         var hero = document.createElement("header");
@@ -102,7 +103,9 @@ document.addEventListener("DOMContentLoaded", function () {
         var mobileOverlay = document.createElement("div");
         var overlayBrasao = brasao ? brasao.cloneNode(true) : null;
         var overlayPanel = document.createElement("div");
-        var overlayWordmark = document.createElement("div");
+        var overlayWordmark = document.createElement(
+            headingLink ? "a" : "div"
+        );
         var overlayTextGroup = document.createElement("div");
         var overlayCourseTitle = subheading.cloneNode(true);
         var overlayProfessors = professors.cloneNode(true);
@@ -159,6 +162,9 @@ document.addEventListener("DOMContentLoaded", function () {
         overlayPanel.className = "semester-menu-panel";
         overlayWordmark.className = "semester-overlay-wordmark";
         overlayWordmark.textContent = "DSG1863";
+        if (headingLink) {
+            overlayWordmark.href = headingLink.href;
+        }
         overlayTextGroup.className = "semester-overlay-text-group";
         overlayCourseTitle.className = "semester-course-title";
         overlayProfessors.className = "semester-professors";

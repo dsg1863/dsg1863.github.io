@@ -362,6 +362,8 @@ body.semestre-2026-1 .semester-header {
         font-weight: 700;
         line-height: 0.95;
         padding-top: 4px;
+        text-decoration: none;
+        display: inline-block;
     }
 
     .semester-overlay-text-group {
