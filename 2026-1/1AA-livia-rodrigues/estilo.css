@@ -1,0 +1,92 @@
+body {
+  background-color: forestgreen;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+h1 {
+  font-size: 50px;
+  font-family: monospace;
+  color: lightgoldenrodyellow;
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+h2 {
+  font-size: 28px;
+  font-family: monospace;
+  color: lightyellow;
+  margin-top: 40px;
+}
+
+
+p {
+  font-size: 16px;
+  color: white;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+
+section {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+
+img {
+  display: block;
+  margin: 30px auto;
+  max-width: 400px;
+  width: 70%;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #145c42;
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #1d7a59;
+}
+
+.desfile1 h1, p {
+color: lightyellow;
+}
+
+.desfile2 h1, p {
+color: lightyellow;
+}
+
+.desfile3 h1, p {
+color: lightyellow;
+}
+
+.desfile4 h1, p {
+color: lightyellow;
+}
+
+.desfile5 h1, p {
+color: lightyellow;
+}
+
+.desfile6 h1, p {
+color: lightyellow;
+}

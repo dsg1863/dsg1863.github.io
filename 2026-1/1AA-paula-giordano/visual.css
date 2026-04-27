@@ -1,0 +1,60 @@
+body {
+	background-color: beige;
+	margin: 0px;
+	text-align: center;
+}
+
+.banner {
+	width: 100%;
+	height: 400px;
+	background-image: url("back.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: -70px;
+	display: flex;
+	justify-content: center; /*horizontal */
+	align-items: center; /*vertical */
+}
+
+h1 {
+	font-size: 100px;
+	font-family: monospace;
+	color: whitesmoke;
+	position: center;
+}
+
+h2 {
+	font-size: 20px;
+	font-family: helvetica;
+	color:whitesmoke ;
+	margin-top: -60px;
+}
+
+h3 {
+	font-size: 40px;
+	font-family: helvetica;
+	margin-left: 30px;
+}
+
+h4 {
+	font-size: 25px;
+	font-family: monospace;
+	margin-left: 30px;
+	color: black;
+}
+
+p {
+	font-family: helvetica;
+	margin-top: -20px;
+	margin-left: 30px;
+	color: black;
+}
+
+.imagemquadrada {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-left: 30px;
+}

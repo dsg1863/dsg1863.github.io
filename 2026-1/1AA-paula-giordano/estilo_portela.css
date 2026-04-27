@@ -1,0 +1,18 @@
+body {
+	background-color: dodgerblue;
+}
+h1{
+	font-size: 60px;
+	font-family: monospace;
+	color: lightgoldenrodyellow;
+}
+h2{
+	font-size: 25px;
+	font-family: monospace;
+	color: lightyellow;
+}
+p{
+	font-size: 15px;
+	font-family: helvetica;
+	color: white;
+}
