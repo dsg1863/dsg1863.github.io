@@ -5,9 +5,22 @@
   box-sizing: border-box;
 }
 
+/* FONTES */
+@font-face {
+  font-family: 'Knockout';
+  src: url('fonts/Knockout-HTF31-JuniorMiddlewt.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Knockout';
+  src: url('fonts/Knockout-HTF50-Welterweight.otf') format('opentype');
+  font-weight: 700;
+}
+
 /* BASE */
 body {
-  font-family: sans-serif;
+  font-family: 'Knockout', sans-serif;
   background-color: #0a2a43;
   color: white;
 }
@@ -72,18 +85,7 @@ nav a {
 }
 
 /* HERO TOPO IMAGEM DOIS */
-.intro {
-  height: 80vh;
-  background-image: url('../imagens/LandPageImage_SiteMariana.jpg');
-  background-size: cover;
-  background-position: center;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  position: relative;
-}
 
 /* overlay */
 .intro::before {
@@ -153,4 +155,153 @@ footer {
   background-color: #0f4c75;
   text-align: center;
   padding: 10px;
+}
+
+/* PRAIAS */
+
+.praias {
+  padding: 60px 10px;
+  background-color: #0a2a43;
+}
+
+/* lista */
+.praias-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.praia-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  color: white;
+
+  transition: transform 0.3s ease;
+
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.praia-item * {
+  pointer-events: none;
+}
+
+/* hover */
+.praia-item:hover {
+  transform: translateX(10px);
+}
+
+/* imagem */
+.praia-item img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* texto */
+.praia-texto h3 {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+.praia-texto p {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.titulo-praias {
+  font-size: 32px;
+  padding: 80px 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BLOCO PRINCIPAL */
+.bloco-duplo {
+  display: flex;
+  width: 100%;
+  min-height: 70vh;
+}
+
+/* INVERTER LADOS */
+.bloco-duplo.invertido {
+  flex-direction: row-reverse;
+}
+
+/* TEXTO */
+.bloco-texto {
+  width: 50%;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+/* CORES (tons de azul) */
+.azul {
+  background-color: #0f3d4c; /* azul escuro */
+}
+
+.azul-claro {
+  background-color: #2f7f8f; /* azul médio */
+}
+
+/* TÍTULO */
+.bloco-texto h2 {
+  font-family: 'Knockout', sans-serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+/* TEXTO */
+.bloco-texto p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+/* IMAGEM */
+.bloco-imagem {
+  width: 80%;
+  height: auto;
+}
+
+.bloco-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.praia-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  background-color: #0f3d4c;
+  padding: 60px 80px;
+  gap: 20px;
+}
+
+/* cada item */
+.praia-info div {
+  background-color: #1f5c6b;
+  padding: 30px;
+
+  text-align: center;
+  border-radius: 8px;
+
+  font-size: 18px;
+  letter-spacing: 1px;
 }
