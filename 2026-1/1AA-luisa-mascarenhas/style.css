@@ -1,0 +1,97 @@
+body {
+  font-family: Arial;
+   background-color: #a8dadc;
+  text-align: center;
+  transition: 0.5s;
+}
+
+header {
+  background-image: url("imagens/fotocapailha5.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px;
+}
+
+header h1 {
+  font-size: 60px;
+  letter-spacing: 2px;
+   margin-bottom: 5px;
+}
+
+header p {
+  margin-top: 0px;
+}
+
+img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-conteudo {
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+  max-width: 80%;
+  border-radius: 10px;
+  animation: zoom 0.3s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.7);}
+  to {transform: scale(1);}
+}
+
+button {
+  background: linear-gradient(45deg, #1e90ff, #00bfff);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+.tema-praia {
+  background: linear-gradient(to bottom, #a8dadc, #457b9d);
+  color: #033;
+}
+
+.tema-noite {
+  background: linear-gradient(to bottom, #0f172a, #1e293b);
+  color: white;
+}
+
+img {
+  width: 200px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+img.grande {
+  width: 400px;
+  z-index: 10;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Ilha Grande</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<div id="modal" class="modal" onclick="fecharModal()">
+  <img id="imagemModal" class="modal-conteudo">
+</div>
+
+<body>
+
+<header>
+  <h1>Ilha Grande</h1>
+  <p>Minha experiência nesse paraíso brasileiro</p>
+ <button onclick="trocarTema()" id="botaoTema">🌴 Praia</button>
+</header>
+
+<section>
+  <h2> Minhas Fotos</h2>
+  <img src="imagens/pranchapouso.jpg" onclick="ampliarImagem(this)">
+  <img src="imagens/fotocapailha5.jpg" onclick="ampliarImagem(this)">
+  <img src="imagens/fotomeninasnomar.jpeg" onclick="ampliarImagem(this)">
+  <img src="imagens/nascerdosol.jpeg" onclick="ampliarImagem(this)">
+  <img src="imagens/fototrilha2.jpeg" onclick="ampliarImagem(this)">
+</section>
+
+<section>
+  <h2> Playlist da Viagem</h2>
+ <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2i9NyW2YzzTsi31GjY9DrJ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+</iframe>
+</section>
+
+<section>
+  <h2> Dicas!</h2>
+
+  <div class="dica">
+    <p> Conhecer a praia de Lopes Mendes!</p>
+
+     <div class="galeria">
+    <img src="imagens/lopes1.jpg"onclick="ampliarImagem(this)">
+    <img src="imagens/lopes5.jpg"onclick="ampliarImagem(this)">
+    <img src="imagens/lopes2.JPG"onclick="ampliarImagem(this)">
+    <img src="imagens/lopes4.jpg"onclick="ampliarImagem(this)">
+    <img src="imagens/lopes6.jpg"onclick="ampliarImagem(this)">
+  </div>
+</div>
+
+  <div class="dica">
+    <p> Fazer trilhas e se conectar com a natureza</p>
+
+     <div class="galeria">
+    <img src="imagens/fototrilha2.jpeg"onclick="ampliarImagem(this)">
+    <img src="imagens/yoga.jpeg"onclick="ampliarImagem(this)">
+    <img src="imagens/contemple.jpeg"onclick="ampliarImagem(this)">
+  </div>
+</div>
+
+
+</section>
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
