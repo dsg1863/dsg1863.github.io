@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abacatinho — Isabele Barros</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Instrument+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;1,300;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="projeto.css">
+
+  <style>
+    /* ── Storyboard section ── */
+    .proj-storyboard {
+      padding: 80px 6vw;
+      background: transparent;
+    }
+
+    .proj-storyboard-label {
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.45;
+      margin-bottom: 40px;
+    }
+
+    .proj-storyboard-titulo {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 400;
+      margin-bottom: 48px;
+      line-height: 1.3;
+    }
+
+    .storyboard-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: start;
+      max-width: 700px;
+    }
+
+    .storyboard-card {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .storyboard-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      display: block;
+      border: 1px solid rgba(0,0,0,0.08);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    }
+
+    .storyboard-card-label {
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      opacity: 0.4;
+    }
+
+    .storyboard-card-desc {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      line-height: 1.65;
+      opacity: 0.75;
+    }
+
+    /* ── Próximos passos section ── */
+    .proj-proximos {
+      padding: 80px 6vw;
+      border-top: 1px solid rgba(0,0,0,0.07);
+    }
+
+    .proj-proximos-label {
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.45;
+      margin-bottom: 40px;
+    }
+
+    .proj-proximos-titulo {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 400;
+      margin-bottom: 48px;
+      line-height: 1.3;
+    }
+
+    .proximos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .proximo-card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 32px 28px;
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 4px;
+      background: rgba(116,198,157,0.04);
+      transition: border-color 0.3s, background 0.3s;
+    }
+
+    .proximo-card:hover {
+      border-color: rgba(64,145,108,0.3);
+      background: rgba(116,198,157,0.09);
+    }
+
+    .proximo-card-num {
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      opacity: 0.35;
+    }
+
+    .proximo-card-titulo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .proximo-card-texto {
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 300;
+      line-height: 1.7;
+      opacity: 0.65;
+    }
+
+    @media (max-width: 768px) {
+      .storyboard-grid { grid-template-columns: 1fr; }
+      .proximos-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cur" id="cdot"><div class="cur-dot"></div></div>
+  <div class="cur" id="cring"><div class="cur-ring"></div></div>
+
+  <a class="proj-page-back" href="index.html">← Voltar</a>
+
+  <!-- CAPA -->
+  <div class="proj-capa">
+    <div class="proj-capa-placeholder">
+      <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+        <path d="M600,80 Q780,200 750,420 Q720,640 600,720 Q480,640 450,420 Q420,200 600,80Z" fill="#74C69D" opacity="0.4"/>
+        <path d="M600,180 Q700,260 680,420 Q660,580 600,640 Q540,580 520,420 Q500,260 600,180Z" fill="#40916C" opacity="0.5"/>
+        <circle cx="600" cy="420" r="60" fill="#E9C46A" opacity="0.3"/>
+      </svg>
+    </div>
+    <div class="proj-capa-overlay" style="background: linear-gradient(to top, rgba(26,58,42,0.95) 0%, rgba(26,58,42,0.3) 60%, transparent 100%);"></div>
+    <div class="proj-capa-conteudo reveal">
+      <p class="proj-capa-bioma" style="color:var(--amarelo-ipe)">Kamishibai</p>
+      <h1 class="proj-capa-titulo">Abaca<em>tinho</em></h1>
+      <div class="proj-capa-tags">
+        <span class="proj-capa-tag">Kamishibai</span>
+        <span class="proj-capa-tag">Ilustração</span>
+        <span class="proj-capa-tag">Narrativa</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DESCRIÇÃO -->
+  <div class="proj-descricao">
+    <div class="reveal">
+      <div class="proj-descricao-label">Projeto</div>
+      <div class="proj-descricao-valor">Abacatinho</div>
+
+      <div class="proj-descricao-label">Área</div>
+      <div class="proj-descricao-valor">Kamishibai · Ilustração</div>
+
+      <div class="proj-descricao-label">Ferramentas</div>
+      <div class="proj-descricao-valor">Illustrator · Photoshop</div>
+    </div>
+    <div class="reveal" style="transition-delay:.15s">
+      <h2 class="proj-descricao-titulo">
+        Storyboard e descrição <br>feito para Ling, Com <em> e Disc no Design III</em>
+      </h2>
+      <div class="proj-descricao-texto">
+        <p>A ideia nasceu de uma simples fruta — o abacate. Daí um rascunhei o personagem e seu storyboard.</p>
+        <p>A ideia da descrição é apresentar o crescimento da fruta com metáforas.</p>
+        <p>Abacatinho é uma história infantil que explora temas de paciência, crescimento e descoberta.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- STORYBOARDS -->
+  <div class="proj-storyboard">
+    <div class="proj-storyboard-label reveal">Storyboard</div>
+    <h2 class="proj-storyboard-titulo reveal">O esboço da <em>história.</em></h2>
+
+    <div class="storyboard-grid">
+
+      <div class="storyboard-card reveal">
+        <img src="abacatExpl.jpg" alt="Explicação do Abacatinho — crescimento e palavras-chave">
+        <span class="storyboard-card-label">Ficha · Conceito</span>
+        <p class="storyboard-card-desc">Apresentação do personagem e diagrama de crescimento — da sementinha ao abacate maduro.</p>
+      </div>
+
+      <div class="storyboard-card reveal" style="transition-delay:.12s">
+        <img src="abacatStory.jpg" alt="Storyboard da narrativa do Abacatinho">
+        <span class="storyboard-card-label">Storyboard · Narrativa</span>
+        <p class="storyboard-card-desc">Sequência de cenas: Abacatinho observa os outros frutos serem colhidos, sente tristeza, e aprende que é preciso esperar a estação certa.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PRÓXIMOS PASSOS -->
+  <div class="proj-proximos">
+    <div class="proj-proximos-label reveal">Em desenvolvimento...</div>
+    <h2 class="proj-proximos-titulo reveal">Abacatinho <em> will return </em></h2>
+
+    </div>
+  </div>
+
+  <!-- NAVEGAÇÃO ENTRE PROJETOS -->
+  <div class="proj-nav">
+    <a class="proj-nav-anterior" href="projeto-trenzinho.html">
+      <span class="proj-nav-label">Projeto anterior</span>
+      <span class="proj-nav-nome">← Trenzinho do Caipira</span>
+    </a>
+    <a class="proj-nav-proximo" href="projeto-futuro-ancestral.html">
+      <span class="proj-nav-label">Próximo projeto</span>
+      <span class="proj-nav-nome">Futuro Ancestral →</span>
+    </a>
+  </div>
+
+  <div class="proj-footer">
+    <a class="proj-footer-volta" href="index.html">← voltar ao portfólio</a>
+    <span class="proj-footer-marca">Isabele Barros</span>
+  </div>
+
+  <script src="projeto.js"></script>
+</body>
+</html>

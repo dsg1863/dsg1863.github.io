@@ -449,7 +449,7 @@ nav::after {
 /* ── CONTATO ── */
 #contato {
   padding: 7rem 3.5rem;
-  background: var(--areia);
+  background: var(--creme);
   position: relative;
   overflow: hidden;
 }
@@ -459,7 +459,7 @@ nav::after {
   bottom: -100px; left: -100px;
   width: 400px; height: 400px;
   border-radius: 50%;
-  background: radial-gradient(circle, var(--amarelo-ipe) 0%, transparent 65%);
+  background: radial-gradient(circle, var(--creme) 0%, transparent 65%);
   opacity: 0.15;
   pointer-events: none;
 }

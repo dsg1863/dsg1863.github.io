@@ -1,0 +1,333 @@
+/* ════════════════════════════════
+   PROJETO.CSS — estilos das páginas de projeto
+   Isabele Barros — Portfólio
+   ════════════════════════════════ */
+
+/* ── BOTÃO VOLTAR ── */
+.proj-page-back {
+  position: fixed;
+  top: 2rem; left: 3.5rem;
+  z-index: 600;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--areia);
+  text-decoration: none;
+  display: flex; align-items: center; gap: 0.5rem;
+  opacity: 0.6;
+  transition: opacity .25s;
+  mix-blend-mode: difference;
+}
+.proj-page-back:hover { opacity: 1; }
+
+/* ── CAPA ── */
+.proj-capa {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: var(--verde-mata);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 3.5rem 4rem;
+}
+.proj-capa-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.35;
+}
+.proj-capa-placeholder {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.proj-capa-placeholder svg {
+  width: 60%; height: 60%;
+  opacity: 0.08;
+}
+.proj-capa-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(26,58,42,0.95) 0%, rgba(26,58,42,0.3) 60%, transparent 100%);
+}
+.proj-capa-conteudo {
+  position: relative; z-index: 2;
+  max-width: 800px;
+}
+.proj-capa-bioma {
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--verde-claro);
+  margin-bottom: 1rem;
+  display: flex; align-items: center; gap: 0.6rem;
+}
+.proj-capa-bioma::before {
+  content: '';
+  width: 6px; height: 6px; border-radius: 50%;
+  background: currentColor;
+}
+.proj-capa-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.8rem, 6vw, 6rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--areia);
+}
+.proj-capa-titulo em {
+  font-weight: 400;
+  font-style: italic;
+  color: var(--verde-claro);
+}
+.proj-capa-tags {
+  display: flex; gap: 0.5rem; flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.proj-capa-tag {
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--areia);
+  border: 1px solid rgba(245,237,214,0.2);
+  padding: 0.25rem 0.7rem;
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
+/* ── DESCRIÇÃO ── */
+.proj-descricao {
+  padding: 6rem 3.5rem;
+  background: var(--creme);
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 5rem;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.proj-descricao-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--verde-musgo);
+  opacity: 0.5;
+  margin-bottom: 0.3rem;
+}
+.proj-descricao-valor {
+  font-size: 0.9rem;
+  color: var(--verde-mata);
+  margin-bottom: 1.5rem;
+}
+.proj-descricao-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--verde-mata);
+  margin-bottom: 1.5rem;
+}
+.proj-descricao-titulo em {
+  font-style: italic;
+  color: var(--verde-folha);
+}
+.proj-descricao-texto {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--verde-mata);
+  opacity: 0.65;
+}
+.proj-descricao-texto p + p { margin-top: 1rem; }
+
+/* ── GALERIA ── */
+.proj-galeria {
+  padding: 0 3.5rem 6rem;
+  background: var(--creme);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.proj-galeria-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--verde-musgo);
+  opacity: 0.5;
+  margin-bottom: 2rem;
+  display: flex; align-items: center; gap: 1rem;
+}
+.proj-galeria-label::after {
+  content: '';
+  flex: 1; max-width: 50px; height: 1px;
+  background: var(--verde-musgo); opacity: 0.3;
+}
+.proj-galeria-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.proj-galeria-grid .grande { grid-column: 1 / -1; }
+
+.proj-img-wrap {
+  background: var(--areia);
+  border: 1px solid rgba(26,58,42,0.08);
+  border-radius: 3px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.proj-img-wrap.tall { aspect-ratio: 4/3; }
+.proj-img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.img-placeholder {
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 0.8rem;
+  opacity: 0.25;
+  width: 100%; height: 100%;
+}
+.img-placeholder svg { width: 32px; }
+.img-placeholder span {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--verde-mata);
+}
+
+/* ── PROCESSO CRIATIVO ── */
+.proj-processo {
+  padding: 6rem 3.5rem;
+  background: var(--areia);
+  position: relative;
+  overflow: hidden;
+}
+.proj-processo::before {
+  content: '';
+  position: absolute;
+  bottom: -80px; right: -80px;
+  width: 300px; height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--amarelo-ipe) 0%, transparent 70%);
+  opacity: 0.15;
+  pointer-events: none;
+}
+.proj-processo-inner { max-width: 1100px; }
+.proj-processo-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 3.5rem;
+}
+.proj-processo-titulo em { font-style: italic; color: var(--verde-folha); }
+
+.processo-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.processo-step {
+  padding: 2rem;
+  background: var(--creme);
+  border: 1px solid rgba(26,58,42,0.08);
+  border-radius: 3px;
+}
+.processo-step-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--verde-folha);
+  opacity: 0.3;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.processo-step-titulo {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--verde-mata);
+  margin-bottom: 0.8rem;
+}
+.processo-step-texto {
+  font-size: 0.88rem;
+  line-height: 1.8;
+  color: var(--verde-mata);
+  opacity: 0.6;
+}
+
+/* ── NAVEGAÇÃO ENTRE PROJETOS ── */
+.proj-nav {
+  background: var(--verde-mata);
+  padding: 3rem 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.proj-nav-anterior,
+.proj-nav-proximo {
+  display: flex; flex-direction: column; gap: 0.3rem;
+  text-decoration: none;
+  transition: opacity .25s;
+  opacity: 0.6;
+}
+.proj-nav-anterior:hover,
+.proj-nav-proximo:hover { opacity: 1; }
+.proj-nav-proximo { align-items: flex-end; }
+.proj-nav-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--verde-claro);
+}
+.proj-nav-nome {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--areia);
+}
+
+/* ── FOOTER ── */
+.proj-footer {
+  padding: 2rem 3.5rem;
+  background: var(--verde-mata);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.proj-footer-volta {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--areia);
+  text-decoration: none;
+  opacity: 0.5;
+  transition: opacity .25s;
+}
+.proj-footer-volta:hover { opacity: 1; }
+.proj-footer-marca {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--areia);
+  opacity: 0.3;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .proj-page-back { left: 1.5rem; }
+  .proj-capa { padding: 0 1.5rem 3rem; }
+  .proj-descricao { grid-template-columns: 1fr; gap: 2.5rem; padding: 4rem 1.5rem; }
+  .proj-galeria { padding: 0 1.5rem 4rem; }
+  .proj-galeria-grid { grid-template-columns: 1fr; }
+  .proj-galeria-grid .grande { grid-column: 1; }
+  .proj-processo { padding: 4rem 1.5rem; }
+  .processo-steps { grid-template-columns: 1fr; gap: 1rem; }
+  .proj-nav { padding: 2rem 1.5rem; }
+  .proj-footer { padding: 1.5rem; flex-direction: column; gap: 1rem; text-align: center; }
+}
