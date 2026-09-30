@@ -113,6 +113,9 @@ body.semestre-2025-2 .brasao img  {
 body.semestre-2026-1 .brasao img {
   opacity: 0.4;
 }
+body.semestre-2026-2 .brasao img {
+  opacity: 0.3;
+}
 
 @media (max-width: 1023px) {
     .brasao {
