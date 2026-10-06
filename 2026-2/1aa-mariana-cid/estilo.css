@@ -1,0 +1,57 @@
+body {
+background-image: url("4.png")
+}
+
+
+h1{
+font-family: "Bangers", system-ui;
+font-size: 170px;
+background-color: #fcba03;
+} 
+
+p1 {
+font-family: "Just Another Hand", cursive;
+font-size: 70px;
+color: #f0d002;
+width: 200px; 
+} 
+
+
+p2 {
+font-family: "Bangers", system-ui;
+font-size: 90px;
+color: #f5e505;
+} 
+
+
+p3 {
+font-family: "Bangers", system-ui;
+font-size: 130px;
+color: #f5e505;
+} 
+
+
+p4 {
+font-family: "Bangers", system-ui;
+font-size: 170px;
+color: #f5e505;
+} 
+
+p5 {
+font-family: "Bangers", system-ui;
+font-size: 210px;
+color: #f5e505;
+} 
+
+
+
+p6 {
+font-family: "Bangers", system-ui;
+font-size: 240px;
+color: #f5e505;
+} 
+
+a{
+	font-size: 50px;
+	color: #A09503;
+}
