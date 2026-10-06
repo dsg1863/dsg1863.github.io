@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "Shardee";
+    src: url("./fonts/Shardee.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Harring";
+    src: url("./fonts/Harring.ttf") format("truetype");
+}
+
+.xanh-mono-regular {
+  font-family: "Xanh Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.xanh-mono-regular-italic {
+  font-family: "Xanh Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+    background-image: url(./assets/sky2.gif);
+    background-repeat: repeat;
+    padding: 50px;
+    cursor: url('./assets/star.png') 16 16, auto;
+}
+
+h1 {
+    font-family: "Shardee", cursive;
+    font-weight: 400;
+    margin: 0px;
+    font-size: 96px;
+    color: #ffffff;
+    text-shadow: 2px 1px 3px #FFC90E;
+}
+
+audio-player {
+    display: flex;
+    justify-content: center;
+}
+
+.sailors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+
+p {
+    font-family: "Harring", monospace;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 180%;
+    color:white;
+}
+
+.divisoria{
+    background-repeat: repeat-x;
+}
+
+
+.highlight {
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 2px 1px 3px #FFC90E;
+}
+
+.highlight-pink {
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 1px 1px 0 #f32477;
+}
+
+.highlight-green {
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 1px 1px 0 #20ff00;
+}
+
+.highlight-red{
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 1px 1px 0 #ff0d00;
+}
+
+.highlight-orange{
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 1px 1px 0 #F27115;
+}
+
+.highlight-blue{
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 1px 1px 0 #4ac5f5;
+}
+
+.slogan {
+    font-family: "Xanh Mono", monospace;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    width: 100%;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#nav a{
+    text-decoration: none;
+    font-family: "Xanh Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 28px;
+    color: #ffffff;
+    text-shadow: 2px 1px 3px #FE6FAA; 
+}
+
+#nav a:hover {
+    text-shadow: 2px 1px 10px white; 
+}
+
+#nav img{
+    width: 100px;
+}
+
+.main-img img{
+    display: flex;
+    width: 500px;
+    height: auto;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    align-items: center;
+    gap: 30px
+}
+
+.lateral{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.description img{
+    width: 500px;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+.titulo img{
+    height: 125px;
+    width: auto;
+}
+
+#footer{
+    font-family: "Xanh Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    text-shadow: 2px 1px 3px #FE6FAA; 
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#footer img{
+    height: 50px;
+}
+
+audio {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  height: 30px;
+  width: 100px;
+}
