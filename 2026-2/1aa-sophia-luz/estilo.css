@@ -1,0 +1,42 @@
+p {
+	font-family: "Iosevka Charon Mono";
+	font-size: 150px;
+	color: #2791F5;
+}
+
+p.outro {
+	font-family: "Iosevka Charon Mono";
+	font-size: 150px;
+	color: #2791F5;
+	margin-bottom: 40px;
+}
+p.texto {
+	font-family: "Iosevka Charon Mono";
+	font-size: 30px;
+	color: #2791F5;
+}
+
+h1 { font-family:"Iosevka Charon Mono";
+font-size:200px;
+color: #2791F5;
+margin-top:40px; }
+
+a{
+	color: #080085;
+	background-color: skyblue;
+	font-size: 65px;
+	border: 10px;
+	border-radius: 15px;
+	padding: 10px;
+	text-decoration: none;
+}
+a:hover {
+	color: #675CFF;
+}
+.iosevka-charon-mono-light-italic {
+  font-family: "Iosevka Charon Mono", monospace;
+  font-weight: 300;
+  font-style: italic;
+}
+
+
