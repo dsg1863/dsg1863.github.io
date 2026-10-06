@@ -59,6 +59,11 @@ body.semestre-2026-1 .semester-header {
     --semester-overlay-bg: #404;
 }
 
+body.semestre-2026-2 .semester-header {
+    --semester-accent: #00d67c;
+    --semester-overlay-bg: #000559;
+}
+
 .semester-header-inner {
     position: relative;
     display: flex;

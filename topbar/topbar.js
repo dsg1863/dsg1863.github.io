@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var semesterPages = ["2026-1", "2025-2", "2025-1", "2024-2"];
+    var semesterPages = ["2026-2", "2026-1", "2025-2", "2025-1", "2024-2"];
 
     function createAnchor(href, text, className) {
         var link = document.createElement("a");
