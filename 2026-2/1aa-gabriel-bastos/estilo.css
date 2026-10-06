@@ -1,0 +1,39 @@
+body{
+b
+}
+
+p{
+	font-family: "Fjalla One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+	font-size: 100px;
+	color: #ffbc03;
+	
+}
+
+h1{
+	font-family: "Fjalla One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+	font-size: 100px;
+	color: #b86c16;
+}
+
+a:hover{
+	background-color: indianred;
+	font-family: "Fjalla One", sans-serif;
+}
+a{
+ color: #b86c16;
+ font-size: 50px;
+ font-family: "Fjalla One", sans-serif;
+}
+a.inicio{
+ color: #ffbc03;
+ font-size: 50px;
+ font-family: "Fjalla One", sans-serif;
+}
+
+	img{
+		margin: 10px;
+	}
