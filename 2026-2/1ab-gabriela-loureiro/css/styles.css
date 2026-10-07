@@ -52,6 +52,15 @@ img.comecome {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 30px;
+	width: 100%;
+}
+
+.img-memo img.destaque {
+	width: 100%;
+	height: auto;
+	max-height: 90vh;
+	object-fit: contain;
+	min-width: 0;
 }
 
 
