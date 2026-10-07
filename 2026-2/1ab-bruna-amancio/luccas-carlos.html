@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="luccas-style.css">
+    <title>Luccas Carlos - R&B em Tom</title>
+</head>
+<body>
+
+    <a href="index.html" class="botao-home">Voltar para home</a>
+
+    <div class="perfil-artista">
+
+        <div class="foto-artista">
+            <img src="LuccasCarlos.png">
+        </div>
+
+        <div class="texto-artista">
+            <h1><img src="luccasNome.png" alt="Luccas Carlos"></h1>
+
+            <p>Luccas Carlos, nascido no Rio de Janeiro em 1994, é cantor e compositor brasileiro conhecido por sua atuação na cena do R&B e da música urbana nacional. Começou a compor aos 14 anos e, ao longo de sua carreira, desenvolveu um estilo que mistura R&B, rap, trap, samba e outras influências da música brasileira. Integrante do coletivo carioca Pirâmide Perdida, ganhou destaque por suas músicas e colaborações com artistas como BK', Matuê, Rashid, Djonga e IZA.</p>
+
+            <p>Atualmente, segue expandindo sua trajetória com novos lançamentos e parcerias, tendo lançado o álbum Busco Romance Love Show e sua edição deluxe, além de singles recentes como "só (mais) uma vez", "NEON", "FEITIÇO", "MONSTRO" e "off", consolidando sua presença na cena contemporânea do R&B brasileiro.</p>
+
+            <div class="botoes">
+                <a href="https://open.spotify.com/intl-pt/artist/5WFFFHVqeVk5tLuYh2KjQy?si=FLB8GvuWR_e_Oa87C_05vw" class="botao" target="_blank">OUÇA SUAS MÚSICAS</a>
+                <a href="https://www.instagram.com/luccascarlos" class="botao" target="_blank">CONHEÇA MAIS DO ARTISTA</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="video-artista">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sNvrzssZAOQ?si=Z2xuKa9KuZjCNK2l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+        <div class="player-musica">
+        <audio id="audio-artista" loop controls>
+            <source src="musica-luccas.mp3" type="audio/mpeg">
+            Seu navegador não suporta áudio.
+        </audio>
+        <p id="aviso-play" class="aviso-play" style="display: none;">
+            Clique em qualquer lugar da página para tocar a música
+        </p>
+    </div>
+
+    <footer>
+        <p>Projeto idealizado por Bruna Amancio para a matéria DSG1863 - Práticas Experimentais III. Todo o conteúdo presente aqui é apenas para fins acadêmicos.</p>
+    </footer>
+
+    <script>
+    const audio = document.getElementById('audio-artista');
+    const aviso = document.getElementById('aviso-play');
+
+  
+    audio.play().catch(() => {
+
+        aviso.style.display = 'block';
+
+        document.body.addEventListener('click', function ativarSom() {
+            audio.play();
+            aviso.style.display = 'none';
+            document.body.removeEventListener('click', ativarSom);
+        }, { once: true });
+    });
+    </script>
+</body>
+</html>

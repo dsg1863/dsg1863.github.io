@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TABERNA DA CENOURA</title>
+</head>
+
+<body>
+
+    <div id="cena">
+
+        <img id="fundo" src="imagens/CENA 1.jpg">
+
+
+        <!-- TÍTULO E SUBTÍTULO -->
+
+        <div id="introducao">
+
+            <h1>
+                Bem-vindo à Taberna da Cenoura
+            </h1>
+
+            <p>
+                clique nos personagens, eles sempre tem algo a dizer...
+            </p>
+
+        </div>
+
+
+        <!-- PRIMEIRO BOTÃO -->
+
+        <a href="mensagem.html"
+           id="botao1"
+           class="botao"
+           data-x="1554"
+           data-y="586">
+        </a>
+
+
+        <!-- SEGUNDO BOTÃO -->
+
+        <a href="cenabar.html"
+           id="botao2"
+           class="botao"
+           data-x="509"
+           data-y="520">
+        </a>
+
+    </div>
+
+
+<style>
+
+    body {
+        margin: 0;
+    }
+
+
+    /* ============================
+       CENA
+       ============================ */
+
+    #cena {
+        position: relative;
+        width: 100vw;
+    }
+
+
+    #fundo {
+        width: 100%;
+        display: block;
+    }
+
+
+    /* ============================
+       TÍTULO + SUBTÍTULO
+       ============================ */
+
+    #introducao {
+        position: absolute;
+
+        top: 40px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        width: 80%;
+
+        text-align: center;
+
+        z-index: 20;
+
+        font-family: Georgia, serif;
+
+        color: white;
+
+        text-shadow:
+            2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+
+    /* TÍTULO */
+
+    #introducao h1 {
+        margin: 0;
+
+        font-size: 42px;
+        font-weight: bold;
+    }
+
+
+    /* SUBTÍTULO */
+
+    #introducao p {
+        margin-top: 10px;
+
+        font-size: 20px;
+        font-style: italic;
+    }
+
+
+    /* ============================
+       BOTÕES INVISÍVEIS
+       ============================ */
+
+    .botao {
+        position: absolute;
+
+        width: 150px;
+        height: 300px;
+
+        transform: translate(-50%, -50%);
+
+        z-index: 10;
+
+        background: transparent;
+        border: none;
+
+        box-sizing: border-box;
+
+        cursor: pointer;
+    }
+
+</style>
+
+
+<script>
+
+    const imagem = document.getElementById("fundo");
+
+    // TAMANHO ORIGINAL DA IMAGEM
+
+    const larguraOriginal = 1920;
+    const alturaOriginal = 1080;
+
+
+    // ============================
+    // POSICIONAMENTO DOS BOTÕES
+    // ============================
+
+    function posicionarBotoes() {
+
+        const rect = imagem.getBoundingClientRect();
+
+        const botoes = document.querySelectorAll(".botao");
+
+        botoes.forEach(function(botao) {
+
+            const xOriginal =
+                Number(botao.dataset.x);
+
+            const yOriginal =
+                Number(botao.dataset.y);
+
+
+            const xTela =
+                xOriginal *
+                (rect.width / larguraOriginal);
+
+            const yTela =
+                yOriginal *
+                (rect.height / alturaOriginal);
+
+
+            botao.style.left =
+                xTela + "px";
+
+            botao.style.top =
+                yTela + "px";
+
+        });
+
+    }
+
+
+    // ============================
+    // CARREGAMENTO
+    // ============================
+
+    imagem.addEventListener(
+        "load",
+        posicionarBotoes
+    );
+
+
+    // ============================
+    // REDIMENSIONAMENTO
+    // ============================
+
+    window.addEventListener(
+        "resize",
+        posicionarBotoes
+    );
+
+</script>
+
+</body>
+</html>

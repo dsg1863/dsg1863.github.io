@@ -1,0 +1,168 @@
+/* ===== Cores do escudo do AFC Richmond ===== */
+:root {
+  --azul: #34355a;
+  --azul-escuro: #26264a;
+  --dourado: #e0a84a;
+  --tijolo: #b5523e;
+  --prata: #d9dadf;
+  --fundo: #f1f1f4;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Barlow', Arial, sans-serif;
+  background: var(--fundo);
+  color: var(--azul-escuro);
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ===== Cabeçalho (borda dourada + tijolo, como o escudo) ===== */
+.topo {
+  background: var(--azul-escuro);
+  border-bottom: 6px solid var(--dourado);
+  box-shadow: 0 6px 0 var(--tijolo);
+  margin-bottom: 6px;
+}
+.topo-conteudo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.topo a { display: flex; }
+.topo img { height: 96px; width: auto; margin: -8px -26px; }
+.topo h1, .topo p, .posicao h2, .numero, .nome strong, .perfil-info h1 {
+  font-family: 'Barlow Condensed', Arial Narrow, sans-serif;
+}
+.topo h1 { font-size: 2.3rem; line-height: 1; color: #fff; }
+.topo p { font-size: 1.3rem; color: var(--dourado); }
+
+/* ===== Página do elenco ===== */
+.elenco { max-width: 1200px; margin: 0 auto; padding: 40px 24px 64px; }
+.posicao { margin-bottom: 48px; }
+.posicao h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 4px solid var(--dourado);
+}
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* ===== Card do jogador ===== */
+.card {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: linear-gradient(160deg, #4a4b78, var(--azul-escuro));
+  border-bottom: 6px solid var(--dourado);
+}
+.card img, .perfil-foto img {
+  position: absolute;
+  height: auto;
+  max-width: none;
+}
+.card img { transition: transform 0.3s; }
+.numero {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  z-index: 2;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--dourado);
+}
+.nome {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 44px 16px 14px;
+  color: #fff;
+  background: linear-gradient(to top, rgba(38, 38, 74, 0.95) 40%, transparent);
+}
+.nome small { font-size: 1rem; }
+.nome strong {
+  font-size: 1.9rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.card:hover { border-bottom-color: var(--tijolo); }
+.card:hover img { transform: scale(1.05); }
+.card:focus-visible { outline: 3px solid var(--dourado); outline-offset: 3px; }
+
+/* ===== Enquadramento de cada foto (ajusta os PNGs originais) ===== */
+.f-arlo    { width: 152.2%; left: -44.9%; top: -0.9%; }
+.f-jamie   { width: 100.9%; left: -0.2%;  top: -1.1%; }
+.f-jan     { width: 123.4%; left: -10.8%; top: -2.8%; }
+.f-colin   { width: 158.1%; left: -58.1%; top: -17.3%; }
+.f-dani    { width: 154.1%; left: 0%;     top: -12.8%; }
+.f-isaac   { width: 181.2%; left: -77.4%; top: -18.6%; }
+.f-moe     { width: 161.4%; left: -61.4%; top: -20%; }
+.f-sam     { width: 179.4%; left: -75.9%; top: -22.3%; }
+.f-richard { width: 211.9%; left: -65.5%; top: -2%; }
+.f-thierry { width: 128.7%; left: -11.8%; top: -4.9%; }
+
+/* ===== Página individual do jogador ===== */
+.perfil {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px 64px;
+  display: grid;
+  grid-template-columns: minmax(0, 340px) 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.perfil-foto {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: linear-gradient(160deg, #4a4b78, var(--azul-escuro));
+  border-bottom: 6px solid var(--dourado);
+}
+.perfil-foto .numero { font-size: 4.5rem; }
+.voltar {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid var(--dourado);
+}
+.voltar:hover { color: var(--tijolo); }
+.perfil-info h1 { font-size: 3.2rem; line-height: 1.05; text-transform: uppercase; }
+.perfil-info h1 small { display: block; font-size: 1.6rem; text-transform: none; color: var(--tijolo); }
+.fatos {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px 24px;
+  margin: 20px 0 28px;
+  padding: 16px 0;
+  border-top: 2px solid var(--prata);
+  border-bottom: 2px solid var(--prata);
+}
+.fatos dt { font-weight: 700; }
+.perfil-info p { margin-bottom: 14px; max-width: 62ch; }
+
+/* ===== Rodapé ===== */
+.rodape {
+  background: var(--azul-escuro);
+  color: var(--prata);
+  text-align: center;
+  padding: 20px 24px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 720px) {
+  .perfil { grid-template-columns: 1fr; }
+  .topo h1 { font-size: 1.8rem; }
+}

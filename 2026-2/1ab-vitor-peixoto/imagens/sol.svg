@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 200 200">
+  <path transform="rotate(0.0)" fill="#ffd400" d="M -14 -48 C 10 -75, 45 -88, 30 -99 C 27 -65, 20 -52, 14 -48 Z"/>
+  <path transform="rotate(22.5)" fill="#e6007e" d="M -14 -48 C 10 -75, 45 -88, 30 -99 C 27 -65, 20 -52, 14 -48 Z"/>
+  <path transform="rotate(45.0)" fill="#ffd400" d="M -14 -48 C 10 -75, 45 -88, 30 -99 C 27 -65, 20 -52, 14 -48 Z"/>
+  <path transform="rotate(67.5)" fill="#e6007e" d="M -14 -48 C 10 -75, 45 -88, 30 -99 C 27 -65, 20 -52, 14 -48 Z"/>
+  <path transform="rotate(90.0)" fill="#ffd400" d="M -14 -48 C 10 -75, 45 -88, 30 -99 C 27 -65, 20 -52, 14 -48 Z"/>
+  <path transform="rotate(112.5)" fill="#e6007e" d="M -14 -48 C 10 -75, 45 -88, 30 -99 C 27 -65, 20 -52, 14 -48 Z"/>
+  <path transform="rotate(135.0)" fill="#ffd400" d="M -14 -48 C 10 -75, 45 -88, 30 -99 C 27 -65, 20 -52, 14 -48 Z"/>
+  <path transform="rotate(157.5)" fill="#e6007e" d="M -14 -48 C 10 -75, 45 -88, 30 -99 C 27 -65, 20 -52, 14 -48 Z"/>
+  <path transform="rotate(180.0)" fill="#ffd400" d="M -14 -48 C 10 -75, 45 -88, 30 -99 C 27 -65, 20 -52, 14 -48 Z"/>
+  <path transform="rotate(202.5)" fill="#e6007e" d="M -14 -48 C 10 -75, 45 -88, 30 -99 C 27 -65, 20 -52, 14 -48 Z"/>
+  <path transform="rotate(225.0)" fill="#ffd400" d="M -14 -48 C 10 -75, 45 -88, 30 -99 C 27 -65, 20 -52, 14 -48 Z"/>
+  <path transform="rotate(247.5)" fill="#e6007e" d="M -14 -48 C 10 -75, 45 -88, 30 -99 C 27 -65, 20 -52, 14 -48 Z"/>
+  <path transform="rotate(270.0)" fill="#ffd400" d="M -14 -48 C 10 -75, 45 -88, 30 -99 C 27 -65, 20 -52, 14 -48 Z"/>
+  <path transform="rotate(292.5)" fill="#e6007e" d="M -14 -48 C 10 -75, 45 -88, 30 -99 C 27 -65, 20 -52, 14 -48 Z"/>
+  <path transform="rotate(315.0)" fill="#ffd400" d="M -14 -48 C 10 -75, 45 -88, 30 -99 C 27 -65, 20 -52, 14 -48 Z"/>
+  <path transform="rotate(337.5)" fill="#e6007e" d="M -14 -48 C 10 -75, 45 -88, 30 -99 C 27 -65, 20 -52, 14 -48 Z"/>
+  <circle r="50" fill="#f2ede2"/>
+</svg>

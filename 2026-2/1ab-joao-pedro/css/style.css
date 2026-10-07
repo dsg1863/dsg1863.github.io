@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #e8d8b8;
+    color: #11182b;
+    font-family: 'Libre Baskerville', serif;
+}
+
+header {
+    min-height: 85vh;
+    padding: 30px 6%;
+    position: relative;
+    background:
+        radial-gradient(#11182b 0.8px, transparent 0.8px);
+    background-size: 7px 7px;
+    background-color: #e8d8b8;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #11182b;
+    padding-bottom: 12px;
+}
+
+header h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(100px, 20vw, 280px);
+    line-height: .75;
+    margin-top: 70px;
+    letter-spacing: -5px;
+}
+
+.subtitulo {
+    margin-top: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 5px;
+    border-top: 3px solid #11182b;
+    border-bottom: 3px solid #11182b;
+    padding: 15px 0;
+}
+
+nav {
+    background: #11182b;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    padding: 18px;
+}
+
+nav a {
+    color: #e8d8b8;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #a63d32;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    min-height: 750px;
+}
+
+.hero-imagem {
+    overflow: hidden;
+}
+
+.hero-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(1.15);
+}
+
+.hero-texto {
+    padding: 70px 8%;
+    background: #11182b;
+    color: #e8d8b8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.numero {
+    color: #a63d32;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(60px, 7vw, 110px);
+    line-height: .85;
+    margin: 30px 0;
+}
+
+.hero-texto p:not(.numero) {
+    max-width: 450px;
+    line-height: 1.8;
+}
+
+.botao {
+    margin-top: 35px;
+    color: #e8d8b8;
+    border: 2px solid #e8d8b8;
+    width: fit-content;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+
+.botao:hover {
+    background: #a63d32;
+    border-color: #a63d32;
+}
+
+.titulo-secao {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.titulo-secao span {
+    color: #a63d32;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.titulo-secao h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(60px, 9vw, 130px);
+    line-height: .8;
+}
+
+.historia {
+    padding: 120px 8%;
+    border-bottom: 3px solid #11182b;
+}
+
+.texto-historia {
+    max-width: 850px;
+    margin-left: 15%;
+    column-count: 2;
+    column-gap: 60px;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.texto-historia p {
+    margin-bottom: 30px;
+}
+
+.filmes {
+    padding: 120px 8%;
+    background: #11182b;
+    color: #e8d8b8;
+}
+
+.grid-filmes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 30px;
+}
+
+.filme {
+    border-bottom: 2px solid #e8d8b8;
+    padding-bottom: 25px;
+}
+
+.filme img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(1.4);
+    transition: .4s;
+}
+
+.filme:hover img {
+    filter: grayscale(0%) contrast(1.1);
+    transform: scale(1.02);
+}
+
+.filme div {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    margin-top: 15px;
+}
+
+.filme span {
+    color: #a63d32;
+    font-family: 'Oswald', sans-serif;
+}
+
+.filme h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    line-height: 1.05;
+}
+
+.filme p {
+    grid-column: 2;
+    margin-top: 5px;
+}
+
+.diretores {
+    padding: 120px 8%;
+}
+
+.diretores-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 3px solid #11182b;
+}
+
+.diretor {
+    padding: 40px 30px;
+    border-right: 2px solid #11182b;
+}
+
+.diretor:last-child {
+    border-right: none;
+}
+
+.diretor h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    line-height: .9;
+    margin-bottom: 30px;
+}
+
+.diretor p {
+    line-height: 1.8;
+}
+
+.diretor-imagem {
+    width: 100%;
+    height: 360px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background: #e8d8b8;
+}
+
+.diretor-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.fotografia {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background: #ff9d00;
+    color: #11182b;
+}
+
+.foto-texto {
+    padding: 100px 10%;
+}
+
+.foto-texto span {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+}
+
+.foto-texto h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(60px, 7vw, 110px);
+    line-height: .85;
+    margin: 40px 0;
+}
+
+.foto-texto p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.foto-imagem {
+    min-height: 700px;
+}
+
+.foto-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(1.1) saturate(1.05);
+}
+
+footer {
+    background: #11182b;
+    color: #e8d8b8;
+    padding: 70px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 70px;
+    line-height: .8;
+}
+
+footer p {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+@media (max-width: 1000px) {
+    .grid-filmes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-imagem {
+        height: 500px;
+    }
+
+    .texto-historia {
+        margin-left: 0;
+        column-count: 1;
+    }
+
+    .grid-filmes {
+        grid-template-columns: 1fr;
+    }
+
+    .diretores-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .diretor {
+        border-right: none;
+        border-bottom: 2px solid #11182b;
+    }
+
+    .fotografia {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+}

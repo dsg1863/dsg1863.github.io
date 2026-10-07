@@ -1,0 +1,969 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E SE? — A Seleção dos Sonhos</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f3ef;
+    color:#111;
+}
+
+
+/* CABEÇALHO */
+
+header{
+    padding:35px 6vw 25px;
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid #d6d4cd;
+}
+
+.logo{
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:4px;
+}
+
+.numero{
+    font-size:12px;
+    color:#777;
+}
+
+
+/* INTRODUÇÃO */
+
+.intro{
+    padding:85px 6vw 55px;
+    max-width:1100px;
+}
+
+.intro h1{
+    font-size:clamp(55px,9vw,125px);
+    line-height:.86;
+    letter-spacing:-7px;
+    font-weight:800;
+}
+
+.intro h2{
+    margin-top:30px;
+    max-width:570px;
+    font-size:21px;
+    font-weight:normal;
+    line-height:1.45;
+}
+
+.intro p{
+    margin-top:20px;
+    font-size:12px;
+    color:#777;
+}
+
+
+/* ÁREA DA SELEÇÃO */
+
+.selecao{
+    padding:30px 6vw 100px;
+}
+
+.titulo-secao{
+    max-width:1000px;
+    margin:0 auto 28px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.titulo-secao h3{
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.contador{
+    color:#777;
+    font-size:13px;
+}
+
+
+/* CAMPO */
+
+.campo{
+    position:relative;
+    width:100%;
+    max-width:1000px;
+    height:700px;
+    margin:auto;
+
+    background:#12663a;
+
+    border:2px solid #fff;
+    outline:6px solid #12663a;
+
+    overflow:hidden;
+}
+
+
+/* LINHA DO MEIO */
+
+.campo::before{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:50%;
+
+    width:100%;
+    height:2px;
+
+    background:rgba(255,255,255,.7);
+
+    transform:translateY(-50%);
+
+    z-index:1;
+}
+
+
+/* CÍRCULO CENTRAL */
+
+.campo::after{
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    border:2px solid rgba(255,255,255,.7);
+
+    border-radius:50%;
+}
+
+
+/* ÁREAS */
+
+.linha-area{
+    position:absolute;
+
+    width:240px;
+    height:100px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    border:2px solid rgba(255,255,255,.7);
+}
+
+.linha-area.cima{
+    top:0;
+    border-top:none;
+}
+
+.linha-area.baixo{
+    bottom:0;
+    border-bottom:none;
+}
+
+
+/* JOGADORES */
+
+.jogador{
+    position:absolute;
+
+    transform:translate(-50%,-50%);
+
+    width:125px;
+
+    text-align:center;
+
+    z-index:3;
+}
+
+.jogador label{
+    display:block;
+
+    margin-bottom:5px;
+
+    color:#fff;
+
+    font-size:8px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+}
+
+
+/* SELECT */
+
+select{
+    width:100%;
+
+    padding:9px 7px;
+
+    border:0;
+
+    border-radius:4px;
+
+    background:#f4f3ef;
+
+    color:#111;
+
+    font-size:10px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+select:focus{
+    outline:3px solid #e4c523;
+}
+
+
+/* POSIÇÕES */
+
+.goleiro{
+    bottom:48px;
+    left:50%;
+}
+
+.lateral1{
+    bottom:220px;
+    left:12%;
+}
+
+.zagueiro1{
+    bottom:165px;
+    left:35%;
+}
+
+.zagueiro2{
+    bottom:165px;
+    left:65%;
+}
+
+.lateral2{
+    bottom:220px;
+    left:88%;
+}
+
+.meia1{
+    top:55%;
+    left:28%;
+}
+
+.meia2{
+    top:43%;
+    left:50%;
+}
+
+.meia3{
+    top:55%;
+    left:72%;
+}
+
+.ponta1{
+    top:28%;
+    left:20%;
+}
+
+.ponta2{
+    top:18%;
+    left:50%;
+}
+
+.ponta3{
+    top:28%;
+    left:80%;
+}
+
+
+/* BOTÕES */
+
+.acoes{
+    max-width:1000px;
+
+    margin:28px auto 0;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+}
+
+button{
+    border:1px solid #111;
+
+    background:#111;
+
+    color:#fff;
+
+    padding:13px 18px;
+
+    font-size:11px;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    cursor:pointer;
+}
+
+button:hover{
+    background:#12663a;
+
+    border-color:#12663a;
+}
+
+
+/* MENSAGEM */
+
+#mensagem{
+    max-width:1000px;
+
+    margin:18px auto 0;
+
+    padding:15px 18px;
+
+    background:#fff;
+
+    border-left:4px solid #12663a;
+
+    display:none;
+
+    font-size:13px;
+
+    line-height:1.5;
+}
+
+
+/* RODAPÉ */
+
+footer{
+    border-top:1px solid #d6d4cd;
+
+    padding:30px 6vw;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    font-size:10px;
+
+    color:#777;
+}
+
+.estrela{
+    color:#12663a;
+
+    font-size:15px;
+}
+
+
+/* CELULAR */
+
+@media(max-width:700px){
+
+    header{
+        padding:25px;
+    }
+
+    .intro{
+        padding:60px 25px 40px;
+    }
+
+    .intro h1{
+        letter-spacing:-4px;
+    }
+
+    .selecao{
+        padding:30px 15px 70px;
+    }
+
+    .campo{
+        height:600px;
+    }
+
+    .jogador{
+        width:90px;
+    }
+
+    select{
+        padding:7px 4px;
+        font-size:8px;
+    }
+
+    .jogador label{
+        font-size:6px;
+    }
+
+    .lateral1{
+        left:9%;
+    }
+
+    .lateral2{
+        left:91%;
+    }
+
+    .ponta1{
+        left:18%;
+    }
+
+    .ponta3{
+        left:82%;
+    }
+
+    footer{
+        flex-direction:column;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        E SE?
+    </div>
+
+    <div class="numero">
+        01 / 11
+    </div>
+
+</header>
+
+
+
+<section class="intro">
+
+    <h1>
+        A SELEÇÃO<br>
+        DOS SONHOS.
+    </h1>
+
+    <h2>
+        E se você pudesse montar uma seleção brasileira
+        apenas com jogadores que realmente entraram em
+        campo em uma campanha campeã do mundo?
+    </h2>
+
+    <p>
+        São 72 jogadores diferentes. Escolha os seus 11.
+        Não existe resposta certa.
+    </p>
+
+</section>
+
+
+
+<section class="selecao">
+
+    <div class="titulo-secao">
+
+        <h3>
+            Monte sua seleção
+        </h3>
+
+        <div class="contador">
+            <span id="contador">0</span> / 11 jogadores
+        </div>
+
+    </div>
+
+
+    <div class="campo">
+
+        <div class="linha-area cima"></div>
+        <div class="linha-area baixo"></div>
+
+
+        <!-- GOLEIRO -->
+
+        <div class="jogador goleiro">
+
+            <label>Goleiro</label>
+
+            <select onchange="atualizar()">
+                <option value="">Escolher</option>
+            </select>
+
+        </div>
+
+
+        <!-- LATERAL -->
+
+        <div class="jogador lateral1">
+
+            <label>Lateral / Defesa</label>
+
+            <select onchange="atualizar()">
+                <option value="">Escolher</option>
+            </select>
+
+        </div>
+
+
+        <!-- ZAGUEIRO -->
+
+        <div class="jogador zagueiro1">
+
+            <label>Zagueiro</label>
+
+            <select onchange="atualizar()">
+                <option value="">Escolher</option>
+            </select>
+
+        </div>
+
+
+        <!-- ZAGUEIRO -->
+
+        <div class="jogador zagueiro2">
+
+            <label>Zagueiro</label>
+
+            <select onchange="atualizar()">
+                <option value="">Escolher</option>
+            </select>
+
+        </div>
+
+
+        <!-- LATERAL -->
+
+        <div class="jogador lateral2">
+
+            <label>Lateral / Defesa</label>
+
+            <select onchange="atualizar()">
+                <option value="">Escolher</option>
+            </select>
+
+        </div>
+
+
+        <!-- MEIA -->
+
+        <div class="jogador meia1">
+
+            <label>Meia</label>
+
+            <select onchange="atualizar()">
+                <option value="">Escolher</option>
+            </select>
+
+        </div>
+
+
+        <!-- MEIA -->
+
+        <div class="jogador meia2">
+
+            <label>Meia</label>
+
+            <select onchange="atualizar()">
+                <option value="">Escolher</option>
+            </select>
+
+        </div>
+
+
+        <!-- MEIA -->
+
+        <div class="jogador meia3">
+
+            <label>Meia</label>
+
+            <select onchange="atualizar()">
+                <option value="">Escolher</option>
+            </select>
+
+        </div>
+
+
+        <!-- ATAQUE -->
+
+        <div class="jogador ponta1">
+
+            <label>Atacante</label>
+
+            <select onchange="atualizar()">
+                <option value="">Escolher</option>
+            </select>
+
+        </div>
+
+
+        <!-- ATAQUE -->
+
+        <div class="jogador ponta2">
+
+            <label>Atacante</label>
+
+            <select onchange="atualizar()">
+                <option value="">Escolher</option>
+            </select>
+
+        </div>
+
+
+        <!-- ATAQUE -->
+
+        <div class="jogador ponta3">
+
+            <label>Atacante</label>
+
+            <select onchange="atualizar()">
+                <option value="">Escolher</option>
+            </select>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="acoes">
+
+        <button onclick="mostrarEscalacao()">
+            Ver minha seleção
+        </button>
+
+        <button onclick="limpar()">
+            Limpar
+        </button>
+
+    </div>
+
+
+
+    <div id="mensagem"></div>
+
+</section>
+
+
+
+<footer>
+
+    <div>
+        BRASIL — CAMPEÕES DO MUNDO
+    </div>
+
+    <div>
+
+        <span class="estrela">
+            ★
+        </span>
+
+        1958 · 1962 · 1970 · 1994 · 2002
+
+    </div>
+
+</footer>
+
+
+
+<script>
+
+
+const jogadores = {
+
+    goleiros: [
+
+        "Gilmar — 1958 · 1962",
+        "Félix — 1970",
+        "Taffarel — 1994",
+        "Marcos — 2002"
+
+    ],
+
+
+    defesa: [
+
+        "Bellini — 1958 · 1962",
+        "Djalma Santos — 1958 · 1962",
+        "Nilton Santos — 1958 · 1962",
+        "De Sordi — 1958",
+        "Orlando — 1958",
+        "Mauro — 1962",
+        "Zózimo — 1962",
+        "Brito — 1970",
+        "Piazza — 1970",
+        "Carlos Alberto — 1970",
+        "Marco Antônio — 1970",
+        "Fontana — 1970",
+        "Everaldo — 1970",
+        "Jorginho — 1994",
+        "Ricardo Rocha — 1994",
+        "Branco — 1994",
+        "Aldair — 1994",
+        "Cafu — 1994 · 2002",
+        "Márcio Santos — 1994",
+        "Leonardo — 1994",
+        "Lúcio — 2002",
+        "Roque Júnior — 2002",
+        "Edmílson — 2002",
+        "Roberto Carlos — 2002",
+        "Belletti — 2002",
+        "Ânderson Polga — 2002",
+        "Júnior — 2002"
+
+    ],
+
+
+    meio: [
+
+        "Dino Sani — 1958",
+        "Didi — 1958 · 1962",
+        "Mário Zagallo — 1958 · 1962",
+        "Joel — 1958",
+        "Zito — 1958 · 1962",
+        "Clodoaldo — 1970",
+        "Gérson — 1970",
+        "Rivellino — 1970",
+        "Paulo Cézar Caju — 1970",
+        "Mauro Silva — 1994",
+        "Dunga — 1994",
+        "Zinho — 1994",
+        "Raí — 1994",
+        "Mazinho — 1994",
+        "Ricardinho — 2002",
+        "Gilberto Silva — 2002",
+        "Kléberson — 2002",
+        "Denílson — 2002",
+        "Vampeta — 2002",
+        "Juninho Paulista — 2002",
+        "Kaká — 2002"
+
+    ],
+
+
+    ataque: [
+
+        "Garrincha — 1958 · 1962",
+        "Pelé — 1958 · 1962 · 1970",
+        "José Altafini (Mazzola) — 1958",
+        "Vavá — 1958 · 1962",
+        "Dida — 1958",
+        "Amarildo — 1962",
+        "Jairzinho — 1970",
+        "Tostão — 1970",
+        "Edu — 1970",
+        "Roberto Miranda — 1970",
+        "Bebeto — 1994",
+        "Romário — 1994",
+        "Paulo Sérgio — 1994",
+        "Müller — 1994",
+        "Viola — 1994",
+        "Ronaldo — 2002",
+        "Rivaldo — 2002",
+        "Ronaldinho — 2002",
+        "Edílson — 2002",
+        "Luizão — 2002"
+
+    ]
+
+};
+
+
+
+const selects = document.querySelectorAll("select");
+
+
+function preencherSelects(){
+
+    const listas = [
+
+        jogadores.goleiros,
+
+        jogadores.defesa,
+        jogadores.defesa,
+        jogadores.defesa,
+        jogadores.defesa,
+
+        jogadores.meio,
+        jogadores.meio,
+        jogadores.meio,
+
+        jogadores.ataque,
+        jogadores.ataque,
+        jogadores.ataque
+
+    ];
+
+
+    selects.forEach((select, i) => {
+
+        listas[i].forEach((jogador) => {
+
+            const option =
+                document.createElement("option");
+
+            option.value = jogador;
+
+            option.textContent = jogador;
+
+            select.appendChild(option);
+
+        });
+
+    });
+
+}
+
+
+function atualizar(){
+
+    const escolhidos =
+
+        Array.from(selects)
+        .map(select => select.value)
+        .filter(Boolean);
+
+
+    document.getElementById("contador").textContent =
+        escolhidos.length;
+
+
+    selects.forEach((atual) => {
+
+        Array.from(atual.options).forEach((option) => {
+
+            if(!option.value){
+                return;
+            }
+
+            const repetido =
+
+                escolhidos.includes(option.value)
+
+                &&
+
+                atual.value !== option.value;
+
+
+            option.disabled = repetido;
+
+        });
+
+    });
+
+}
+
+
+function mostrarEscalacao(){
+
+    const escolhidos =
+
+        Array.from(selects)
+        .map(select => select.value)
+        .filter(Boolean);
+
+
+    const mensagem =
+        document.getElementById("mensagem");
+
+
+    mensagem.style.display = "block";
+
+
+    if(escolhidos.length < 11){
+
+        mensagem.innerHTML =
+
+            "Sua seleção ainda está incompleta. Faltam "
+
+            +
+
+            (11 - escolhidos.length)
+
+            +
+
+            " jogador(es).";
+
+        return;
+    }
+
+
+    mensagem.innerHTML =
+
+        "<strong>SUA SELEÇÃO ESTÁ PRONTA.</strong>"
+
+        +
+
+        "<br><br>"
+
+        +
+
+        escolhidos.join(" · ")
+
+        +
+
+        "<br><br>"
+
+        +
+
+        "Cinco Copas. Centenas de histórias. Apenas onze lugares.";
+
+}
+
+
+function limpar(){
+
+    selects.forEach(select => {
+
+        select.value = "";
+
+    });
+
+
+    document.getElementById("contador").textContent =
+        "0";
+
+
+    document.getElementById("mensagem").style.display =
+        "none";
+
+
+    atualizar();
+
+}
+
+
+preencherSelects();
+
+atualizar();
+
+</script>
+
+</body>
+</html>
+```

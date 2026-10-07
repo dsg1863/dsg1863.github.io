@@ -1,0 +1,532 @@
+/* Configuração global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+/* Barra do Topo */
+/* Barra do Topo com altura definida e centralização perfeita */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* Centraliza verticalmente tudo o que está dentro da barra */
+    height: 85px;         /* Define uma altura fixa para a barra */
+    padding: 0 5%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Tamanho e centralização da logo do topo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 50px !important; /* Ajuste o tamanho da logo aqui (ex: 45px ou 50px) */
+    width: auto !important;
+    max-width: none !important;
+    object-fit: contain;
+}
+
+.nav-logo {
+    height: 90px !important;
+    width: auto !important;
+    object-fit: contain;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 32px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #000;
+    font-weight: 500;
+}
+
+/* Seção de Capa (Hero) */
+.hero-section {
+    width: 100%;
+    padding: 40px 5% 0 5%;
+    text-align: center;
+}
+
+.hero-content {
+    margin-bottom: 30px;
+}
+
+.tagline {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #777;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.hero-logo-img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.hero-content p {
+    font-size: 15px;
+    color: #555;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* Imagem de Destaque da Modelo (Estilo Revista) */
+.hero-banner-image {
+    width: 100%;
+    height: 70vh; /* Ocupa uma boa parte da tela com elegância */
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.hero-banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobre todo o espaço com proporção perfeita */
+}/* Seção de Capa com duas fotos lado a lado */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 85vh; /* Altura elegante para a capa */
+    overflow: hidden;
+    background-color: #000; /* Fundo escuro caso a imagem demore a carregar */
+}
+
+/* Grade que divide as duas fotos lado a lado */
+.hero-images-grid {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-img-box {
+    flex: 1; /* Divide o espaço perfeitamente 50% para cada foto */
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobre o espaço sem distorcer */
+    filter: brightness(0.9); /* Deixa as fotos levemente mais escuras para destacar a logo */
+}
+
+/* Caixa com a logo e textos flutuando exatamente no meio da tela */
+.hero-overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza perfeitamente no centro exato */
+    text-align: center;
+    z-index: 10;
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.85); /* Fundo branco translúcido elegante */
+    padding: 40px 30px;
+    backdrop-filter: blur(8px); /* Efeito de vidro fosco moderno */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.tagline {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #555;
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 500;
+}
+
+.hero-logo-img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.hero-overlay-content p {
+    font-size: 14px;
+    color: #444;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+}/* Seção de Capa */
+/* Seção de Capa de ponta a ponta sem margens */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+    background-color: #000;
+    margin: 0 !important;   /* Remove qualquer margem externa */
+    padding: 0 !important;  /* Remove qualquer espaçamento interno */
+}
+
+/* Grade dividindo as duas fotos */
+.hero-images-grid {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-img-box {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9); /* Deixa a foto ligeiramente mais escura para destacar a logo */
+}
+
+/* Caixa centralizada com a logo e textos */
+.hero-overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    width: 90%;
+    max-width: 550px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 35px 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.tagline {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #555;
+    margin-bottom: 12px;
+    display: block;
+    font-weight: 500;
+}
+
+.hero-logo-img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 12px auto;
+}
+
+/* Remove a caixinha e deixa apenas o conteúdo a flutuar livremente no centro */
+.hero-overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    width: 90%;
+    max-width: 600px;
+    background: transparent !important; /* Tira totalmente o fundo branco/cinza */
+    backdrop-filter: none !important;     /* Remove o efeito de vidro fosco */
+    box-shadow: none !important;         /* Remove a sombra da caixa */
+    padding: 0;
+}
+
+/* Deixa a tag "YOUR NEW MAKEUP BRAND" bem visível e elegante sobre as fotos */
+.tagline {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ffffff; /* Letra branca para destacar bem no fundo escuro/editorial */
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Sombra suave para leitura perfeita */
+}
+
+/* Tamanho grande da logo no centro da capa */
+.hero-logo-img {
+    max-width: 1100px; /* Aumente aqui se quiser a logo ainda maior */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px auto;
+    /* Se a sua logo for preta e precisar de ficar branca para aparecer bem nas fotos, adicione a linha abaixo: */
+    /* filter: brightness(0) invert(1); */
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.7));
+}
+
+/* Frase de baixo elegante */
+.hero-overlay-content p {
+    font-size: 14px;
+    color: #ffffff; /* Letra branca com sombra para destacar nas fotos */
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-transform: lowercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}/* Seção de Produtos */
+.products-section {
+    padding: 80px 5%;
+    background-color: #ffffff;
+}
+
+.products-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.products-header h2 {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.products-header p {
+    font-size: 14px;
+    color: #666;
+    letter-spacing: 0.5px;
+}
+
+/* Grade de Produtos (Alinha os produtos lado a lado) */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: #fafafa;
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.product-img-box {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.product-img-box {
+    width: 100%;
+    height: 380px; /* Aumenta a altura para transformar o espaço num retângulo vertical ideal para frascos */
+    overflow: hidden;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8; /* Fundo neutro elegante caso sobre algum espaço lateral */
+}
+
+.product-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Garante que a foto inteira da base aparece sem nenhum corte */
+}
+
+.product-info h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.product-price {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+./* Botões de comprar arredondados (estilo pílula) */
+.buy-btn {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 50px; /* Deixa as pontas arredondadas */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+/* Botões de comprar pretos, com a mesma fonte, mas com as pontas arredondadas */
+.buy-btn {
+    background-color: #111111; /* Mantém o preto original */
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 50px;       /* Arredonda apenas as extremidades */
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Mantém a fonte original */
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #444444;
+}
+.explore-btn:hover {
+    background-color: #f0f0f0; /* Tom levemente mais escuro ao passar o mouse */
+    transform: translateY(-2px);
+}
+/* Estilos da Página de Detalhes do Produto */
+.product-detail-container {
+    display: flex;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 5%;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Caixa e imagem de detalhes do produto */
+.product-detail-img {
+    flex: 1;
+    background: #f8f8f8;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+
+.product-detail-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Preenche todo o retângulo por completo, eliminando as margens brancas */
+}
+.product-detail-info {
+    flex: 1;
+}
+
+.product-category {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #777;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.product-detail-info h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin: 10px 0 15px 0;
+    letter-spacing: 1px;
+}
+
+.detail-price {
+    font-size: 20px;
+    color: #333;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.product-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Seletor de Cores */
+.color-selection {
+    margin-bottom: 35px;
+}
+
+.color-title {
+    display: block;
+    font-size: 13px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.color-options {
+    display: flex;
+    gap: 12px;
+}
+
+.color-dot {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.color-dot:hover, .color-dot.active-color {
+    transform: scale(1.1);
+    border-color: #111;
+}
+
+/* Botão Adicionar à Sacola */
+.add-to-cart-btn {
+    display: inline-block;
+    background-color: #111111;
+    color: #ffffff;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 50px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #444444;
+}
