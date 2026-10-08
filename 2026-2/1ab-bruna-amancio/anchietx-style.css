@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+	background-color: #3C2517;
+}
+
+.perfil-artista {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 30px auto 60px auto;
+    padding: 0 40px;
+}
+
+.foto-artista img {
+    width: 320px;
+    border-radius: 20px;
+}
+
+.texto-artista {
+    flex: 1;
+}
+
+.texto-artista h1 {
+    margin: 0 0 20px 0;
+}
+
+.texto-artista h1 img {
+    width: 280px;
+}
+
+.texto-artista p {
+    font-family: montserrat;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.botoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #2b1a10;
+    color: #ffffff;
+    font-family: montserrat;
+    font-size: 0.8rem;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+
+}
+
+.video-artista {
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+}
+
+.video-artista iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+footer {
+    margin-top: auto;
+    font-family: montserrat;
+    font-weight: 500;
+    color: #BC9B7A;
+    text-align: center;
+    font-size: 80%;
+    padding: 10px;
+}
+
+.botao-home {
+    display: inline-block;
+    background-color: #2b1a10;
+    color: #ffffff;
+    font-family: montserrat;
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 30px;
+    margin: 20px 40px;
+}
+
+.botao-home:hover {
+    background-color: #BC9B7A;
+    color: #2b1a10;
+}
+
+.player-musica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.player-musica audio {
+    width: 100%;
+    max-width: 400px;
+}
+
+.aviso-play {
+    font-family: montserrat;
+    color: #BC9B7A;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    text-align: center;
+}

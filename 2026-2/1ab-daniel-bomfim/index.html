@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arroz, Feijão e Bife</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="../../navbar/navbar-universal.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+
+        <div class="shape shape-green"></div>
+        <div class="shape shape-yellow"></div>
+        <div class="shape shape-blue"></div>
+
+        <section class="content">
+
+            <h1>ARROZ, FEIJÃO<br>E BIFE</h1>
+
+            <p class="subtitulo">QUAL O ACOMPANHAMENTO?</p>
+
+            <button id="sortearBtn">SORTEAR</button>
+
+            <details class="menu">
+                <summary>MENU</summary>
+                <div id="listaMenu" class="lista-menu"></div>
+            </details>
+
+            <section id="resultado" class="resultado" aria-live="polite">
+                <div class="resultado-foto">
+                    <span>SEU<br>ACOMPANHAMENTO<br>APARECERÁ AQUI</span>
+                </div>
+                <div class="resultado-nome"></div>
+            </section>
+
+            <img
+                class="prato"
+                src="images/prato.png"
+                alt="Prato com arroz, feijão e bife"
+            >
+
+        </section>
+    </main>
+
+    <script>
+        const acompanhamentos = [
+            { nome: "FAROFA", busca: "farofa brasileira comida" },
+            { nome: "OVO FRITO", busca: "ovo frito comida" },
+            { nome: "BATATA FRITA", busca: "batata frita comida" },
+            { nome: "COUVE REFOGADA", busca: "couve refogada brasileira" },
+            { nome: "BANANA FRITA", busca: "banana frita comida" },
+            { nome: "LINGUIÇA", busca: "linguica brasileira comida" },
+            { nome: "BIFE ACEBOLADO", busca: "bife acebolado comida" },
+            { nome: "FRANGO ASSADO", busca: "frango assado comida" },
+            { nome: "TORRESMO", busca: "torresmo brasileiro" },
+            { nome: "VINAGRETE", busca: "vinagrete brasileiro" },
+            { nome: "PÃO DE ALHO", busca: "pao de alho brasileiro" },
+
+            { nome: "ABAPORU — TARSILA DO AMARAL", busca: "Abaporu Tarsila do Amaral" },
+            { nome: "OPERÁRIOS — TARSILA DO AMARAL", busca: "Operarios Tarsila do Amaral" },
+            { nome: "A NEGRA — TARSILA DO AMARAL", busca: "A Negra Tarsila do Amaral" },
+            { nome: "O LAVRADOR DE CAFÉ — CANDIDO PORTINARI", busca: "Lavrador de Cafe Portinari" },
+            { nome: "GUERRA E PAZ — CANDIDO PORTINARI", busca: "Guerra e Paz Portinari" },
+            { nome: "BICHO — LYGIA CLARK", busca: "Bicho Lygia Clark" },
+            { nome: "TROPICÁLIA — HÉLIO OITICICA", busca: "Tropicalia Helio Oiticica" },
+
+            { nome: "CONGRESSO NACIONAL", busca: "Congresso Nacional Brasil Brasilia" },
+            { nome: "MASP", busca: "MASP Sao Paulo arquitetura" },
+            { nome: "MUSEU DE ARTE CONTEMPORÂNEA DE NITERÓI", busca: "MAC Niteroi Brasil" },
+            { nome: "CASA DAS CANOAS", busca: "Casa das Canoas Niemeyer" },
+            { nome: "CATEDRAL DE BRASÍLIA", busca: "Catedral de Brasilia" },
+            { nome: "PALÁCIO DA ALVORADA", busca: "Palacio da Alvorada Brasilia" },
+            { nome: "EDIFÍCIO COPAN", busca: "Edificio Copan Sao Paulo" },
+            { nome: "MINHOCÃO", busca: "Minhocao Sao Paulo" },
+
+            { nome: "SACI", busca: "Saci folclore brasileiro" },
+            { nome: "CURUPIRA", busca: "Curupira folclore brasileiro" },
+            { nome: "IARA", busca: "Iara folclore brasileiro" },
+            { nome: "BOTO-COR-DE-ROSA", busca: "boto cor de rosa folclore" },
+            { nome: "BOITATÁ", busca: "Boitata folclore brasileiro" },
+            { nome: "CUCA", busca: "Cuca folclore brasileiro" },
+            { nome: "BUMBA MEU BOI", busca: "Bumba meu boi Brasil" },
+            { nome: "FOLIA DE REIS", busca: "Folia de Reis Brasil" },
+            { nome: "FESTA JUNINA", busca: "Festa Junina Brasil" },
+
+            { nome: "SAMBA", busca: "samba brasileiro" },
+            { nome: "BOSSA NOVA", busca: "bossa nova Brasil" },
+            { nome: "TROPICÁLIA", busca: "Tropicalia musica Brasil" },
+            { nome: "CHORO", busca: "choro musica brasileira" },
+            { nome: "FORRÓ", busca: "forro brasileiro" },
+            { nome: "FUNK CARIOCA", busca: "funk carioca Brasil" },
+            { nome: "MPB", busca: "MPB musica brasileira" },
+
+            { nome: "VOLKSWAGEN FUSCA", busca: "Volkswagen Fusca Brasil" },
+            { nome: "VOLKSWAGEN KOMBI", busca: "Volkswagen Kombi Brasil" },
+            { nome: "VOLKSWAGEN GOL", busca: "Volkswagen Gol Brasil" },
+            { nome: "FIAT UNO", busca: "Fiat Uno Brasil" },
+            { nome: "CHEVROLET CHEVETTE", busca: "Chevrolet Chevette Brasil" },
+            { nome: "CHEVROLET OPALA", busca: "Chevrolet Opala Brasil" },
+            { nome: "FIAT PALIO", busca: "Fiat Palio Brasil" },
+            { nome: "VOLKSWAGEN BRASÍLIA", busca: "Volkswagen Brasilia carro" },
+
+            { nome: "PELÉ", busca: "Pele jogador Brasil" },
+            { nome: "AYRTON SENNA", busca: "Ayrton Senna Brasil" },
+            { nome: "SILVIO SANTOS", busca: "Silvio Santos Brasil" },
+            { nome: "CARMEN MIRANDA", busca: "Carmen Miranda Brasil" },
+            { nome: "TOM JOBIM", busca: "Tom Jobim Brasil" },
+            { nome: "OSCAR NIEMEYER", busca: "Oscar Niemeyer Brasil" },
+            { nome: "GISELE BÜNDCHEN", busca: "Gisele Bundchen Brasil" },
+            { nome: "FERNANDA MONTENEGRO", busca: "Fernanda Montenegro Brasil" },
+
+            { nome: "CALÇADA DE COPACABANA", busca: "calcada Copacabana Rio de Janeiro" },
+            { nome: "CANGA", busca: "canga praia Brasil" },
+            { nome: "CHINELO DE DEDO", busca: "chinelo de dedo Brasil" },
+            { nome: "CADEIRA DE PRAIA", busca: "cadeira de praia Brasil" },
+            { nome: "GARRAFA TÉRMICA", busca: "garrafa termica Brasil" },
+            { nome: "FITA DO SENHOR DO BONFIM", busca: "fita Senhor do Bonfim" },
+            { nome: "MATE DE PRAIA", busca: "mate praia Rio de Janeiro" },
+            { nome: "CAIXA DE ISOPOR", busca: "caixa de isopor praia Brasil" }
+        ];
+
+        const botao = document.getElementById("sortearBtn");
+        const listaMenu = document.getElementById("listaMenu");
+        const resultado = document.getElementById("resultado");
+        const resultadoFoto = document.querySelector(".resultado-foto");
+        const resultadoNome = document.querySelector(".resultado-nome");
+
+        let sorteados = [];
+
+        // Monta o menu com todos os itens em cinza.
+        function montarMenu() {
+            listaMenu.innerHTML = "";
+
+            acompanhamentos.forEach((item, index) => {
+                const linha = document.createElement("div");
+                linha.className = "item-menu";
+                linha.dataset.index = index;
+                linha.textContent = item.nome;
+                listaMenu.appendChild(linha);
+            });
+        }
+
+        function atualizarMenu() {
+            document.querySelectorAll(".item-menu").forEach((linha, index) => {
+                linha.classList.toggle("sorteado", sorteados.includes(index));
+            });
+        }
+
+        function imagemDoItem(item) {
+            // Busca uma fotografia correspondente ao item.
+            // O parâmetro aleatório evita que o navegador mantenha sempre a mesma foto.
+            return "https://loremflickr.com/900/700/" +
+                encodeURIComponent(item.busca) +
+                "?lock=" + item.nome.length;
+        }
+
+        function sortear() {
+            // Evita repetir um item enquanto ainda houver opções não sorteadas.
+            let disponiveis = acompanhamentos
+                .map((item, index) => index)
+                .filter(index => !sorteados.includes(index));
+
+            // Quando todos forem sorteados, começa uma nova rodada.
+            if (disponiveis.length === 0) {
+                sorteados = [];
+                disponiveis = acompanhamentos.map((item, index) => index);
+            }
+
+            const indice = disponiveis[
+                Math.floor(Math.random() * disponiveis.length)
+            ];
+
+            sorteados.push(indice);
+
+            const item = acompanhamentos[indice];
+
+            resultadoNome.textContent = item.nome;
+            resultadoFoto.innerHTML = `
+                <img
+                    src="${imagemDoItem(item)}"
+                    alt="Foto relacionada a ${item.nome}"
+                    onerror="this.parentElement.classList.add('sem-foto'); this.remove();"
+                >
+            `;
+
+            resultado.classList.add("ativo");
+            atualizarMenu();
+        }
+
+        botao.addEventListener("click", sortear);
+
+        montarMenu();
+    </script>
+</body>
+</html>

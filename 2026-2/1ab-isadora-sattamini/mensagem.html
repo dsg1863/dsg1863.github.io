@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TABERNA DA CENOURA</title>
+    <script src="../../navbar/navbar-universal.js" defer></script>
+</head>
+
+<body>
+
+    <div id="cena">
+
+        <!-- IMAGEM DE FUNDO -->
+        <img id="fundo" src="imagens/CENA2.jpg">
+
+
+        <!-- BALÃO DE FALA -->
+        <div id="mensagem">
+            NÃO OLHE PARA MINHAS ORELHAS
+        </div>
+
+
+        <!-- BOTÃO INVISÍVEL -->
+        <a id="botao1"
+           class="botao"
+           data-x="742"
+           data-y="479">
+        </a>
+
+    </div>
+
+
+    <!-- VOLTAR PARA HOME -->
+    <a href="index.html" id="voltar">
+        &lt; voltar
+    </a>
+
+
+<style>
+
+    body {
+        margin: 0;
+    }
+
+
+    /* ============================
+       CENA
+       ============================ */
+
+    #cena {
+        position: relative;
+        width: 100vw;
+    }
+
+
+    /* ============================
+       IMAGEM DE FUNDO
+       ============================ */
+
+    #fundo {
+        width: 100%;
+        display: block;
+    }
+
+
+    /* ============================
+       BALÃO DE FALA
+       ============================ */
+
+    #mensagem {
+        position: absolute;
+
+        z-index: 20;
+
+        /* COMEÇA INVISÍVEL */
+        display: none;
+
+        background: white;
+        color: black;
+
+        padding: 15px 20px;
+
+        border-radius: 15px;
+
+        border: 2px solid black;
+
+        font-family: Georgia, serif;
+        font-size: 20px;
+
+        max-width: 300px;
+
+        box-sizing: border-box;
+
+        transform: translate(-50%, -50%);
+    }
+
+
+    /* CAUDA DO BALÃO */
+
+    #mensagem::after {
+        content: "";
+
+        position: absolute;
+
+        bottom: -7px;
+        left: 2px;
+
+        width: 20px;
+        height: 20px;
+
+        background: white;
+
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+
+        transform: rotate(67deg);
+    }
+
+
+    /* ============================
+       BOTÃO COMPLETAMENTE INVISÍVEL
+       ============================ */
+
+    .botao {
+        position: absolute;
+
+        width: 200px;
+        height: 350px;
+
+        transform: translate(-50%, -50%);
+
+        z-index: 10;
+
+        background: transparent;
+        border: none;
+
+        box-sizing: border-box;
+
+        cursor: pointer;
+    }
+
+
+    /* ============================
+       VOLTAR
+       ============================ */
+
+    #voltar {
+        position: absolute;
+
+        top: 30px;
+        left: 100px;
+        z-index: 30;
+        color: black;
+        background: #fff;
+        border-radius: 8px;
+        padding: 8px;
+    }
+
+</style>
+
+
+<script>
+
+    const imagem = document.getElementById("fundo");
+    const botao = document.getElementById("botao1");
+    const mensagem = document.getElementById("mensagem");
+
+
+    // TAMANHO ORIGINAL DA IMAGEM
+
+    const larguraOriginal = 1920;
+    const alturaOriginal = 1080;
+
+
+    // ============================
+    // POSICIONAMENTO DOS ELEMENTOS
+    // ============================
+
+    function posicionarElementos() {
+
+        const rect = imagem.getBoundingClientRect();
+
+
+        // ----------------------------
+        // POSICIONAR BOTÃO
+        // ----------------------------
+
+        const xBotao = Number(botao.dataset.x);
+        const yBotao = Number(botao.dataset.y);
+
+        const xBotaoTela =
+            xBotao * (rect.width / larguraOriginal);
+
+        const yBotaoTela =
+            yBotao * (rect.height / alturaOriginal);
+
+        botao.style.left = xBotaoTela + "px";
+        botao.style.top = yBotaoTela + "px";
+
+
+        // ----------------------------
+        // POSICIONAR BALÃO
+        // ----------------------------
+
+        const xMensagem = 1234;
+        const yMensagem = 269;
+
+        const xMensagemTela =
+            xMensagem * (rect.width / larguraOriginal);
+
+        const yMensagemTela =
+            yMensagem * (rect.height / alturaOriginal);
+
+        mensagem.style.left = xMensagemTela + "px";
+        mensagem.style.top = yMensagemTela + "px";
+
+    }
+
+
+    // ============================
+    // CLIQUE NO BOTÃO
+    // ============================
+
+    botao.addEventListener("click", function(event) {
+
+        event.preventDefault();
+
+        mensagem.style.display = "block";
+
+    });
+
+
+    // ============================
+    // CARREGAMENTO DA IMAGEM
+    // ============================
+
+    imagem.addEventListener("load", posicionarElementos);
+
+
+    // ============================
+    // REDIMENSIONAMENTO DA JANELA
+    // ============================
+
+    window.addEventListener("resize", posicionarElementos);
+
+</script>
+
+</body>
+</html>

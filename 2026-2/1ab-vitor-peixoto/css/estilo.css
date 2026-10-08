@@ -1,0 +1,274 @@
+/* =========================================
+   ROGÉRIO DUARTE — site experimental
+   ========================================= */
+
+/* ---------- geral ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* fonte dos títulos: curvas gordas e psicodélicas, como os letreiros tropicalistas */
+.nome,
+.texto strong,
+.sol span,
+.topo h1,
+.fim h2 {
+  font-family: "Shrikhand", "Cooper Black", Georgia, serif;
+  font-weight: 400;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* animação do sol girando (usada nas duas páginas) */
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+
+/* =========================================
+   PÁGINA INICIAL (index.html)
+   ========================================= */
+
+.capa {
+  min-height: 100vh;
+  color: #f2ede2;
+  background-color: #e0231b;
+  /* a foto dele em retícula: pontos pretos chapados sobre vermelho, como impresso em gráfica */
+  background-image: url("../imagens/retrato-reticula.png");
+  background-size: cover;
+  background-position: 60% 30%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* o nome gigante: amarelo chapado, contorno preto e sombra magenta sem desfoque */
+.nome {
+  position: relative;
+  padding: 3vh 3vw 0;
+  font-size: 15vw;
+  line-height: 0.95;
+  color: #ffd400;
+  -webkit-text-stroke: 0.035em #000;
+  paint-order: stroke fill;
+  text-shadow: 0.06em 0.06em 0 #e6007e;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nome:hover {
+  color: #1e9a45;
+  text-shadow: 0.06em 0.06em 0 #ffd400;
+}
+
+.texto {
+  position: absolute;
+  left: 3vw;
+  bottom: 4vh;
+  max-width: 34ch;
+  padding: 18px 20px;
+  background-color: #000;
+  color: #f2ede2;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.texto strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 28px;
+  line-height: 1.1;
+  color: #ffd400;
+}
+
+/* o sol que leva para a obra */
+.sol {
+  position: absolute;
+  right: 3vw;
+  bottom: 3vh;
+  width: 230px;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sol img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  animation: girar 26s linear infinite;
+}
+
+.sol:hover img {
+  animation-duration: 3s;
+}
+
+.sol span {
+  position: relative;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  color: #e0231b;
+}
+
+
+/* =========================================
+   PÁGINA DA OBRA (obra.html)
+   ========================================= */
+
+.pagina-obra {
+  background-color: #e0231b;
+  color: #000;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2vh 3vw;
+}
+
+.topo h1 {
+  font-size: 11vw;
+  line-height: 1;
+  color: #ffd400;
+  -webkit-text-stroke: 0.035em #000;
+  paint-order: stroke fill;
+  text-shadow: 0.06em 0.06em 0 #000;
+}
+
+.voltar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background-color: #ffd400;
+  font-size: 22px;
+  font-weight: 800;
+  font-stretch: 75%;
+}
+
+.voltar img {
+  width: 28px;
+  animation: girar 8s linear infinite;
+}
+
+/* a mesa: grade de peças, cada uma levemente torta */
+.mesa {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5vw 3vw;
+  padding: 4vh 4vw;
+  align-items: start;
+}
+
+.mesa figure {
+  transition: transform 0.3s;
+}
+
+.mesa img {
+  box-shadow: 8px 8px 0 #000;
+}
+
+.mesa figcaption {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  font-stretch: 85%;
+  line-height: 1.25;
+}
+
+/* cada peça gira para um lado diferente */
+.mesa figure:nth-child(odd)  { transform: rotate(-3deg); }
+.mesa figure:nth-child(even) { transform: rotate(2deg) translateY(40px); }
+.mesa figure:nth-child(3n)   { transform: rotate(4deg); }
+.mesa figure:nth-child(5n)   { transform: rotate(-5deg) translateY(20px); }
+
+/* ao passar o mouse a peça endireita e cresce */
+.mesa figure:hover {
+  transform: rotate(0deg) scale(1.08);
+  position: relative;
+  z-index: 10;
+}
+
+.fim {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 4vw;
+  align-items: end;
+  padding: 8vh 4vw 6vh;
+}
+
+.fim h2 {
+  margin-bottom: 16px;
+  font-size: 6vw;
+  line-height: 1;
+  color: #ffd400;
+  -webkit-text-stroke: 0.035em #000;
+  paint-order: stroke fill;
+  text-shadow: 0.06em 0.06em 0 #000;
+}
+
+.fim p {
+  max-width: 36ch;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+
+/* =========================================
+   CELULAR (telas pequenas)
+   ========================================= */
+
+@media (max-width: 700px) {
+
+  .nome {
+    font-size: 21vw;
+  }
+
+  .topo h1 {
+    font-size: 20vw;
+  }
+
+  .texto {
+    max-width: 20ch;
+    font-size: 15px;
+  }
+
+  .sol {
+    width: 130px;
+    height: 130px;
+  }
+
+  .sol span {
+    font-size: 17px;
+  }
+
+  .mesa {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fim {
+    grid-template-columns: 1fr;
+  }
+
+  .fim h2 {
+    font-size: 15vw;
+  }
+}

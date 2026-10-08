@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+
+body {
+	font-family: "Merriweather", serif;
+	background: #ECE9E0;
+	margin: 50px;
+	display: flex ;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+
+
+h1 {
+	color: black;
+	font-size: 40px;
+}
+
+img {
+	width: 500px;
+}
+
+img.destaque {
+	height: 90vh;
+	width: auto;
+	margin-top: -30px;
+	padding-bottom: 40px;
+}
+
+img.convite {
+	width: 500px;
+	margin-bottom: 26px;
+}
+
+img.comecome {
+	width: 500px;
+	margin-bottom: 26px;
+}
+
+.img-memo {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	width: 100%;
+}
+
+.img-memo img.destaque {
+	width: 100%;
+	height: auto;
+	max-height: 90vh;
+	object-fit: contain;
+	min-width: 0;
+}
+
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 50px;
+}
+
+.grid-item {
+    border: 1px solid red;
+
+}
+
+.grid-item img {
+	width: 60%;
+}
+
+a.btn {
+    text-decoration: none;
+    background: #e4cccc;
+    padding: 15px 25px;
+    border-radius: 70px;
+    color: black;
+}
+
+a.btn:hover {
+    background: #cc989b;
+    color: white;
+}
+
+nav ul {
+	display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 50px 0 0 0;
+    gap: 10px;
+}
+
+
+ .comecome {
+position: relative;
+width: 500px;
+height: 497px;
+}
+
+.comecome img {
+width: 500px;
+height: 497px;
+display: block;
+}
+
+.link {
+position: absolute;
+text-decoration: none;
+color: black;
+white-space: nowrap;
+}
+
+/* MEMÓRIAS — em cima */
+.link1 {
+top: 82px;
+left: 250px;
+transform: translate(-50%, -50%);
+}
+
+/* HORA DO BANHO — esquerda */
+.link2 {
+top: 244px;
+left: 95px;
+transform: translate(-50%, -50%);
+}
+
+/* PRESENTE DO MAR — direita */
+.link3 {
+top: 244px;
+left: 390px;
+transform: translate(-50%, -50%);
+}
+
+/* A ÚNICA CRIANÇA — embaixo */
+.link4 {
+top: 400px;
+left: 250px;
+transform: translate(-50%, -50%);
+}
+
+.info {
+	padding: 20px 0;
+}
+
