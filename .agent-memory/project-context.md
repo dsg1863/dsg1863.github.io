@@ -18,14 +18,16 @@ Repo: `dsg1863/dsg1863.github.io` → live at https://dsg1863.github.io. Publish
 - Validation rules in `Project-Publish-Checklist.md` (case-sensitive paths, no spaces/accents in filenames, asset existence, navbar)
 - Navbar: `python3 navbar/inject-navbar.py` (use `--check` to preview); auto-detects semester from URL
 
-## 2026-2 semester state (as of 2026-10-07)
+## 2026-2 semester state (as of 2026-10-08)
 - Semester page: bg `#000559`, links `#00d67c`, PUC shield opacity 0.3, favicon `imagens/fav-blue.png`
-- Published: 9 × 1AA (João) + 12 × 1AB (Lula); navbar injected only into 1AB (41 pages)
+- Published: 10 × 1AA (João, incl. mariana-araujo) + 13 × 1AB (Lula, incl. maria-fernanda-bonaldo); navbar injected only into 1AB (42 pages)
+- Maria Fernanda Bonaldo: student sent site as zip; `index.html` extracted from zip; `index.docx` removed by Lula; navbar injected manually (injector with default args would also touch 1AA/2026-1 pages — on hold). Gotcha: Lula once deleted `2026-2/index.html` thinking it was a leftover — it's the semester listing page, restore from git if that happens again
 - Vitor Peixoto: GLightbox gallery lives at `obra-lightbox.html`; original `obra.html` preserved untouched by request
 - Gabriela Loureiro: 77 MB GIF compressed to 20 MB (432×768, 12fps, 64 colors) — she requires GIF (autoplay+loop), unused MP4 removed; `memorias.html` grid overflow fixed via scoped `.img-memo img.destaque` rule (`.destaque` is shared with other pages — never edit it globally)
 
 ## Pending / known issues
 - **Nuno Pereira**: `style.css` missing from his zip → page live but unstyled, waiting for him to send it
+- Maria Fernanda Bonaldo's `style.css` has an unclosed `{` on `.card-content h2` (~line 217) that silently kills the following `.card` rule — her bug, mention to her if relevant
 - **1AA navbar**: NOT injected (Lula said hold off — his explicit call, ask before doing)
 - 1AA known issues deliberately unfixed per Lula: filenames with spaces/accents, 15–26 MB images, duplicate assets
 
