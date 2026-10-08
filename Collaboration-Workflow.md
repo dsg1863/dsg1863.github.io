@@ -27,7 +27,7 @@ git push origin main
 
 - `main` holds only stable, published work.
 - One branch per task, small commits.
-- If you each work in your own class's folders (`1aa-*` vs `1ab-*`), merges stay clean.
+- Work in your own class's folders (`1aa-*` vs `1ab-*`) — different files merge cleanly.
 
 ## If you forgot to pull
 
