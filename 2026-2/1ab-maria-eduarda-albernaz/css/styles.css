@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
-</style>
 
 
 
@@ -61,6 +60,6 @@ a:hover {
 }
 
 .meuvideo {
-	width: auto;
-	height: 900px;
+	width: 100%;
+	height: auto;
 }
