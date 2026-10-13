@@ -1,0 +1,36 @@
+h1{
+	font-family: anton;
+	font-size: 100px;
+	color: #8F4E03;
+}
+p.inicio {
+	font-family: Black Ops One;
+	font-size: 40px;
+}
+p{
+	font-size: 40px;
+	font-family: helvetica;
+}
+
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+a:hover {
+	color: indianred;
+}
+a{
+	font-family: arial;
+	font-size: 30px;
+} 
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img{
+	padding-bottom: 20px;
+}
