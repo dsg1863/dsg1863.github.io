@@ -31,7 +31,7 @@ h1 {
     font-family: "Shardee", cursive;
     font-weight: 400;
     margin: 0px;
-    font-size: 96px;
+    font-size: 144px;
     color: #ffffff;
     text-shadow: 2px 1px 3px #FFC90E;
 }
@@ -51,7 +51,7 @@ audio-player {
 
 p {
     font-family: "Harring", monospace;
-    font-size: 18px;
+    font-size: 24px;
     letter-spacing: 2px;
     line-height: 180%;
     color:white;
@@ -64,44 +64,38 @@ p {
 
 .highlight {
     font-weight: 400;
-    font-size: 20px;
     color: #ffffff;
     text-shadow: 2px 1px 3px #FFC90E;
 }
 
 .highlight-pink {
     color: #ffffff;
-    font-size: 20px;
     text-shadow: 1px 1px 0 #f32477;
 }
 
 .highlight-green {
     color: #ffffff;
-    font-size: 20px;
     text-shadow: 1px 1px 0 #20ff00;
 }
 
 .highlight-red{
     color: #ffffff;
-    font-size: 20px;
     text-shadow: 1px 1px 0 #ff0d00;
 }
 
 .highlight-orange{
     color: #ffffff;
-    font-size: 20px;
     text-shadow: 1px 1px 0 #F27115;
 }
 
 .highlight-blue{
     color: #ffffff;
-    font-size: 20px;
     text-shadow: 1px 1px 0 #4ac5f5;
 }
 
 .slogan {
     font-family: "Xanh Mono", monospace;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.5;
     color: white;
     width: 100%;
@@ -122,7 +116,7 @@ p {
     font-family: "Xanh Mono", monospace;
     font-weight: 500;
     font-style: normal;
-    font-size: 28px;
+    font-size: 34px;
     color: #ffffff;
     text-shadow: 2px 1px 3px #FE6FAA; 
 }
@@ -132,7 +126,7 @@ p {
 }
 
 #nav img{
-    width: 100px;
+    width: 150px;
 }
 
 .main-img img{
@@ -146,17 +140,17 @@ p {
     flex-direction: row;
     padding: 15px;
     align-items: center;
-    gap: 30px
+    gap: 40px;
 }
 
 .lateral{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 60px;
 }
 
 .description img{
-    width: 500px;
+    width: 800px;
 }
 
 .titulo{
@@ -167,7 +161,7 @@ p {
 }
 
 .titulo img{
-    height: 125px;
+    height: 175px;
     width: auto;
 }
 
