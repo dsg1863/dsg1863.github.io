@@ -1,0 +1,243 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;  
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: flex 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.card:hover {
+    flex: 2;
+}
+
+.container.has-expanded .card {
+    flex: 0.5;
+}
+
+.container.has-expanded .card:hover {
+    flex: 0.75;
+}
+
+.container.has-expanded .card.expanded,
+.container.has-expanded .card.expanded:hover {
+    flex: 7;
+}
+
+.card:nth-child(1) {
+    --cor-fundo: #121214;
+    --glow-color: #1F1F2F;
+    background-color: var(--cor-fundo);
+    font-family: Outfit, sans-serif;
+    font-size: 75px;
+    color: #F3ECE0;
+}
+
+.card:nth-child(2) {
+    --cor-fundo: #A68B91;
+    --glow-color: #B36072;
+    background-color: var(--cor-fundo);
+    font-family: Outfit, sans-serif;
+    font-size: 75px;
+    color: #4A1521;
+}
+
+.card:nth-child(3) {
+    --cor-fundo: #4A1521;
+    --glow-color: #62091E;
+    background-color: var(--cor-fundo);
+    font-family: Outfit, sans-serif;
+    font-size: 75px;
+    color: #A68B91;
+}
+
+.card:nth-child(4) {
+    --cor-fundo: #EEC8A3;
+    --glow-color: #E9AB6E;
+    background-color: var(--cor-fundo);
+    font-family: Outfit, sans-serif;
+    font-size: 55px;
+    color: #121214;
+}
+
+.card-content {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    padding: 0 40px;
+    box-sizing: border-box;
+    transition: flex 0.6s ease;
+}
+
+.card-content .vetor-card,
+.card-content h2 {
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    transform: translateY(-50%);
+    transition: left 0.6s ease, right 0.6s ease, transform 0.6s ease, opacity 0.5s ease;
+    white-space: nowrap;
+}
+
+
+.align-right .card-content .vetor-card { left: 40px; right: auto; }
+.align-right .card-content h2         { right: 40px; left: auto; }
+
+.align-left .card-content .vetor-card { right: 40px; left: auto; }
+.align-left .card-content h2          { left: 40px; right: auto; }
+
+.card-content .vetor-card {
+    height: 500px;
+    width: auto;
+}
+
+.card:nth-child(1) .card-content .vetor-card { height: 620px; }
+.card:nth-child(2) .card-content .vetor-card { height: 500px; }
+.card:nth-child(3) .card-content .vetor-card { height: 500px; }
+
+.card.expanded .card-content {
+    flex: 0 0 200px; 
+}
+
+.card.expanded .card-content .vetor-card {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.85);
+}
+
+.card-description {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.6s ease;
+    padding: 0 40px;
+}
+
+.card-description-inner {
+    overflow: hidden;
+}
+
+.card-description p {
+    max-width: 650px;
+    margin: 0 0 30px 0;
+    font-family: Outfit, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.align-right .card-description p {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+}
+
+.align-left .card-description p {
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+}
+
+.card.expanded .card-description {
+    grid-template-rows: 1fr;
+    flex: 1; 
+}
+
+.card-stack {
+    --inset: 40px;
+    --dir: 1;
+    --altura-carta: min(78vh, 640px);
+    --inclinacao: 8deg;
+
+    position: absolute;
+    top: 0;
+    height: 100vh; 
+    width: min(700px, 45vw);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease 0.2s;
+    z-index: 3;
+}
+
+.align-right .card-stack { left: var(--inset); }
+
+.align-left .card-stack {
+    right: var(--inset);
+    --dir: -1;
+}
+
+.card.expanded .card-stack {
+    opacity: 1;
+}
+
+.card-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: min(640px, 90vh);
+    height: min(640px, 90vh);
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 70%);
+    filter: blur(20px);
+    z-index: 0;
+}
+
+.card-frente {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: var(--altura-carta);
+    width: auto;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+    transform: translate(-50%, -50%) rotate(calc(var(--dir) * var(--inclinacao)));
+    z-index: 2;
+}
+
+.card-verso {
+    display: none;
+}
+
+:root {
+    --fonte-titulo: "New Rocker", system-ui;
+}
+
+.card-content h2 {
+    font-family: var(--fonte-titulo);
+    font-weight: 400; 
+
+.card {
+    isolation: isolate; 
+    --my: 50%;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    background: radial-gradient(
+        circle 170px at var(--mx) var(--my),
+        var(--glow-color, rgba(255, 255, 255, 0.3)) 0%,
+        transparent 70%
+    );
+}
+
+.card:hover::before {
+    opacity: 1;
+}
