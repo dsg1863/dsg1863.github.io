@@ -23,6 +23,7 @@ Repo: `dsg1863/dsg1863.github.io` → live at https://dsg1863.github.io. Publish
 - Published: 10 × 1AA (João, incl. mariana-araujo) + 13 × 1AB (Lula, incl. maria-fernanda-bonaldo); navbar injected only into 1AB (42 pages)
 - Maria Fernanda Bonaldo: student sent site as zip; `index.html` extracted from zip; `index.docx` removed by Lula; navbar injected manually (injector with default args would also touch 1AA/2026-1 pages — on hold). Gotcha: Lula once deleted `2026-2/index.html` thinking it was a leftover — it's the semester listing page, restore from git if that happens again
 - João Pedro Xavier (1AB): folder renamed `1ab-joao-pedro` → `1ab-joao-pedro-xavier` (2026-10-08); Lula also fixed a swapped director image (`diretor-1`↔`diretor-3`) in his index.html; semester index href updated to match
+- Helena Ferraz (1AB): site sent as a Next.js/React project (`2026-2/1ab-helena-ferraz/` — package.json, .tsx, node_modules) → NOT compatible with the static GitHub Pages env; not committed. Instead, semester index links directly to her live site (https://brasil-em-festa-caderno-helena.helenaferraz07.chatgpt.site/, opens new window) — 2026-10-20
 - Vitor Peixoto: GLightbox gallery lives at `obra-lightbox.html`; original `obra.html` preserved untouched by request
 - Gabriela Loureiro: 77 MB GIF compressed to 20 MB (432×768, 12fps, 64 colors) — she requires GIF (autoplay+loop), unused MP4 removed; `memorias.html` grid overflow fixed via scoped `.img-memo img.destaque` rule (`.destaque` is shared with other pages — never edit it globally)
 
