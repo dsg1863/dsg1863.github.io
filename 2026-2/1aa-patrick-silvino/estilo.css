@@ -1,0 +1,161 @@
+/* =========================================================
+   GERAL
+   ========================================================= */
+body {
+	margin: 0;
+	background-color: #FFFDF7;
+}
+
+/* =========================================================
+   CABEÇALHO 
+   ========================================================= */
+header.cabecalho {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 5px 40px 10px 100px;
+	background-color: #000000;
+	font-family: "Carter One", system-ui;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+header.cabecalho nav {
+	display: flex;
+	gap: 20px;
+}
+
+header.cabecalho .nome {
+	margin-left: auto;
+	font-size: 20px;
+	color: #FFFDF7;
+}
+
+/* Links do cabeçalho */
+header.cabecalho a,
+header.cabecalho a:visited {
+	font-size: 20px;
+	color: #FFFDF7;
+	text-decoration: none;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+header.cabecalho a:hover {
+	background-color: #FFFDF7;
+	color: #000000;
+}
+
+/* =========================================================
+   PÁGINA INICIAL
+   ========================================================= */
+main.principal {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 6%;
+	padding: 70px 5% 40px 5%;
+	align-items: start;
+}
+
+main.principal .texto {
+	line-height: 1.5;
+}
+
+main.principal .texto p {
+	margin: 0 0 1.5em 0;
+}
+
+main.principal .eu {
+	text-align: right;
+}
+
+main.principal .eu img {
+	width: auto;
+	max-width: 100%;
+	max-height: 75vh;
+	height: auto;
+}
+
+/* Celular: texto em cima, foto embaixo */
+@media (max-width: 800px) {
+	header.cabecalho {
+		flex-wrap: wrap;
+		padding: 10px 20px;
+	}
+	main.principal {
+		grid-template-columns: 1fr;
+		padding-top: 30px;
+	}
+	main.principal .eu {
+		text-align: center;
+	}
+}
+
+/* =========================================================
+   PROJETOS (mosaico) 
+   ========================================================= */
+table {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td.mosaico {
+	width: 33.33%;
+	padding: 50px 2% 0 2%;
+	vertical-align: top;
+}
+
+td.mosaico a {
+	display: block;
+	transition: transform 0.3s ease;
+}
+
+td.mosaico a:hover {
+	transform: scale(1.08);
+}
+
+img.serie {
+	width: 100%;
+	aspect-ratio: 16 / 10;
+	object-fit: cover;
+	display: block;
+	border-radius: 8px;
+}
+
+/* =========================================================
+   VÍDEO — mantido como estava
+   ========================================================= */
+video {
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 5%;
+}
+
+/* =========================================================
+   TROCA DE IMAGEM NO HOVER — mantido como estava
+   ========================================================= */
+a.troca {
+	position: relative;
+	display: block;
+	padding: 0;
+}
+
+a.troca:hover {
+	background-color: transparent;
+}
+
+a.troca img.sobre {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+a.troca:hover img.sobre {
+	opacity: 1;
+}
